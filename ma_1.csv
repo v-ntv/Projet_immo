@@ -1,0 +1,1031 @@
+ville,prix_appartement,min_appartement,max_appartement,prix_maison,min_maison,max_maison,loyer_appartement,loyer_min_appartement,loyer_max_appartement,loyer_maison,loyer_min_maison,loyer_max_maison,url,Code_insee
+Abbaretz,1715.0,1006.0,2836.0,1704.0,682.0,2935.0,12.0,8.3,19.7,11.7,7.6,15.0,https://www.meilleursagents.com/prix-immobilier/abbaretz-44170/,44001
+Aigrefeuille-sur-Maine,2704.0,1673.0,3682.0,2630.0,1052.0,3875.0,13.0,9.6,17.0,12.7,8.8,15.5,https://www.meilleursagents.com/prix-immobilier/aigrefeuille-sur-maine-44140/,44002
+Ancenis,2965.0,1629.0,4876.0,2730.0,1230.0,4376.0,11.8,7.9,19.5,12.4,8.0,16.3,https://www.meilleursagents.com/prix-immobilier/ancenis-44150/,44003
+Saint-Géréon,2907.0,1649.0,4184.0,2504.0,1183.0,3677.0,12.4,8.2,17.7,12.2,9.4,16.1,https://www.meilleursagents.com/prix-immobilier/saint-gereon-44150/,44003
+Chaumes-en-Retz,2533.0,1474.0,3650.0,2412.0,965.0,3581.0,13.5,9.4,21.2,12.5,8.9,15.6,https://www.meilleursagents.com/prix-immobilier/arthon-en-retz-44320/,44005
+La Sicaudais,2533.0,1474.0,3650.0,2412.0,965.0,3581.0,13.5,9.4,21.2,12.5,8.9,15.6,https://www.meilleursagents.com/prix-immobilier/la-sicaudais-44320/,44005
+Chaumes-en-Retz,2533.0,1474.0,3650.0,2412.0,965.0,3581.0,13.5,9.4,21.2,12.5,8.9,15.6,https://www.meilleursagents.com/prix-immobilier/chemere-44680/,44005
+Assérac,3284.0,1941.0,4466.0,2964.0,1185.0,5731.0,11.4,7.5,16.3,12.8,7.8,16.1,https://www.meilleursagents.com/prix-immobilier/asserac-44410/,44006
+Pont d'Armes,3284.0,1941.0,4466.0,2964.0,1185.0,5731.0,11.4,7.5,16.3,12.8,7.8,16.1,https://www.meilleursagents.com/prix-immobilier/pont-d-armes-44410/,44006
+Avessac,1688.0,1178.0,2828.0,1619.0,648.0,3135.0,10.9,7.9,17.6,10.7,6.6,13.2,https://www.meilleursagents.com/prix-immobilier/avessac-44460/,44007
+Batz-sur-Mer,4584.0,2251.0,7165.0,5071.0,2028.0,10141.0,13.9,9.4,19.7,14.4,9.9,19.2,https://www.meilleursagents.com/prix-immobilier/batz-sur-mer-44740/,44010
+La Bernerie-en-Retz,4950.0,3119.0,7463.0,4534.0,2360.0,8431.0,13.6,10.2,19.5,13.8,10.8,18.3,https://www.meilleursagents.com/prix-immobilier/la-bernerie-en-retz-44760/,44012
+Besné,2486.0,1544.0,3434.0,2466.0,1115.0,3825.0,12.6,8.7,17.5,12.0,7.2,14.2,https://www.meilleursagents.com/prix-immobilier/besne-44160/,44013
+Le Bignon,3359.0,2605.0,4340.0,2660.0,1064.0,3728.0,13.9,10.2,18.4,13.1,9.2,17.0,https://www.meilleursagents.com/prix-immobilier/le-bignon-44140/,44014
+Blain,1960.0,1395.0,2551.0,2092.0,883.0,3193.0,11.1,8.2,17.2,11.9,7.1,16.6,https://www.meilleursagents.com/prix-immobilier/blain-44130/,44015
+Saint Emilien de Blain,1960.0,1395.0,2551.0,2092.0,883.0,3193.0,11.1,8.2,17.2,11.9,7.1,16.6,https://www.meilleursagents.com/prix-immobilier/saint-emilien-de-blain-44130/,44015
+Saint Omer de Blain,1960.0,1395.0,2551.0,2092.0,883.0,3193.0,11.1,8.2,17.2,11.9,7.1,16.6,https://www.meilleursagents.com/prix-immobilier/saint-omer-de-blain-44130/,44015
+La Boissière-du-Doré,1763.0,1030.0,3223.0,1945.0,778.0,2626.0,10.6,6.8,17.0,10.1,6.9,13.5,https://www.meilleursagents.com/prix-immobilier/la-boissiere-du-dore-44430/,44016
+Bouaye,3240.0,2480.0,4314.0,2956.0,1390.0,4356.0,12.5,9.6,16.2,13.4,9.2,18.0,https://www.meilleursagents.com/prix-immobilier/bouaye-44830/,44018
+Bouée,2595.0,1403.0,3835.0,2296.0,918.0,3557.0,12.4,9.2,16.9,12.5,8.0,16.3,https://www.meilleursagents.com/prix-immobilier/bouee-44260/,44019
+Villeneuve-en-Retz,2686.0,1605.0,3628.0,2453.0,981.0,3939.0,12.8,8.1,22.9,12.7,8.8,15.4,https://www.meilleursagents.com/prix-immobilier/bourgneuf-en-retz-44580/,44021
+Villeneuve-en-Retz,2686.0,1605.0,3628.0,2453.0,981.0,3939.0,12.8,8.1,22.9,12.7,8.8,15.4,https://www.meilleursagents.com/prix-immobilier/fresnay-en-retz-44580/,44021
+Saint Cyr En Retz,2686.0,1605.0,3628.0,2453.0,981.0,3939.0,12.8,8.1,22.9,12.7,8.8,15.4,https://www.meilleursagents.com/prix-immobilier/saint-cyr-en-retz-44580/,44021
+Boussay,2389.0,1682.0,3181.0,1992.0,797.0,3240.0,10.1,7.3,17.8,10.2,6.8,12.9,https://www.meilleursagents.com/prix-immobilier/boussay-44190/,44022
+Bouvron,2001.0,1407.0,2696.0,2020.0,896.0,3511.0,12.4,9.2,20.5,12.0,7.7,16.4,https://www.meilleursagents.com/prix-immobilier/bouvron-44130/,44023
+Brains,3038.0,2077.0,3714.0,2691.0,1319.0,3684.0,13.4,9.3,18.2,11.0,6.6,14.3,https://www.meilleursagents.com/prix-immobilier/brains-44830/,44024
+Campbon,2533.0,1516.0,3526.0,2232.0,995.0,3503.0,12.5,9.0,19.1,11.5,7.2,15.3,https://www.meilleursagents.com/prix-immobilier/campbon-44750/,44025
+Carquefou,3562.0,2381.0,4876.0,3401.0,2051.0,5316.0,13.7,10.6,20.9,12.2,10.2,16.4,https://www.meilleursagents.com/prix-immobilier/carquefou-44470/,44026
+Casson,3401.0,2169.0,4767.0,2692.0,1363.0,3862.0,12.7,8.9,17.3,13.9,9.9,17.5,https://www.meilleursagents.com/prix-immobilier/casson-44390/,44027
+Le Cellier,2840.0,1410.0,4433.0,2541.0,1016.0,4088.0,13.3,8.9,18.5,13.4,9.4,17.6,https://www.meilleursagents.com/prix-immobilier/le-cellier-44850/,44028
+Divatte-sur-Loire,2715.0,1819.0,4353.0,2426.0,981.0,3944.0,12.9,10.3,21.9,14.0,9.5,18.8,https://www.meilleursagents.com/prix-immobilier/barbechat-44450/,44029
+Divatte-sur-Loire,2715.0,1819.0,4353.0,2426.0,981.0,3944.0,12.9,10.3,21.9,14.0,9.5,18.8,https://www.meilleursagents.com/prix-immobilier/la-chapelle-basse-mer-44450/,44029
+La Chapelle-des-Marais,2567.0,1620.0,4112.0,2417.0,1016.0,3912.0,11.6,8.9,20.5,11.2,7.6,13.2,https://www.meilleursagents.com/prix-immobilier/la-chapelle-des-marais-44410/,44030
+La Chapelle-Glain,1696.0,964.0,2467.0,1296.0,519.0,2449.0,10.2,6.4,16.1,9.8,6.5,13.2,https://www.meilleursagents.com/prix-immobilier/la-chapelle-glain-44670/,44031
+La Chapelle-Heulin,2793.0,2038.0,3722.0,2710.0,1084.0,3851.0,12.7,9.3,17.1,13.3,8.5,17.0,https://www.meilleursagents.com/prix-immobilier/la-chapelle-heulin-44330/,44032
+La Chapelle-Launay,2528.0,1414.0,3688.0,2318.0,927.0,3512.0,12.6,9.1,17.0,13.1,8.6,17.3,https://www.meilleursagents.com/prix-immobilier/la-chapelle-launay-44260/,44033
+Châteaubriant,1976.0,1045.0,3136.0,1825.0,849.0,2969.0,11.3,7.6,17.6,11.5,8.0,16.0,https://www.meilleursagents.com/prix-immobilier/chateaubriant-44110/,44036
+Château-Thébaud,2886.0,2007.0,3844.0,2595.0,1038.0,3879.0,13.1,9.7,17.1,12.8,8.6,16.4,https://www.meilleursagents.com/prix-immobilier/chateau-thebaud-44690/,44037
+Chauvé,2355.0,1085.0,3635.0,2729.0,1091.0,4145.0,11.5,9.5,19.8,13.1,9.1,16.3,https://www.meilleursagents.com/prix-immobilier/chauve-44320/,44038
+Cheix-en-Retz,2984.0,2047.0,4140.0,2746.0,1098.0,3698.0,12.9,8.6,16.6,13.2,8.0,16.6,https://www.meilleursagents.com/prix-immobilier/cheix-en-retz-44640/,44039
+La Chevrolière,3007.0,2114.0,3721.0,2550.0,1173.0,3390.0,13.9,9.2,18.1,12.9,9.2,15.3,https://www.meilleursagents.com/prix-immobilier/la-chevroliere-44118/,44041
+Passay,3007.0,2114.0,3721.0,2550.0,1173.0,3390.0,13.9,9.2,18.1,12.9,9.2,15.3,https://www.meilleursagents.com/prix-immobilier/passay-44118/,44041
+Clisson,3598.0,2241.0,4621.0,3209.0,1555.0,5039.0,13.2,9.9,17.0,12.0,7.8,15.8,https://www.meilleursagents.com/prix-immobilier/clisson-44190/,44043
+Conquereuil,1748.0,1131.0,2711.0,1565.0,628.0,3078.0,9.8,6.2,15.6,9.9,6.0,14.0,https://www.meilleursagents.com/prix-immobilier/conquereuil-44290/,44044
+Cordemais,2322.0,1052.0,3743.0,2588.0,1420.0,4341.0,12.4,8.7,16.6,13.2,8.2,16.7,https://www.meilleursagents.com/prix-immobilier/cordemais-44360/,44045
+Corsept,2271.0,908.0,3602.0,2831.0,1380.0,3994.0,13.7,9.8,20.7,14.3,9.9,18.2,https://www.meilleursagents.com/prix-immobilier/corsept-44560/,44046
+Couëron,3143.0,2116.0,4416.0,2914.0,1470.0,4333.0,12.7,9.7,18.0,13.1,9.6,17.1,https://www.meilleursagents.com/prix-immobilier/coueron-44220/,44047
+La Chabossiere,3143.0,2116.0,4416.0,2914.0,1470.0,4333.0,12.7,9.7,18.0,13.1,9.6,17.1,https://www.meilleursagents.com/prix-immobilier/la-chabossiere-44220/,44047
+Couffé,2463.0,1380.0,4435.0,2141.0,908.0,3136.0,12.6,8.7,16.5,12.4,9.0,15.7,https://www.meilleursagents.com/prix-immobilier/couffe-44521/,44048
+Le Croisic,4565.0,2432.0,7543.0,4789.0,2296.0,8277.0,13.3,8.6,21.3,14.7,11.8,19.1,https://www.meilleursagents.com/prix-immobilier/le-croisic-44490/,44049
+Crossac,2578.0,1586.0,3523.0,2387.0,955.0,3537.0,11.7,9.6,20.3,11.3,7.5,15.2,https://www.meilleursagents.com/prix-immobilier/crossac-44160/,44050
+Derval,1717.0,1055.0,2835.0,1825.0,730.0,2737.0,11.5,6.3,20.3,9.8,6.9,12.6,https://www.meilleursagents.com/prix-immobilier/derval-44590/,44051
+Drefféac,2552.0,1487.0,3563.0,2345.0,965.0,3443.0,11.7,9.6,20.2,10.2,7.2,12.3,https://www.meilleursagents.com/prix-immobilier/dreffeac-44530/,44053
+Erbray,1759.0,931.0,2678.0,1649.0,660.0,2557.0,10.4,7.1,17.0,10.2,7.1,12.8,https://www.meilleursagents.com/prix-immobilier/erbray-44110/,44054
+La Baule-Escoublac,7022.0,3516.0,12661.0,6737.0,2982.0,11831.0,14.8,9.6,23.1,15.6,12.4,20.4,https://www.meilleursagents.com/prix-immobilier/la-baule-escoublac-44500/,44055
+Fégréac,2405.0,1426.0,4159.0,1646.0,658.0,3138.0,10.0,5.7,17.5,9.6,5.8,14.6,https://www.meilleursagents.com/prix-immobilier/fegreac-44460/,44057
+Fercé,1901.0,1026.0,2732.0,1572.0,629.0,2632.0,10.4,6.4,17.1,10.1,7.7,13.6,https://www.meilleursagents.com/prix-immobilier/ferce-44660/,44058
+Frossay,2327.0,947.0,4366.0,2555.0,1083.0,4115.0,11.6,9.6,20.1,13.1,9.1,17.7,https://www.meilleursagents.com/prix-immobilier/frossay-44320/,44061
+Le Gâvre,1960.0,1395.0,2551.0,1893.0,757.0,2996.0,11.4,8.0,18.7,11.3,7.9,14.8,https://www.meilleursagents.com/prix-immobilier/le-gavre-44130/,44062
+Gétigné,2505.0,1735.0,3353.0,2460.0,1046.0,3782.0,12.6,8.6,20.9,12.2,8.4,15.9,https://www.meilleursagents.com/prix-immobilier/getigne-44190/,44063
+Gorges,3595.0,2395.0,4443.0,2704.0,1082.0,3919.0,12.8,9.4,17.1,13.0,9.2,16.9,https://www.meilleursagents.com/prix-immobilier/gorges-44190/,44064
+Grand-Auverné,2366.0,1192.0,3595.0,1460.0,584.0,2333.0,11.2,8.1,18.3,10.2,6.4,14.4,https://www.meilleursagents.com/prix-immobilier/grand-auverne-44520/,44065
+Guémené-Penfao,2427.0,1239.0,3395.0,1680.0,672.0,2855.0,9.8,6.0,15.2,9.9,6.0,14.1,https://www.meilleursagents.com/prix-immobilier/guemene-penfao-44290/,44067
+Besle sur Vilaine,2427.0,1239.0,3395.0,1680.0,672.0,2855.0,9.8,6.0,15.2,9.9,6.0,14.1,https://www.meilleursagents.com/prix-immobilier/besle-sur-vilaine-44290/,44067
+Guenouvry,2427.0,1239.0,3395.0,1680.0,672.0,2855.0,9.8,6.0,15.2,9.9,6.0,14.1,https://www.meilleursagents.com/prix-immobilier/guenouvry-44290/,44067
+Guenrouet,2525.0,1485.0,3533.0,1932.0,773.0,3399.0,11.4,7.9,18.5,10.4,7.4,13.1,https://www.meilleursagents.com/prix-immobilier/guenrouet-44530/,44068
+Notre Dame de Grace,2525.0,1485.0,3533.0,1932.0,773.0,3399.0,11.4,7.9,18.5,10.4,7.4,13.1,https://www.meilleursagents.com/prix-immobilier/notre-dame-de-grace-44530/,44068
+Guérande,3986.0,2470.0,5646.0,4354.0,2206.0,7412.0,14.0,9.5,19.9,14.4,8.6,19.5,https://www.meilleursagents.com/prix-immobilier/guerande-44350/,44069
+Clis,3986.0,2470.0,5646.0,4354.0,2206.0,7412.0,14.0,9.5,19.9,14.4,8.6,19.5,https://www.meilleursagents.com/prix-immobilier/clis-44350/,44069
+La Madeleine,3986.0,2470.0,5646.0,4354.0,2206.0,7412.0,14.0,9.5,19.9,14.4,8.6,19.5,https://www.meilleursagents.com/prix-immobilier/la-madeleine-44350/,44069
+Saille,3986.0,2470.0,5646.0,4354.0,2206.0,7412.0,14.0,9.5,19.9,14.4,8.6,19.5,https://www.meilleursagents.com/prix-immobilier/saille-44350/,44069
+La Haie-Fouassière,3264.0,2267.0,4503.0,2766.0,1340.0,4100.0,13.1,9.6,17.7,13.1,8.7,16.9,https://www.meilleursagents.com/prix-immobilier/la-haie-fouassiere-44690/,44070
+Haute-Goulaine,3515.0,2524.0,4525.0,3165.0,1324.0,4972.0,13.4,10.7,16.8,14.8,11.6,18.7,https://www.meilleursagents.com/prix-immobilier/haute-goulaine-44115/,44071
+Herbignac,2768.0,1454.0,5536.0,2872.0,1149.0,4725.0,12.7,8.4,18.3,12.8,7.6,15.5,https://www.meilleursagents.com/prix-immobilier/herbignac-44410/,44072
+Pompas,2768.0,1454.0,5536.0,2872.0,1149.0,4725.0,12.7,8.4,18.3,12.8,7.6,15.5,https://www.meilleursagents.com/prix-immobilier/pompas-44410/,44072
+Indre,3003.0,1634.0,4341.0,3122.0,1370.0,5022.0,13.4,10.8,19.3,15.5,10.6,21.5,https://www.meilleursagents.com/prix-immobilier/indre-44610/,44074
+Haute Indre,3003.0,1634.0,4341.0,3122.0,1370.0,5022.0,13.4,10.8,19.3,15.5,10.6,21.5,https://www.meilleursagents.com/prix-immobilier/haute-indre-44610/,44074
+Issé,1742.0,920.0,2745.0,1445.0,615.0,2673.0,9.7,5.6,15.2,10.6,7.8,13.9,https://www.meilleursagents.com/prix-immobilier/isse-44520/,44075
+Jans,1721.0,1014.0,2911.0,1697.0,679.0,2877.0,11.4,6.6,20.5,10.0,6.6,13.6,https://www.meilleursagents.com/prix-immobilier/jans-44170/,44076
+Joué-sur-Erdre,2536.0,1329.0,3895.0,1927.0,771.0,3376.0,11.8,8.8,18.4,10.9,7.4,15.0,https://www.meilleursagents.com/prix-immobilier/joue-sur-erdre-44440/,44077
+Notre Dame des Langueurs,2536.0,1329.0,3895.0,1927.0,771.0,3376.0,11.8,8.8,18.4,10.9,7.4,15.0,https://www.meilleursagents.com/prix-immobilier/notre-dame-des-langueurs-44440/,44077
+Juigné-des-Moutiers,1793.0,847.0,2914.0,1427.0,571.0,2613.0,9.7,6.6,15.4,9.8,7.0,12.4,https://www.meilleursagents.com/prix-immobilier/juigne-des-moutiers-44670/,44078
+Le Landreau,2792.0,1883.0,3388.0,2470.0,1218.0,3693.0,12.8,8.4,17.2,12.8,8.8,16.6,https://www.meilleursagents.com/prix-immobilier/le-landreau-44430/,44079
+Lavau-sur-Loire,2227.0,891.0,3609.0,1976.0,931.0,3008.0,12.7,9.6,18.8,13.6,9.0,17.7,https://www.meilleursagents.com/prix-immobilier/lavau-sur-loire-44260/,44080
+Legé,2212.0,1428.0,2990.0,1939.0,776.0,3157.0,11.3,9.2,19.0,10.2,6.5,12.4,https://www.meilleursagents.com/prix-immobilier/lege-44650/,44081
+Ligné,2889.0,1473.0,4716.0,2446.0,979.0,3394.0,12.8,8.4,17.6,12.7,8.9,15.8,https://www.meilleursagents.com/prix-immobilier/ligne-44850/,44082
+La Limouzinière,2261.0,1689.0,3135.0,2155.0,862.0,3253.0,13.3,9.6,18.6,12.3,8.4,14.7,https://www.meilleursagents.com/prix-immobilier/la-limouziniere-44310/,44083
+Le Loroux-Bottereau,2965.0,1798.0,3839.0,2804.0,1127.0,3854.0,12.7,8.6,20.9,13.8,10.1,17.4,https://www.meilleursagents.com/prix-immobilier/le-loroux-bottereau-44430/,44084
+Louisfert,1764.0,908.0,2779.0,1585.0,634.0,2538.0,10.6,7.3,17.4,10.1,6.7,14.6,https://www.meilleursagents.com/prix-immobilier/louisfert-44110/,44085
+Lusanger,1728.0,933.0,2751.0,1619.0,648.0,2829.0,10.8,6.2,19.4,10.2,6.9,14.3,https://www.meilleursagents.com/prix-immobilier/lusanger-44590/,44086
+Machecoul-Saint-Même,2705.0,1425.0,3705.0,2393.0,1060.0,3789.0,12.8,8.0,22.0,12.7,8.8,15.5,https://www.meilleursagents.com/prix-immobilier/machecoul-44270/,44087
+Machecoul-Saint-Même,2705.0,1425.0,3705.0,2393.0,1060.0,3789.0,12.8,8.0,22.0,12.7,8.8,15.5,https://www.meilleursagents.com/prix-immobilier/saint-meme-le-tenu-44270/,44087
+Maisdon-sur-Sèvre,2437.0,1822.0,3083.0,2516.0,1006.0,3586.0,13.2,9.6,18.5,13.2,9.7,17.5,https://www.meilleursagents.com/prix-immobilier/maisdon-sur-sevre-44690/,44088
+Malville,2576.0,1414.0,3785.0,2413.0,1125.0,3781.0,12.8,8.8,17.3,12.0,7.6,15.1,https://www.meilleursagents.com/prix-immobilier/malville-44260/,44089
+La Marne,2679.0,1428.0,3658.0,2054.0,947.0,3223.0,11.2,9.0,18.8,11.4,7.3,14.6,https://www.meilleursagents.com/prix-immobilier/la-marne-44270/,44090
+Massérac,1688.0,1180.0,2685.0,1458.0,583.0,2752.0,9.8,5.6,16.0,9.9,6.0,13.8,https://www.meilleursagents.com/prix-immobilier/masserac-44290/,44092
+Mauves-sur-Loire,3011.0,1543.0,5233.0,2834.0,1302.0,4378.0,13.1,8.7,18.0,13.4,9.6,18.3,https://www.meilleursagents.com/prix-immobilier/mauves-sur-loire-44470/,44094
+La Meilleraye-de-Bretagne,1782.0,979.0,2831.0,1553.0,621.0,2577.0,10.0,5.6,17.7,10.2,7.5,13.1,https://www.meilleursagents.com/prix-immobilier/la-meilleraye-de-bretagne-44520/,44095
+Mésanger,2428.0,1349.0,4669.0,2454.0,1093.0,3609.0,12.1,9.1,20.6,11.5,8.1,15.8,https://www.meilleursagents.com/prix-immobilier/mesanger-44522/,44096
+Mesquer,4211.0,2018.0,7353.0,4567.0,1827.0,9100.0,12.7,8.3,18.1,12.7,7.7,15.9,https://www.meilleursagents.com/prix-immobilier/mesquer-44420/,44097
+Quimiac,4211.0,2018.0,7353.0,4567.0,1827.0,9100.0,12.7,8.3,18.1,12.7,7.7,15.9,https://www.meilleursagents.com/prix-immobilier/quimiac-44420/,44097
+Missillac,2659.0,1463.0,5318.0,2452.0,981.0,4450.0,11.7,9.6,20.1,11.1,7.8,13.5,https://www.meilleursagents.com/prix-immobilier/missillac-44780/,44098
+Moisdon-la-Rivière,1752.0,927.0,2715.0,1546.0,618.0,3091.0,11.2,8.2,18.3,8.7,5.2,11.7,https://www.meilleursagents.com/prix-immobilier/moisdon-la-riviere-44520/,44099
+Monnières,2836.0,2115.0,3666.0,2499.0,1055.0,3545.0,12.8,9.4,17.0,12.3,8.2,16.0,https://www.meilleursagents.com/prix-immobilier/monnieres-44690/,44100
+Montbert,2421.0,1870.0,3239.0,2310.0,1007.0,3238.0,13.9,10.1,19.5,12.4,8.9,16.0,https://www.meilleursagents.com/prix-immobilier/montbert-44140/,44102
+Montoir-de-Bretagne,2571.0,1277.0,3331.0,2540.0,1092.0,3749.0,12.2,8.1,18.8,14.0,11.6,17.3,https://www.meilleursagents.com/prix-immobilier/montoir-de-bretagne-44550/,44103
+Montrelais,1967.0,933.0,3420.0,1858.0,743.0,2552.0,11.5,8.5,17.0,11.4,8.9,16.4,https://www.meilleursagents.com/prix-immobilier/montrelais-44370/,44104
+Mouais,1739.0,1093.0,2726.0,1873.0,797.0,3106.0,10.9,7.2,17.2,10.1,6.8,13.7,https://www.meilleursagents.com/prix-immobilier/mouais-44590/,44105
+Les Moutiers-en-Retz,3824.0,2829.0,5186.0,3947.0,2006.0,6456.0,13.6,9.0,19.3,13.6,9.6,16.7,https://www.meilleursagents.com/prix-immobilier/les-moutiers-en-retz-44760/,44106
+Mouzeil,2593.0,1358.0,4021.0,2024.0,810.0,3101.0,10.9,6.3,14.8,11.2,8.0,14.6,https://www.meilleursagents.com/prix-immobilier/mouzeil-44850/,44107
+Mouzillon,2518.0,1824.0,3336.0,2423.0,969.0,3867.0,12.7,8.7,21.0,12.7,8.8,16.8,https://www.meilleursagents.com/prix-immobilier/mouzillon-44330/,44108
+Nantes,3412.0,2187.0,4810.0,4064.0,2264.0,6663.0,14.7,10.7,22.9,13.2,10.4,17.3,https://www.meilleursagents.com/prix-immobilier/nantes-44000/,44109
+Notre-Dame-des-Landes,2012.0,1408.0,2607.0,2308.0,923.0,3551.0,12.4,8.4,16.7,12.4,8.4,16.4,https://www.meilleursagents.com/prix-immobilier/notre-dame-des-landes-44130/,44111
+Noyal-sur-Brutz,1895.0,1001.0,2722.0,1543.0,617.0,2548.0,10.1,6.6,16.7,10.2,7.0,13.0,https://www.meilleursagents.com/prix-immobilier/noyal-sur-brutz-44110/,44112
+Nozay,1721.0,1014.0,2911.0,1887.0,755.0,3192.0,12.4,8.3,19.8,11.0,6.7,15.8,https://www.meilleursagents.com/prix-immobilier/nozay-44170/,44113
+Oudon,2855.0,1459.0,4710.0,2416.0,1161.0,3729.0,12.3,9.4,16.7,12.3,9.1,16.2,https://www.meilleursagents.com/prix-immobilier/oudon-44521/,44115
+Paimbœuf,2227.0,891.0,3609.0,2262.0,905.0,3554.0,12.2,8.3,20.3,13.5,8.8,17.3,https://www.meilleursagents.com/prix-immobilier/paimboeuf-44560/,44116
+Le Pallet,2566.0,1863.0,3563.0,2583.0,1033.0,4013.0,12.7,9.3,17.1,12.9,8.4,17.0,https://www.meilleursagents.com/prix-immobilier/le-pallet-44330/,44117
+Pannecé,2422.0,1304.0,4677.0,1831.0,732.0,2967.0,9.5,5.9,14.8,10.1,7.3,13.8,https://www.meilleursagents.com/prix-immobilier/pannece-44440/,44118
+Paulx,2705.0,1425.0,3706.0,2165.0,929.0,3355.0,11.4,9.3,19.0,11.8,7.6,14.9,https://www.meilleursagents.com/prix-immobilier/paulx-44270/,44119
+Le Pellerin,2770.0,1484.0,3507.0,2611.0,1206.0,4179.0,12.7,9.8,20.1,12.5,8.7,16.4,https://www.meilleursagents.com/prix-immobilier/le-pellerin-44640/,44120
+Petit-Auverné,1750.0,955.0,2653.0,1787.0,715.0,3575.0,9.4,5.2,16.9,10.2,7.3,13.1,https://www.meilleursagents.com/prix-immobilier/petit-auverne-44670/,44121
+Petit-Mars,3381.0,2056.0,4847.0,2399.0,1125.0,3564.0,12.8,9.0,17.5,12.9,9.1,16.1,https://www.meilleursagents.com/prix-immobilier/petit-mars-44390/,44122
+Pierric,1734.0,1117.0,2628.0,1480.0,592.0,2392.0,10.7,8.6,18.3,11.0,8.1,15.5,https://www.meilleursagents.com/prix-immobilier/pierric-44290/,44123
+Le Pin,1855.0,892.0,3200.0,1441.0,577.0,2846.0,9.1,5.2,14.2,9.9,7.1,12.2,https://www.meilleursagents.com/prix-immobilier/le-pin-44540/,44124
+Piriac-sur-Mer,4182.0,2134.0,7253.0,4901.0,2338.0,9794.0,12.7,8.6,18.1,12.6,7.7,15.9,https://www.meilleursagents.com/prix-immobilier/piriac-sur-mer-44420/,44125
+La Plaine-sur-Mer,4369.0,2280.0,6617.0,3884.0,1880.0,6916.0,13.6,9.3,19.4,14.0,11.5,18.7,https://www.meilleursagents.com/prix-immobilier/la-plaine-sur-mer-44770/,44126
+La Planche,2280.0,1721.0,3146.0,2068.0,827.0,3088.0,11.5,8.5,18.3,11.2,6.8,13.8,https://www.meilleursagents.com/prix-immobilier/la-planche-44140/,44127
+Plessé,1945.0,1401.0,2516.0,1776.0,710.0,3120.0,11.4,6.7,20.6,10.8,7.6,13.8,https://www.meilleursagents.com/prix-immobilier/plesse-44630/,44128
+Le Coudray,1945.0,1401.0,2516.0,1776.0,710.0,3120.0,11.4,6.7,20.6,10.8,7.6,13.8,https://www.meilleursagents.com/prix-immobilier/le-coudray-44630/,44128
+Le Dresny,1945.0,1401.0,2516.0,1776.0,710.0,3120.0,11.4,6.7,20.6,10.8,7.6,13.8,https://www.meilleursagents.com/prix-immobilier/le-dresny-44630/,44128
+Pontchâteau,2555.0,1491.0,3567.0,2465.0,1095.0,3670.0,12.2,8.1,20.6,13.4,8.5,17.5,https://www.meilleursagents.com/prix-immobilier/pontchateau-44160/,44129
+Saint Guillaume,2555.0,1491.0,3567.0,2465.0,1095.0,3670.0,12.2,8.1,20.6,13.4,8.5,17.5,https://www.meilleursagents.com/prix-immobilier/saint-guillaume-44160/,44129
+Saint Roch,2555.0,1491.0,3567.0,2465.0,1095.0,3670.0,12.2,8.1,20.6,13.4,8.5,17.5,https://www.meilleursagents.com/prix-immobilier/saint-roch-44160/,44129
+Viais,3241.0,2568.0,4159.0,2877.0,1200.0,4306.0,13.9,9.9,18.8,13.4,9.6,17.4,https://www.meilleursagents.com/prix-immobilier/viais-44860/,44130
+Le Clion sur Mer,5673.0,3105.0,8819.0,5195.0,2347.0,10045.0,13.6,10.0,20.1,14.0,11.0,18.6,https://www.meilleursagents.com/prix-immobilier/le-clion-sur-mer-44210/,44131
+Sainte Marie,5673.0,3105.0,8819.0,5195.0,2347.0,10045.0,13.6,10.0,20.1,14.0,11.0,18.6,https://www.meilleursagents.com/prix-immobilier/sainte-marie-44210/,44131
+Pornichet,6082.0,3305.0,10160.0,5999.0,2720.0,11400.0,14.5,9.1,23.2,16.0,11.0,20.9,https://www.meilleursagents.com/prix-immobilier/pornichet-44380/,44132
+Pouillé-les-Côteaux,1964.0,1123.0,3928.0,2148.0,897.0,3299.0,9.2,5.7,14.3,9.8,6.5,13.8,https://www.meilleursagents.com/prix-immobilier/pouille-les-coteaux-44522/,44134
+Préfailles,4668.0,1909.0,6258.0,5019.0,2035.0,10038.0,13.6,9.3,19.3,14.0,11.0,18.7,https://www.meilleursagents.com/prix-immobilier/prefailles-44770/,44136
+Prinquiau,2523.0,1521.0,3428.0,2293.0,968.0,3496.0,12.6,8.5,16.3,13.7,9.0,18.1,https://www.meilleursagents.com/prix-immobilier/prinquiau-44260/,44137
+Puceul,1797.0,1143.0,2960.0,1978.0,829.0,2717.0,11.8,8.1,15.9,11.9,8.6,15.9,https://www.meilleursagents.com/prix-immobilier/puceul-44390/,44138
+Quilly,2527.0,1489.0,3533.0,1812.0,762.0,3156.0,11.1,9.1,17.9,11.7,8.5,16.4,https://www.meilleursagents.com/prix-immobilier/quilly-44750/,44139
+La Regrippière,1852.0,1081.0,3324.0,1918.0,767.0,2859.0,11.0,7.9,19.4,10.0,6.7,13.3,https://www.meilleursagents.com/prix-immobilier/la-regrippiere-44330/,44140
+La Remaudière,2624.0,1802.0,4368.0,2023.0,809.0,3341.0,10.6,7.6,18.6,10.5,7.0,13.8,https://www.meilleursagents.com/prix-immobilier/la-remaudiere-44430/,44141
+Remouillé,2341.0,1716.0,3065.0,2233.0,956.0,3343.0,12.8,9.3,18.0,12.2,8.9,16.6,https://www.meilleursagents.com/prix-immobilier/remouille-44140/,44142
+Rezé,2986.0,2122.0,4338.0,3118.0,1554.0,4975.0,13.7,10.4,21.4,12.0,10.2,15.0,https://www.meilleursagents.com/prix-immobilier/reze-44400/,44143
+Riaillé,2550.0,1359.0,3925.0,1711.0,685.0,2647.0,9.5,5.3,16.3,9.8,6.6,13.0,https://www.meilleursagents.com/prix-immobilier/riaille-44440/,44144
+Rouans,2565.0,1634.0,3683.0,2606.0,1042.0,4182.0,13.0,10.1,18.5,12.6,8.7,16.4,https://www.meilleursagents.com/prix-immobilier/rouans-44640/,44145
+Rougé,1896.0,1011.0,2724.0,1424.0,570.0,2693.0,10.4,7.1,14.0,9.9,6.5,13.2,https://www.meilleursagents.com/prix-immobilier/rouge-44660/,44146
+Ruffigné,2265.0,1475.0,3139.0,1278.0,511.0,2174.0,10.6,6.1,19.0,10.6,6.9,14.5,https://www.meilleursagents.com/prix-immobilier/ruffigne-44660/,44148
+Saffré,2629.0,1431.0,4115.0,2055.0,854.0,3315.0,10.7,7.4,17.7,10.6,7.0,13.6,https://www.meilleursagents.com/prix-immobilier/saffre-44390/,44149
+Saint-Aignan-Grandlieu,3200.0,2254.0,4217.0,2647.0,1156.0,3829.0,12.5,9.6,16.2,13.4,9.5,17.3,https://www.meilleursagents.com/prix-immobilier/saint-aignan-grandlieu-44860/,44150
+Saint-André-des-Eaux,3765.0,2039.0,5126.0,3722.0,1557.0,6018.0,14.0,9.5,19.9,14.4,9.2,18.9,https://www.meilleursagents.com/prix-immobilier/saint-andre-des-eaux-44117/,44151
+Sainte-Anne-sur-Brivet,2556.0,1494.0,3564.0,2540.0,1233.0,4304.0,11.6,9.1,20.0,10.4,6.8,12.8,https://www.meilleursagents.com/prix-immobilier/sainte-anne-sur-brivet-44160/,44152
+Saint-Aubin-des-Châteaux,1761.0,913.0,2778.0,1607.0,667.0,3004.0,10.2,5.9,17.6,10.5,7.9,13.7,https://www.meilleursagents.com/prix-immobilier/saint-aubin-des-chateaux-44110/,44153
+Saint-Brevin-les-Pins,4517.0,2680.0,6697.0,3958.0,1891.0,6475.0,13.7,9.1,19.5,14.2,11.0,18.5,https://www.meilleursagents.com/prix-immobilier/saint-brevin-les-pins-44250/,44154
+Mindin,4517.0,2680.0,6697.0,3958.0,1891.0,6475.0,13.7,9.1,19.5,14.2,11.0,18.5,https://www.meilleursagents.com/prix-immobilier/mindin-44250/,44154
+Saint Brevin l'Ocean,4517.0,2680.0,6697.0,3958.0,1891.0,6475.0,13.7,9.1,19.5,14.2,11.0,18.5,https://www.meilleursagents.com/prix-immobilier/saint-brevin-l-ocean-44250/,44154
+Saint-Colomban,2274.0,1683.0,3191.0,2316.0,926.0,3501.0,13.9,9.9,19.5,12.4,9.0,14.8,https://www.meilleursagents.com/prix-immobilier/saint-colomban-44310/,44155
+Corcoué-sur-Logne,2217.0,1615.0,3066.0,1926.0,800.0,2968.0,11.5,9.2,19.2,11.3,7.7,14.6,https://www.meilleursagents.com/prix-immobilier/corcoue-sur-logne-44650/,44156
+La Benate,2217.0,1615.0,3066.0,1926.0,800.0,2968.0,11.5,9.2,19.2,11.3,7.7,14.6,https://www.meilleursagents.com/prix-immobilier/la-benate-44650/,44156
+Saint Jean de Corcoue,2217.0,1615.0,3066.0,1926.0,800.0,2968.0,11.5,9.2,19.2,11.3,7.7,14.6,https://www.meilleursagents.com/prix-immobilier/saint-jean-de-corcoue-44650/,44156
+Saint-Étienne-de-Mer-Morte,2652.0,1424.0,3599.0,2046.0,818.0,3279.0,11.2,9.0,18.7,11.1,7.1,14.1,https://www.meilleursagents.com/prix-immobilier/saint-etienne-de-mer-morte-44270/,44157
+Saint-Étienne-de-Montluc,3054.0,1374.0,3949.0,2883.0,1153.0,4440.0,14.2,11.4,20.8,14.6,10.5,20.7,https://www.meilleursagents.com/prix-immobilier/saint-etienne-de-montluc-44360/,44158
+Saint-Fiacre-sur-Maine,3323.0,1868.0,5078.0,2764.0,1497.0,4452.0,13.5,8.9,18.5,13.0,9.2,17.1,https://www.meilleursagents.com/prix-immobilier/saint-fiacre-sur-maine-44690/,44159
+Saint-Gildas-des-Bois,2533.0,1471.0,3543.0,1931.0,772.0,3142.0,10.8,7.9,17.6,11.0,8.8,13.4,https://www.meilleursagents.com/prix-immobilier/saint-gildas-des-bois-44530/,44161
+Vair-sur-Loire,1937.0,1009.0,3875.0,2122.0,849.0,3382.0,11.4,7.9,20.5,11.7,8.9,16.0,https://www.meilleursagents.com/prix-immobilier/anetz-44150/,44163
+Vair-sur-Loire,1937.0,1009.0,3875.0,2122.0,849.0,3382.0,11.4,7.9,20.5,11.7,8.9,16.0,https://www.meilleursagents.com/prix-immobilier/saint-herblon-44150/,44163
+Saint-Hilaire-de-Chaléons,2589.0,1506.0,3437.0,2297.0,919.0,3523.0,11.4,9.4,19.7,11.8,8.0,14.9,https://www.meilleursagents.com/prix-immobilier/saint-hilaire-de-chaleons-44680/,44164
+Saint-Hilaire-de-Clisson,2487.0,1778.0,3238.0,2314.0,926.0,3139.0,12.8,9.3,17.9,12.0,8.8,15.4,https://www.meilleursagents.com/prix-immobilier/saint-hilaire-de-clisson-44190/,44165
+Saint-Jean-de-Boiseau,3087.0,2163.0,4016.0,2737.0,1206.0,4035.0,14.3,11.0,18.5,16.1,11.1,21.6,https://www.meilleursagents.com/prix-immobilier/saint-jean-de-boiseau-44640/,44166
+Saint-Joachim,2475.0,1289.0,3202.0,2230.0,1005.0,3681.0,10.4,5.9,17.7,11.7,7.0,17.7,https://www.meilleursagents.com/prix-immobilier/saint-joachim-44720/,44168
+Saint-Julien-de-Concelles,3298.0,2197.0,4367.0,2737.0,1145.0,4116.0,13.2,9.9,17.4,13.6,8.8,16.2,https://www.meilleursagents.com/prix-immobilier/saint-julien-de-concelles-44450/,44169
+Saint-Julien-de-Vouvantes,1791.0,850.0,2882.0,1230.0,492.0,2459.0,11.1,8.1,18.0,9.2,6.4,13.5,https://www.meilleursagents.com/prix-immobilier/saint-julien-de-vouvantes-44670/,44170
+Saint-Léger-les-Vignes,3224.0,2565.0,4312.0,2677.0,1285.0,3779.0,13.1,9.3,17.4,13.2,8.8,15.9,https://www.meilleursagents.com/prix-immobilier/saint-leger-les-vignes-44710/,44171
+Sainte-Luce-sur-Loire,3566.0,2579.0,4737.0,3226.0,1862.0,4766.0,13.1,10.2,19.3,11.8,10.0,15.3,https://www.meilleursagents.com/prix-immobilier/sainte-luce-sur-loire-44980/,44172
+Saint-Lumine-de-Clisson,2484.0,1869.0,3303.0,2351.0,1284.0,3579.0,13.0,9.4,18.2,12.8,9.3,17.4,https://www.meilleursagents.com/prix-immobilier/saint-lumine-de-clisson-44190/,44173
+Saint-Lumine-de-Coutais,2708.0,1459.0,3664.0,2179.0,906.0,3135.0,11.2,9.0,18.8,11.2,7.3,14.7,https://www.meilleursagents.com/prix-immobilier/saint-lumine-de-coutais-44310/,44174
+Saint-Lyphard,3535.0,2270.0,4799.0,3160.0,1264.0,5135.0,11.9,7.8,17.0,13.0,8.3,17.0,https://www.meilleursagents.com/prix-immobilier/saint-lyphard-44410/,44175
+Saint-Malo-de-Guersac,2559.0,1287.0,3308.0,2433.0,1027.0,3838.0,11.7,9.0,20.8,11.2,7.5,15.1,https://www.meilleursagents.com/prix-immobilier/saint-malo-de-guersac-44550/,44176
+Saint-Mars-de-Coutais,2693.0,1471.0,3630.0,2354.0,942.0,3422.0,12.5,9.2,17.5,13.0,9.1,16.2,https://www.meilleursagents.com/prix-immobilier/saint-mars-de-coutais-44680/,44178
+Saint-Mars-du-Désert,2924.0,1473.0,4803.0,2535.0,1076.0,3760.0,12.9,9.1,17.6,12.8,9.0,16.0,https://www.meilleursagents.com/prix-immobilier/saint-mars-du-desert-44850/,44179
+Bonnœuvre,2520.0,1320.0,4232.0,1679.0,672.0,2940.0,9.5,5.4,16.1,10.0,7.3,13.9,https://www.meilleursagents.com/prix-immobilier/bonnoeuvre-44540/,44180
+Maumusson,1946.0,1075.0,3891.0,2099.0,852.0,3230.0,9.0,6.0,14.9,10.3,7.2,14.5,https://www.meilleursagents.com/prix-immobilier/maumusson-44540/,44180
+Saint-Mars-la-Jaille,2088.0,1101.0,3775.0,1694.0,678.0,2988.0,9.1,5.3,15.9,9.4,6.4,11.9,https://www.meilleursagents.com/prix-immobilier/saint-mars-la-jaille-44540/,44180
+Saint-Sulpice-des-Landes,2329.0,1201.0,3746.0,1668.0,667.0,2961.0,8.8,4.9,15.8,9.2,6.2,11.7,https://www.meilleursagents.com/prix-immobilier/saint-sulpice-des-landes-44540/,44180
+Vritz,1861.0,891.0,3471.0,1608.0,643.0,3215.0,10.9,8.0,17.9,9.3,6.1,13.3,https://www.meilleursagents.com/prix-immobilier/vritz-44540/,44180
+Tharon Plage,4439.0,2582.0,6507.0,3955.0,1592.0,6830.0,13.6,10.0,20.7,13.8,10.8,18.4,https://www.meilleursagents.com/prix-immobilier/tharon-plage-44730/,44182
+Saint-Molf,3591.0,2356.0,4951.0,3175.0,1270.0,4835.0,11.9,7.8,17.0,13.0,7.8,15.9,https://www.meilleursagents.com/prix-immobilier/saint-molf-44350/,44183
+Saint-Nazaire,3030.0,1912.0,4383.0,3182.0,1678.0,5229.0,12.7,8.1,20.5,14.6,9.9,19.7,https://www.meilleursagents.com/prix-immobilier/saint-nazaire-44600/,44184
+Saint-Nicolas-de-Redon,2658.0,1209.0,3803.0,1826.0,730.0,3060.0,11.5,8.7,16.8,11.1,7.3,14.6,https://www.meilleursagents.com/prix-immobilier/saint-nicolas-de-redon-44460/,44185
+Sainte-Pazanne,2636.0,1603.0,3378.0,2701.0,1146.0,3672.0,12.9,9.4,19.8,12.7,8.9,15.8,https://www.meilleursagents.com/prix-immobilier/sainte-pazanne-44680/,44186
+Saint-Père-en-Retz,2420.0,1138.0,3588.0,2787.0,1115.0,4374.0,11.6,9.6,20.0,12.2,8.2,16.5,https://www.meilleursagents.com/prix-immobilier/saint-pere-en-retz-44320/,44187
+Saint-Philbert-de-Grand-Lieu,2908.0,1960.0,3609.0,2637.0,1241.0,3866.0,12.5,9.7,17.8,12.7,9.1,16.2,https://www.meilleursagents.com/prix-immobilier/saint-philbert-de-grand-lieu-44310/,44188
+Sainte-Reine-de-Bretagne,2563.0,1532.0,4247.0,2346.0,938.0,3736.0,11.7,9.6,20.3,11.1,7.4,13.0,https://www.meilleursagents.com/prix-immobilier/sainte-reine-de-bretagne-44160/,44189
+Saint-Viaud,2262.0,905.0,3785.0,2630.0,1110.0,4256.0,11.6,9.5,20.1,11.7,7.8,15.7,https://www.meilleursagents.com/prix-immobilier/saint-viaud-44320/,44192
+Saint-Vincent-des-Landes,1756.0,926.0,2801.0,1394.0,558.0,2529.0,9.7,5.7,15.3,10.9,6.8,14.4,https://www.meilleursagents.com/prix-immobilier/saint-vincent-des-landes-44590/,44193
+Savenay,2595.0,1403.0,3835.0,2456.0,1073.0,3865.0,12.7,9.4,19.8,13.6,9.4,17.9,https://www.meilleursagents.com/prix-immobilier/savenay-44260/,44195
+Sévérac,2562.0,1235.0,3683.0,1849.0,740.0,3357.0,9.8,5.7,15.4,9.4,5.6,14.2,https://www.meilleursagents.com/prix-immobilier/severac-44530/,44196
+Sion-les-Mines,1739.0,930.0,2748.0,1367.0,547.0,2734.0,10.2,5.8,17.4,10.5,6.5,14.6,https://www.meilleursagents.com/prix-immobilier/sion-les-mines-44590/,44197
+Les Sorinières,3334.0,2595.0,4393.0,3035.0,1367.0,4367.0,13.8,11.2,17.0,13.4,9.4,17.3,https://www.meilleursagents.com/prix-immobilier/les-sorinieres-44840/,44198
+Soudan,1856.0,1013.0,2625.0,1445.0,578.0,2669.0,10.5,5.9,18.8,10.1,7.2,12.9,https://www.meilleursagents.com/prix-immobilier/soudan-44110/,44199
+Soulvache,2326.0,1582.0,3223.0,1331.0,533.0,2663.0,10.3,6.3,17.0,9.8,7.3,13.3,https://www.meilleursagents.com/prix-immobilier/soulvache-44660/,44200
+Sucé-sur-Erdre,3854.0,2544.0,5501.0,3558.0,1658.0,6598.0,13.5,10.3,17.6,14.1,11.0,16.9,https://www.meilleursagents.com/prix-immobilier/suce-sur-erdre-44240/,44201
+Teillé,2525.0,1330.0,3843.0,1964.0,805.0,3290.0,11.4,8.7,19.5,11.4,8.0,15.6,https://www.meilleursagents.com/prix-immobilier/teille-44440/,44202
+Le Temple-de-Bretagne,2148.0,1453.0,2999.0,2469.0,1163.0,3659.0,12.8,9.5,19.9,12.2,8.4,16.9,https://www.meilleursagents.com/prix-immobilier/le-temple-de-bretagne-44360/,44203
+Thouaré-sur-Loire,3333.0,2511.0,4316.0,3165.0,1843.0,4750.0,13.4,10.2,17.4,14.0,10.2,17.4,https://www.meilleursagents.com/prix-immobilier/thouare-sur-loire-44470/,44204
+Les Touches,2669.0,1376.0,4186.0,2190.0,889.0,3098.0,13.2,10.0,21.5,12.5,7.7,17.6,https://www.meilleursagents.com/prix-immobilier/les-touches-44390/,44205
+Touvois,2550.0,1644.0,3371.0,1937.0,775.0,2994.0,11.2,9.0,18.8,10.5,7.1,13.9,https://www.meilleursagents.com/prix-immobilier/touvois-44650/,44206
+Trans-sur-Erdre,2586.0,1356.0,4006.0,1794.0,718.0,3031.0,10.4,6.1,14.4,10.2,6.7,14.1,https://www.meilleursagents.com/prix-immobilier/trans-sur-erdre-44440/,44207
+Treffieux,1721.0,1014.0,2911.0,1563.0,625.0,2746.0,11.1,7.1,18.7,11.2,7.2,15.5,https://www.meilleursagents.com/prix-immobilier/treffieux-44170/,44208
+Trignac,2534.0,1585.0,3359.0,2546.0,1124.0,4048.0,12.3,8.1,18.8,14.3,12.1,18.2,https://www.meilleursagents.com/prix-immobilier/trignac-44570/,44210
+La Turballe,4620.0,2471.0,7057.0,4255.0,1702.0,7250.0,13.3,8.8,19.1,13.9,9.4,18.6,https://www.meilleursagents.com/prix-immobilier/la-turballe-44420/,44211
+Trescalan,4620.0,2471.0,7057.0,4255.0,1702.0,7250.0,13.3,8.8,19.1,13.9,9.4,18.6,https://www.meilleursagents.com/prix-immobilier/trescalan-44420/,44211
+Loireauxence,2066.0,1094.0,4132.0,1897.0,759.0,3346.0,9.8,6.6,17.2,9.8,6.7,14.3,https://www.meilleursagents.com/prix-immobilier/belligne-44370/,44213
+Loireauxence,2066.0,1094.0,4132.0,1897.0,759.0,3346.0,9.8,6.6,17.2,9.8,6.7,14.3,https://www.meilleursagents.com/prix-immobilier/la-rouxiere-44370/,44213
+Loireauxence,2066.0,1094.0,4132.0,1897.0,759.0,3346.0,9.8,6.6,17.2,9.8,6.7,14.3,https://www.meilleursagents.com/prix-immobilier/varades-44370/,44213
+Vay,1760.0,1075.0,2934.0,1730.0,692.0,2962.0,11.7,7.9,15.7,10.5,7.7,14.1,https://www.meilleursagents.com/prix-immobilier/vay-44170/,44214
+Beautour,3668.0,2027.0,5389.0,3489.0,1598.0,5559.0,13.4,10.2,21.1,12.2,10.2,15.7,https://www.meilleursagents.com/prix-immobilier/beautour-44120/,44215
+Vieillevigne,2246.0,1608.0,3044.0,2137.0,861.0,3676.0,11.5,8.9,20.1,11.5,7.1,14.4,https://www.meilleursagents.com/prix-immobilier/vieillevigne-44116/,44216
+Vigneux-de-Bretagne,3163.0,1831.0,3971.0,2854.0,1355.0,4580.0,14.2,10.6,20.9,15.3,11.7,20.4,https://www.meilleursagents.com/prix-immobilier/vigneux-de-bretagne-44360/,44217
+La Paquelais,3163.0,1831.0,3971.0,2854.0,1355.0,4580.0,14.2,10.6,20.9,15.3,11.7,20.4,https://www.meilleursagents.com/prix-immobilier/la-paquelais-44360/,44217
+Villepot,1888.0,998.0,2715.0,1407.0,563.0,2267.0,10.3,7.0,15.8,10.2,6.5,13.0,https://www.meilleursagents.com/prix-immobilier/villepot-44110/,44218
+Vue,2547.0,1562.0,3692.0,2376.0,1021.0,3762.0,11.5,9.4,19.8,11.9,8.3,15.6,https://www.meilleursagents.com/prix-immobilier/vue-44640/,44220
+La Chevallerais,3239.0,2190.0,4154.0,2329.0,957.0,3341.0,12.7,9.0,16.9,11.7,8.2,14.9,https://www.meilleursagents.com/prix-immobilier/la-chevallerais-44810/,44221
+La Roche-Blanche,1925.0,1017.0,3849.0,2042.0,970.0,3279.0,11.4,7.8,20.4,11.5,8.7,15.6,https://www.meilleursagents.com/prix-immobilier/la-roche-blanche-44522/,44222
+Geneston,2390.0,1873.0,3436.0,2479.0,1254.0,3449.0,13.0,9.3,18.3,12.5,9.1,16.2,https://www.meilleursagents.com/prix-immobilier/geneston-44140/,44223
+La Grigonnais,1776.0,1111.0,2946.0,2000.0,972.0,2889.0,12.1,8.2,16.2,11.6,8.3,15.0,https://www.meilleursagents.com/prix-immobilier/la-grigonnais-44170/,44224
+Allonnes,1579.0,1127.0,3159.0,1950.0,808.0,3831.0,9.3,6.4,16.1,9.8,7.1,13.0,https://www.meilleursagents.com/prix-immobilier/allonnes-49650/,49002
+Tuffalun,2109.0,1276.0,4218.0,2211.0,1000.0,3832.0,11.2,7.8,19.8,10.0,6.5,12.6,https://www.meilleursagents.com/prix-immobilier/ambillou-chateau-49700/,49003
+Tuffalun,2109.0,1276.0,4218.0,2211.0,1000.0,3832.0,11.2,7.8,19.8,10.0,6.5,12.6,https://www.meilleursagents.com/prix-immobilier/louerre-49700/,49003
+Tuffalun,2109.0,1276.0,4218.0,2211.0,1000.0,3832.0,11.2,7.8,19.8,10.0,6.5,12.6,https://www.meilleursagents.com/prix-immobilier/noyant-la-plaine-49700/,49003
+Angers,3288.0,2103.0,4582.0,3518.0,1924.0,5581.0,13.8,8.6,24.8,13.0,8.6,17.8,https://www.meilleursagents.com/prix-immobilier/angers-49000/,49007
+Angrie,1815.0,851.0,3119.0,1607.0,701.0,2814.0,10.1,6.9,17.4,9.4,7.3,13.1,https://www.meilleursagents.com/prix-immobilier/angrie-49440/,49008
+Antoigné,1561.0,1159.0,2329.0,1458.0,583.0,2916.0,11.3,8.2,18.5,8.3,4.8,10.6,https://www.meilleursagents.com/prix-immobilier/antoigne-49260/,49009
+Armaillé,1794.0,841.0,2960.0,1574.0,629.0,2538.0,10.7,7.4,15.6,8.8,6.2,13.0,https://www.meilleursagents.com/prix-immobilier/armaille-49420/,49010
+Artannes-sur-Thouet,1617.0,1166.0,2444.0,2039.0,946.0,3327.0,10.4,7.6,18.8,9.6,6.6,12.7,https://www.meilleursagents.com/prix-immobilier/artannes-sur-thouet-49260/,49011
+Aubigné-sur-Layon,2732.0,1825.0,3663.0,1896.0,758.0,3792.0,10.3,8.5,12.3,10.0,6.8,12.9,https://www.meilleursagents.com/prix-immobilier/aubigne-sur-layon-49540/,49012
+Avrillé,3275.0,2198.0,4947.0,3272.0,1965.0,5191.0,13.1,10.1,23.7,14.4,11.6,21.1,https://www.meilleursagents.com/prix-immobilier/avrille-49240/,49015
+Baracé,2029.0,1531.0,2668.0,1799.0,720.0,3598.0,10.9,7.7,19.6,9.3,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/barace-49430/,49017
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/bauge-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/boce-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/chartrene-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/chevire-le-rouge-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/clefs-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/cuon-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/echemire-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/fougere-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/le-guedeniau-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/le-vieil-bauge-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/montpollin-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/pontigne-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/saint-martin-d-arce-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/saint-quentin-les-beaurepaire-49150/,49018
+Baugé-en-Anjou,2075.0,1271.0,4150.0,1692.0,677.0,3263.0,9.9,6.8,17.2,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/vaulandry-49150/,49018
+Beaucouzé,3349.0,2455.0,4806.0,3231.0,1965.0,4272.0,13.5,10.5,22.6,14.6,12.2,20.0,https://www.meilleursagents.com/prix-immobilier/beaucouze-49070/,49020
+Beaufort-en-Anjou,2297.0,1225.0,4584.0,2095.0,921.0,3250.0,11.8,8.6,19.3,12.2,9.9,18.2,https://www.meilleursagents.com/prix-immobilier/beaufort-en-vallee-49250/,49021
+Beaufort-en-Anjou,2297.0,1225.0,4584.0,2095.0,921.0,3250.0,11.8,8.6,19.3,12.2,9.9,18.2,https://www.meilleursagents.com/prix-immobilier/gee-49250/,49021
+Beaulieu-sur-Layon,2468.0,1169.0,3777.0,2250.0,900.0,3552.0,11.8,7.7,17.1,11.1,8.6,15.0,https://www.meilleursagents.com/prix-immobilier/beaulieu-sur-layon-49750/,49022
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/le-pin-en-mauges-49110/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/villedieu-la-blouere-49450/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/jallais-49510/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/la-jubaudiere-49510/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/la-poiteviniere-49510/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/andreze-49600/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/beaupreau-49600/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/geste-49600/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/la-chapelle-du-genet-49600/,49023
+Beaupréau-en-Mauges,1702.0,1014.0,2367.0,1954.0,796.0,3057.0,11.2,7.5,18.5,9.9,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/saint-philbert-en-mauges-49600/,49023
+Bécon-les-Granits,2444.0,1196.0,3651.0,2304.0,921.0,3627.0,11.4,9.1,20.2,11.1,8.4,16.1,https://www.meilleursagents.com/prix-immobilier/becon-les-granits-49370/,49026
+Bégrolles-en-Mauges,2393.0,1889.0,3174.0,1938.0,775.0,2878.0,11.1,8.0,19.4,10.1,6.8,12.7,https://www.meilleursagents.com/prix-immobilier/begrolles-en-mauges-49122/,49027
+Béhuard,2817.0,1844.0,3782.0,2643.0,1164.0,4185.0,13.4,10.1,19.2,11.9,9.8,16.2,https://www.meilleursagents.com/prix-immobilier/behuard-49170/,49028
+Blaison-Saint-Sulpice,2552.0,1647.0,3516.0,2626.0,1126.0,3901.0,12.4,9.4,17.0,11.4,8.1,15.6,https://www.meilleursagents.com/prix-immobilier/blaison-gohier-49320/,49029
+Blaison-Saint-Sulpice,2552.0,1647.0,3516.0,2626.0,1126.0,3901.0,12.4,9.4,17.0,11.4,8.1,15.6,https://www.meilleursagents.com/prix-immobilier/saint-sulpice-49320/,49029
+Blou,1895.0,1138.0,3790.0,1793.0,717.0,3294.0,10.4,6.8,16.3,10.3,6.5,14.7,https://www.meilleursagents.com/prix-immobilier/blou-49160/,49030
+Bouchemaine,2897.0,2028.0,4407.0,3659.0,2289.0,5973.0,13.6,10.5,18.4,12.6,10.1,16.5,https://www.meilleursagents.com/prix-immobilier/bouchemaine-49080/,49035
+Bouillé-Ménard,1846.0,903.0,3393.0,1315.0,526.0,2630.0,10.1,6.2,16.7,9.3,6.9,11.1,https://www.meilleursagents.com/prix-immobilier/bouille-menard-49520/,49036
+Bourg-l'Évêque,1841.0,905.0,3374.0,1372.0,549.0,2391.0,9.7,5.4,16.9,9.0,7.7,14.4,https://www.meilleursagents.com/prix-immobilier/bourg-l-eveque-49520/,49038
+Brain-sur-Allonnes,1560.0,1133.0,2515.0,1776.0,710.0,3317.0,10.0,7.4,18.1,9.7,6.3,12.3,https://www.meilleursagents.com/prix-immobilier/brain-sur-allonnes-49650/,49041
+La Breille-les-Pins,1549.0,1117.0,3098.0,1873.0,801.0,3260.0,10.2,7.5,18.4,9.8,7.9,12.8,https://www.meilleursagents.com/prix-immobilier/la-breille-les-pins-49390/,49045
+Briollay,1739.0,1362.0,2472.0,2829.0,1306.0,4958.0,12.1,9.1,17.3,12.6,9.8,16.8,https://www.meilleursagents.com/prix-immobilier/briollay-49125/,49048
+Saint-Rémy-la-Varenne,2676.0,1724.0,3690.0,2322.0,1013.0,3673.0,12.3,9.3,16.8,11.5,8.3,15.8,https://www.meilleursagents.com/prix-immobilier/saint-remy-la-varenne-49250/,49050
+Brissac-Quincé,2535.0,1647.0,3383.0,2644.0,1101.0,3944.0,12.2,7.7,21.0,12.4,9.0,16.3,https://www.meilleursagents.com/prix-immobilier/brissac-quince-49320/,49050
+Chemellier,2562.0,1624.0,5123.0,2255.0,1032.0,4155.0,10.5,8.4,17.2,11.0,7.7,13.3,https://www.meilleursagents.com/prix-immobilier/chemellier-49320/,49050
+Coutures,2816.0,1746.0,5631.0,2310.0,959.0,4017.0,10.3,7.6,16.5,9.9,7.3,13.0,https://www.meilleursagents.com/prix-immobilier/coutures-49320/,49050
+Les Alleuds,2649.0,1824.0,3521.0,2509.0,1004.0,3939.0,10.3,6.6,15.6,10.6,6.8,13.0,https://www.meilleursagents.com/prix-immobilier/les-alleuds-49320/,49050
+Luigné,2132.0,1320.0,4263.0,1994.0,798.0,2922.0,10.3,8.2,14.3,10.6,8.4,13.2,https://www.meilleursagents.com/prix-immobilier/luigne-49320/,49050
+Saulgé-l'Hôpital,2648.0,1824.0,3520.0,2372.0,1142.0,3736.0,10.5,7.8,15.6,11.7,9.0,15.0,https://www.meilleursagents.com/prix-immobilier/saulge-l-hopital-49320/,49050
+Saint Ellier,2652.0,1829.0,3524.0,2392.0,1075.0,4201.0,12.3,8.7,18.1,12.3,10.4,17.8,https://www.meilleursagents.com/prix-immobilier/saint-ellier-49320/,49050
+Saint-Saturnin-sur-Loire,2719.0,1960.0,3575.0,2793.0,1413.0,4729.0,12.5,9.4,17.8,12.5,9.0,17.2,https://www.meilleursagents.com/prix-immobilier/saint-saturnin-sur-loire-49320/,49050
+Vauchrétien,2645.0,1830.0,3532.0,2511.0,1237.0,3770.0,10.5,8.2,15.4,13.6,10.0,19.4,https://www.meilleursagents.com/prix-immobilier/vauchretien-49320/,49050
+Brossay,1613.0,1166.0,3226.0,1625.0,662.0,2362.0,11.1,7.8,18.9,10.2,6.7,13.4,https://www.meilleursagents.com/prix-immobilier/brossay-49700/,49053
+Candé,2858.0,1773.0,4763.0,1632.0,653.0,2867.0,10.6,6.9,17.7,10.5,7.2,13.4,https://www.meilleursagents.com/prix-immobilier/cande-49440/,49054
+Cantenay-Épinard,3068.0,2120.0,4486.0,3072.0,1548.0,4609.0,13.6,10.5,22.8,14.0,11.4,19.1,https://www.meilleursagents.com/prix-immobilier/cantenay-epinard-49460/,49055
+Carbay,1847.0,1027.0,2605.0,1521.0,609.0,2861.0,11.0,6.1,17.4,9.4,6.9,11.7,https://www.meilleursagents.com/prix-immobilier/carbay-49420/,49056
+Cernusson,2171.0,1151.0,3205.0,1698.0,679.0,2421.0,11.4,8.3,18.8,9.6,6.3,12.0,https://www.meilleursagents.com/prix-immobilier/cernusson-49310/,49057
+Les Cerqueux,2560.0,2007.0,3034.0,1630.0,652.0,2651.0,11.2,8.1,19.8,9.6,6.3,12.4,https://www.meilleursagents.com/prix-immobilier/les-cerqueux-49360/,49058
+Brézé,1592.0,1151.0,2423.0,1666.0,765.0,2506.0,10.1,7.4,18.2,9.7,6.7,12.7,https://www.meilleursagents.com/prix-immobilier/breze-49260/,49060
+Saint-Cyr-en-Bourg,1596.0,1152.0,2423.0,1895.0,837.0,3142.0,9.5,5.9,16.4,9.7,6.7,12.7,https://www.meilleursagents.com/prix-immobilier/saint-cyr-en-bourg-49260/,49060
+Chacé,1642.0,1176.0,2427.0,2001.0,833.0,3273.0,11.0,7.6,19.5,9.2,5.0,11.8,https://www.meilleursagents.com/prix-immobilier/chace-49400/,49060
+Challain-la-Potherie,1791.0,857.0,3081.0,1572.0,629.0,3143.0,10.9,7.9,17.8,9.2,6.5,13.5,https://www.meilleursagents.com/prix-immobilier/challain-la-potherie-49440/,49061
+Chambellay,1903.0,944.0,3415.0,1920.0,768.0,3760.0,10.2,6.1,15.4,10.6,8.0,18.0,https://www.meilleursagents.com/prix-immobilier/chambellay-49220/,49064
+Chenillé-Champteussé,2346.0,1538.0,3135.0,2150.0,860.0,4301.0,10.4,7.7,14.7,8.8,5.9,10.8,https://www.meilleursagents.com/prix-immobilier/champteusse-sur-baconne-49220/,49067
+Chenillé-Champteussé,2346.0,1538.0,3135.0,2150.0,860.0,4301.0,10.4,7.7,14.7,8.8,5.9,10.8,https://www.meilleursagents.com/prix-immobilier/chenille-change-49220/,49067
+Champtocé-sur-Loire,2287.0,1022.0,3810.0,1985.0,794.0,2953.0,10.7,7.4,17.3,11.2,8.3,15.6,https://www.meilleursagents.com/prix-immobilier/champtoce-sur-loire-49123/,49068
+Chanteloup-les-Bois,2606.0,2215.0,3147.0,1805.0,722.0,2631.0,9.6,6.3,16.9,9.9,6.9,13.5,https://www.meilleursagents.com/prix-immobilier/chanteloup-les-bois-49340/,49070
+Brissarthe,2011.0,1489.0,2764.0,1893.0,757.0,3004.0,11.2,8.0,20.1,9.9,7.3,14.4,https://www.meilleursagents.com/prix-immobilier/brissarthe-49330/,49080
+Champigné,2040.0,1513.0,2804.0,1919.0,768.0,3239.0,11.6,7.0,20.9,10.1,7.3,14.4,https://www.meilleursagents.com/prix-immobilier/champigne-49330/,49080
+Châteauneuf-sur-Sarthe,2005.0,1430.0,2823.0,1919.0,767.0,2981.0,11.4,7.8,20.2,9.8,7.1,13.6,https://www.meilleursagents.com/prix-immobilier/chateauneuf-sur-sarthe-49330/,49080
+Cherré,2299.0,1594.0,3061.0,1916.0,766.0,3832.0,10.5,8.6,14.2,11.0,7.4,13.2,https://www.meilleursagents.com/prix-immobilier/cherre-49330/,49080
+Contigné,1999.0,1482.0,2745.0,1612.0,645.0,2811.0,11.7,7.0,20.9,9.8,7.1,13.9,https://www.meilleursagents.com/prix-immobilier/contigne-49330/,49080
+Marigné,2062.0,1507.0,2788.0,1486.0,594.0,2627.0,12.2,7.9,20.8,10.3,7.8,14.3,https://www.meilleursagents.com/prix-immobilier/marigne-49330/,49080
+Querré,2094.0,1528.0,2837.0,2144.0,857.0,3574.0,9.7,6.4,16.0,9.3,6.9,12.8,https://www.meilleursagents.com/prix-immobilier/querre-49330/,49080
+Sœurdres,1997.0,1481.0,2742.0,1468.0,587.0,2697.0,11.3,7.3,20.4,10.1,7.9,14.9,https://www.meilleursagents.com/prix-immobilier/soeurdres-49330/,49080
+Chaudefonds-sur-Layon,2595.0,1058.0,4144.0,2368.0,947.0,4212.0,11.2,7.9,16.0,10.6,8.4,15.8,https://www.meilleursagents.com/prix-immobilier/chaudefonds-sur-layon-49290/,49082
+Chavagnes,2318.0,1218.0,3503.0,2123.0,849.0,3221.0,11.3,9.1,18.5,10.6,7.5,12.8,https://www.meilleursagents.com/prix-immobilier/chavagnes-49380/,49086
+Notre-Dame-d'Allençon,2375.0,1235.0,3603.0,2099.0,839.0,3150.0,10.3,8.3,16.9,10.6,8.6,12.9,https://www.meilleursagents.com/prix-immobilier/notre-dame-d-allencon-49380/,49086
+Martigné-Briand,2171.0,1184.0,3221.0,1872.0,749.0,3259.0,11.7,8.5,19.1,9.8,7.5,12.4,https://www.meilleursagents.com/prix-immobilier/martigne-briand-49540/,49086
+Chazé-sur-Argos,1793.0,831.0,3123.0,1964.0,786.0,3526.0,9.8,6.5,15.6,10.5,7.7,14.3,https://www.meilleursagents.com/prix-immobilier/chaze-sur-argos-49500/,49089
+Cheffes,2089.0,1641.0,2766.0,1970.0,788.0,3479.0,10.6,7.0,16.0,12.4,7.8,14.3,https://www.meilleursagents.com/prix-immobilier/cheffes-49125/,49090
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/cosse-d-anjou-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-chapelle-rousselin-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-jumelliere-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-tourlandry-49120/,49092
+Les Gardes,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/les-gardes-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/melay-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/neuvy-en-mauges-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/sainte-christine-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/saint-georges-des-gardes-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/saint-lezin-49120/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-salle-de-vihiers-49310/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/valanjou-49670/,49092
+Chemillé-en-Anjou,2246.0,1124.0,3333.0,1843.0,737.0,2918.0,11.3,7.6,18.1,9.8,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/chanzeaux-49750/,49092
+Cholet,2202.0,1383.0,3562.0,2295.0,1240.0,3577.0,11.8,8.0,19.3,12.3,8.7,16.3,https://www.meilleursagents.com/prix-immobilier/cholet-49300/,49099
+Cizay-la-Madeleine,1620.0,1179.0,2403.0,1605.0,753.0,2241.0,9.7,6.4,17.1,9.7,6.5,13.0,https://www.meilleursagents.com/prix-immobilier/cizay-la-madeleine-49700/,49100
+Cléré-sur-Layon,1568.0,881.0,2287.0,1372.0,549.0,2662.0,9.5,6.0,16.7,10.0,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/clere-sur-layon-49560/,49102
+Cornillé-les-Caves,2395.0,1504.0,3467.0,2321.0,1019.0,3611.0,12.4,9.4,17.0,11.6,8.1,15.7,https://www.meilleursagents.com/prix-immobilier/cornille-les-caves-49140/,49107
+Coron,2277.0,1838.0,2828.0,1683.0,673.0,2583.0,10.5,7.9,17.7,9.5,6.2,12.0,https://www.meilleursagents.com/prix-immobilier/coron-49690/,49109
+Corzé,2293.0,1464.0,3099.0,2270.0,908.0,3517.0,11.0,7.7,19.4,9.5,6.0,11.4,https://www.meilleursagents.com/prix-immobilier/corze-49140/,49110
+Le Coudray-Macouard,2866.0,1936.0,3935.0,1904.0,935.0,3486.0,9.3,6.1,15.2,9.5,8.0,12.3,https://www.meilleursagents.com/prix-immobilier/le-coudray-macouard-49260/,49112
+Courchamps,1620.0,1177.0,2410.0,1948.0,779.0,2936.0,11.2,8.0,19.3,10.0,5.5,12.7,https://www.meilleursagents.com/prix-immobilier/courchamps-49260/,49113
+Courléon,1549.0,997.0,2132.0,1474.0,590.0,2898.0,12.9,8.4,22.7,11.2,8.1,15.2,https://www.meilleursagents.com/prix-immobilier/courleon-49390/,49114
+Denée,2805.0,1811.0,3788.0,2568.0,1027.0,4572.0,12.8,9.7,19.7,12.2,9.5,16.8,https://www.meilleursagents.com/prix-immobilier/denee-49190/,49120
+Dénezé-sous-Doué,2036.0,1247.0,4072.0,1945.0,778.0,3889.0,9.6,8.2,17.4,9.3,5.2,11.9,https://www.meilleursagents.com/prix-immobilier/deneze-sous-doue-49700/,49121
+Distré,2738.0,1849.0,3761.0,2283.0,913.0,3376.0,11.8,9.0,19.1,12.2,8.6,16.0,https://www.meilleursagents.com/prix-immobilier/distre-49400/,49123
+Brigné,1853.0,1161.0,3706.0,2019.0,808.0,3034.0,11.2,7.5,18.7,10.0,5.6,13.0,https://www.meilleursagents.com/prix-immobilier/brigne-49700/,49125
+Concourson-sur-Layon,1739.0,1226.0,3478.0,1343.0,537.0,2101.0,11.0,8.0,19.2,9.3,5.3,12.3,https://www.meilleursagents.com/prix-immobilier/concourson-sur-layon-49700/,49125
+Doué-la-Fontaine,1963.0,1251.0,3926.0,1939.0,775.0,3160.0,10.0,6.4,16.4,9.9,8.0,14.0,https://www.meilleursagents.com/prix-immobilier/doue-la-fontaine-49700/,49125
+Forges,1987.0,1240.0,3974.0,2161.0,882.0,3608.0,11.3,8.0,20.0,9.6,6.5,12.0,https://www.meilleursagents.com/prix-immobilier/forges-49700/,49125
+Les Verchers-sur-Layon,1654.0,1207.0,3308.0,1651.0,660.0,3301.0,9.6,7.1,16.0,9.9,6.5,12.7,https://www.meilleursagents.com/prix-immobilier/les-verchers-sur-layon-49700/,49125
+Meigné,2039.0,1243.0,4077.0,1956.0,846.0,3006.0,10.4,6.1,17.8,10.1,7.0,13.0,https://www.meilleursagents.com/prix-immobilier/meigne-49700/,49125
+Montfort,1811.0,1068.0,2546.0,2154.0,892.0,3505.0,11.5,8.1,16.2,11.2,7.7,13.6,https://www.meilleursagents.com/prix-immobilier/montfort-49700/,49125
+Saint-Georges-sur-Layon,1827.0,1287.0,3654.0,1544.0,770.0,2407.0,11.1,7.8,18.8,10.0,6.9,13.7,https://www.meilleursagents.com/prix-immobilier/saint-georges-sur-layon-49700/,49125
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/champtoceaux-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/landemont-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/la-varenne-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/saint-christophe-la-couperie-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/saint-laurent-des-autels-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/saint-sauveur-de-landemont-49270/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/bouzille-49530/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/drain-49530/,49126
+Orée d'Anjou,2268.0,1461.0,4535.0,2001.0,801.0,3175.0,10.1,7.0,18.2,10.4,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/lire-49530/,49126
+Durtal,1935.0,912.0,2258.0,1603.0,641.0,3000.0,9.1,6.2,16.1,9.6,6.8,13.0,https://www.meilleursagents.com/prix-immobilier/durtal-49430/,49127
+Écouflant,3078.0,2266.0,3819.0,2833.0,1651.0,4319.0,12.1,8.0,18.6,13.4,10.8,18.2,https://www.meilleursagents.com/prix-immobilier/ecouflant-49000/,49129
+Écuillé,2301.0,1592.0,3063.0,2536.0,1206.0,4229.0,10.3,8.0,13.1,12.2,9.9,15.9,https://www.meilleursagents.com/prix-immobilier/ecuille-49460/,49130
+Épieds,1590.0,1152.0,2432.0,1683.0,739.0,2554.0,11.1,7.8,19.6,8.8,5.0,11.5,https://www.meilleursagents.com/prix-immobilier/epieds-49260/,49131
+Étriché,2105.0,1646.0,2797.0,2029.0,812.0,3551.0,10.5,8.4,14.1,10.9,7.7,13.0,https://www.meilleursagents.com/prix-immobilier/etriche-49330/,49132
+Feneu,2712.0,1768.0,3470.0,2626.0,1051.0,4667.0,12.4,9.4,16.9,12.3,8.6,17.2,https://www.meilleursagents.com/prix-immobilier/feneu-49460/,49135
+Les Bois d'Anjou,2274.0,1197.0,4547.0,1896.0,759.0,3458.0,9.1,6.7,16.4,9.6,7.1,13.2,https://www.meilleursagents.com/prix-immobilier/brion-49250/,49138
+Les Bois d'Anjou,2274.0,1197.0,4547.0,1896.0,759.0,3458.0,9.1,6.7,16.4,9.6,7.1,13.2,https://www.meilleursagents.com/prix-immobilier/fontaine-guerin-49250/,49138
+Les Bois d'Anjou,2274.0,1197.0,4547.0,1896.0,759.0,3458.0,9.1,6.7,16.4,9.6,7.1,13.2,https://www.meilleursagents.com/prix-immobilier/saint-georges-du-bois-49250/,49138
+Fontevraud-l'Abbaye,2280.0,1376.0,2926.0,1571.0,628.0,2802.0,10.2,8.5,12.3,9.2,6.7,12.8,https://www.meilleursagents.com/prix-immobilier/fontevraud-l-abbaye-49590/,49140
+Grez-Neuville,2676.0,1643.0,3459.0,2753.0,1134.0,4612.0,12.2,9.3,18.3,12.8,10.7,17.8,https://www.meilleursagents.com/prix-immobilier/grez-neuville-49220/,49155
+Ingrandes-Le Fresne sur Loire,2103.0,945.0,3459.0,2128.0,851.0,3313.0,11.0,6.8,17.2,11.4,7.8,14.2,https://www.meilleursagents.com/prix-immobilier/ingrandes-49123/,49160
+Ingrandes-Le Fresne sur Loire,2103.0,945.0,3459.0,2128.0,851.0,3313.0,11.0,6.8,17.2,11.4,7.8,14.2,https://www.meilleursagents.com/prix-immobilier/le-fresne-sur-loire-49123/,49160
+Saint-Sigismond,2266.0,1028.0,3788.0,1840.0,736.0,3348.0,8.6,5.8,14.3,9.9,6.9,13.9,https://www.meilleursagents.com/prix-immobilier/saint-sigismond-49123/,49160
+La Jaille-Yvon,2341.0,1537.0,3128.0,1980.0,792.0,3961.0,12.2,9.6,17.2,11.3,8.3,16.3,https://www.meilleursagents.com/prix-immobilier/la-jaille-yvon-49220/,49161
+Jarzé Villages,2147.0,1336.0,4294.0,2004.0,802.0,3180.0,10.9,7.7,19.4,9.2,5.9,11.2,https://www.meilleursagents.com/prix-immobilier/beauvau-49140/,49163
+Jarzé Villages,2147.0,1336.0,4294.0,2004.0,802.0,3180.0,10.9,7.7,19.4,9.2,5.9,11.2,https://www.meilleursagents.com/prix-immobilier/chaumont-d-anjou-49140/,49163
+Jarzé Villages,2147.0,1336.0,4294.0,2004.0,802.0,3180.0,10.9,7.7,19.4,9.2,5.9,11.2,https://www.meilleursagents.com/prix-immobilier/jarze-49140/,49163
+Jarzé Villages,2147.0,1336.0,4294.0,2004.0,802.0,3180.0,10.9,7.7,19.4,9.2,5.9,11.2,https://www.meilleursagents.com/prix-immobilier/lue-en-baugeois-49140/,49163
+Saint-Jean-des-Mauvrets,2725.0,1969.0,3581.0,2891.0,1166.0,4324.0,13.1,10.1,18.1,13.6,9.1,18.8,https://www.meilleursagents.com/prix-immobilier/saint-jean-des-mauvrets-49320/,49167
+Juigné-sur-Loire,2861.0,2188.0,3728.0,3311.0,1526.0,5005.0,13.5,10.7,19.0,13.6,10.5,17.4,https://www.meilleursagents.com/prix-immobilier/juigne-sur-loire-49610/,49167
+Juvardeil,2041.0,1515.0,2805.0,2163.0,879.0,4326.0,12.2,7.9,20.8,9.6,7.3,13.4,https://www.meilleursagents.com/prix-immobilier/juvardeil-49330/,49170
+La Lande-Chasles,2060.0,1139.0,4120.0,1945.0,846.0,3400.0,9.6,6.6,15.4,10.1,7.7,13.6,https://www.meilleursagents.com/prix-immobilier/la-lande-chasles-49150/,49171
+Huillé,2026.0,1527.0,2664.0,1743.0,697.0,2860.0,10.6,7.5,19.1,10.0,7.0,13.1,https://www.meilleursagents.com/prix-immobilier/huille-49430/,49174
+Lézigné,1998.0,1492.0,2624.0,1743.0,697.0,2857.0,10.4,7.4,18.8,9.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/lezigne-49430/,49174
+Le Lion-d'Angers,1981.0,1071.0,3105.0,2500.0,1000.0,3848.0,10.9,7.1,17.0,11.4,8.0,14.4,https://www.meilleursagents.com/prix-immobilier/le-lion-d-angers-49220/,49176
+Le Lion-d'Angers,1981.0,1071.0,3105.0,2500.0,1000.0,3848.0,10.9,7.1,17.0,11.4,8.0,14.4,https://www.meilleursagents.com/prix-immobilier/andigne-49220/,49176
+Loiré,1797.0,822.0,3140.0,1438.0,575.0,2656.0,9.5,5.3,16.5,9.6,7.6,14.9,https://www.meilleursagents.com/prix-immobilier/loire-49440/,49178
+Longué-Jumelles,1812.0,1151.0,2418.0,1690.0,683.0,2972.0,9.1,6.3,15.9,9.8,7.3,13.8,https://www.meilleursagents.com/prix-immobilier/longue-jumelles-49160/,49180
+Jumelles,1812.0,1151.0,2418.0,1690.0,683.0,2972.0,9.1,6.3,15.9,9.8,7.3,13.8,https://www.meilleursagents.com/prix-immobilier/jumelles-49160/,49180
+Louresse-Rochemenier,2072.0,1269.0,4144.0,2013.0,887.0,3168.0,11.5,8.0,20.3,10.8,5.9,13.6,https://www.meilleursagents.com/prix-immobilier/louresse-rochemenier-49700/,49182
+Le Louroux-Béconnais,1939.0,995.0,3386.0,2144.0,858.0,3187.0,10.6,8.6,14.9,11.1,8.5,17.6,https://www.meilleursagents.com/prix-immobilier/le-louroux-beconnais-49370/,49183
+Villemoisan,2807.0,1896.0,4177.0,1994.0,798.0,3305.0,11.4,7.8,16.1,12.5,9.7,17.0,https://www.meilleursagents.com/prix-immobilier/villemoisan-49370/,49183
+La Cornuaille,1884.0,921.0,3438.0,1664.0,666.0,3054.0,8.6,5.4,14.3,9.5,7.4,13.2,https://www.meilleursagents.com/prix-immobilier/la-cornuaille-49440/,49183
+Marcé,2365.0,1624.0,3153.0,2130.0,1130.0,3459.0,10.4,8.4,14.0,11.8,10.0,16.2,https://www.meilleursagents.com/prix-immobilier/marce-49140/,49188
+Maulévrier,2641.0,2061.0,3141.0,1972.0,822.0,2930.0,11.2,8.0,19.3,9.7,6.3,12.6,https://www.meilleursagents.com/prix-immobilier/maulevrier-49360/,49192
+Le May-sur-Èvre,2461.0,1953.0,3276.0,1833.0,751.0,2841.0,11.8,8.0,19.4,12.3,8.5,15.6,https://www.meilleursagents.com/prix-immobilier/le-may-sur-evre-49122/,49193
+Mazé-Milon,2621.0,1285.0,5243.0,2284.0,1030.0,3596.0,11.5,8.2,17.4,12.1,9.7,17.2,https://www.meilleursagents.com/prix-immobilier/fontaine-milon-49140/,49194
+Mazé-Milon,2621.0,1285.0,5243.0,2284.0,1030.0,3596.0,11.5,8.2,17.4,12.1,9.7,17.2,https://www.meilleursagents.com/prix-immobilier/maze-49630/,49194
+Mazières-en-Mauges,2575.0,2189.0,3182.0,2390.0,956.0,3273.0,12.0,9.0,18.0,9.8,6.6,12.3,https://www.meilleursagents.com/prix-immobilier/mazieres-en-mauges-49280/,49195
+Longuenée-en-Anjou,2724.0,1605.0,3546.0,2788.0,1269.0,3917.0,10.4,8.4,15.2,13.9,10.2,19.3,https://www.meilleursagents.com/prix-immobilier/pruille-49220/,49200
+Longuenée-en-Anjou,2724.0,1605.0,3546.0,2788.0,1269.0,3917.0,10.4,8.4,15.2,13.9,10.2,19.3,https://www.meilleursagents.com/prix-immobilier/la-meignanne-49770/,49200
+Longuenée-en-Anjou,2724.0,1605.0,3546.0,2788.0,1269.0,3917.0,10.4,8.4,15.2,13.9,10.2,19.3,https://www.meilleursagents.com/prix-immobilier/la-membrolle-sur-longuenee-49770/,49200
+Longuenée-en-Anjou,2724.0,1605.0,3546.0,2788.0,1269.0,3917.0,10.4,8.4,15.2,13.9,10.2,19.3,https://www.meilleursagents.com/prix-immobilier/le-plessis-mace-49770/,49200
+La Ménitré,2332.0,1252.0,4663.0,2118.0,902.0,3700.0,11.5,8.2,18.8,11.6,9.5,17.7,https://www.meilleursagents.com/prix-immobilier/la-menitre-49250/,49201
+Miré,1882.0,1005.0,2379.0,1574.0,654.0,2735.0,11.0,6.5,19.5,10.0,7.1,13.9,https://www.meilleursagents.com/prix-immobilier/mire-49330/,49205
+Montigné-lès-Rairies,1870.0,897.0,2256.0,1697.0,679.0,2666.0,10.6,7.4,18.8,9.4,6.0,11.3,https://www.meilleursagents.com/prix-immobilier/montigne-les-rairies-49430/,49209
+Montilliers,2178.0,1144.0,3213.0,1662.0,665.0,2563.0,12.0,7.9,20.0,9.8,6.6,12.2,https://www.meilleursagents.com/prix-immobilier/montilliers-49310/,49211
+Montreuil-Bellay,1436.0,621.0,2435.0,1696.0,956.0,2567.0,10.0,6.7,17.2,10.0,8.0,13.8,https://www.meilleursagents.com/prix-immobilier/montreuil-bellay-49260/,49215
+Meron,1436.0,621.0,2435.0,1696.0,956.0,2567.0,10.0,6.7,17.2,10.0,8.0,13.8,https://www.meilleursagents.com/prix-immobilier/meron-49260/,49215
+Montreuil-sur-Loir,2352.0,1678.0,3128.0,2418.0,1051.0,3609.0,10.4,8.4,14.0,11.7,9.8,15.0,https://www.meilleursagents.com/prix-immobilier/montreuil-sur-loir-49140/,49216
+Montreuil-sur-Maine,1861.0,918.0,3117.0,2158.0,1092.0,3650.0,10.3,8.4,14.4,12.2,9.6,18.5,https://www.meilleursagents.com/prix-immobilier/montreuil-sur-maine-49220/,49217
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/chaudron-en-mauges-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/la-boissiere-sur-evre-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/la-salle-et-chapelle-aubry-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/montrevault-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/saint-pierre-montlimart-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/saint-quentin-en-mauges-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/saint-remy-en-mauges-49110/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/le-fuilet-49270/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/la-chaussaire-49600/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/le-fief-sauvin-49600/,49218
+Montrevault-sur-Èvre,1785.0,1096.0,2304.0,1674.0,670.0,2872.0,11.5,7.0,19.3,9.8,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/le-puiset-dore-49600/,49218
+Montsoreau,1813.0,1059.0,2509.0,2264.0,1048.0,4528.0,9.6,8.1,11.0,,,,https://www.meilleursagents.com/prix-immobilier/montsoreau-49730/,49219
+Morannes-sur-Sarthe,1955.0,1127.0,3826.0,1608.0,643.0,2908.0,12.1,8.7,17.6,10.2,8.0,13.3,https://www.meilleursagents.com/prix-immobilier/chemire-sur-sarthe-49640/,49220
+Daumeray,2033.0,1537.0,2675.0,1938.0,775.0,3436.0,11.3,8.0,20.0,9.5,6.9,13.9,https://www.meilleursagents.com/prix-immobilier/daumeray-49640/,49220
+Morannes-sur-Sarthe,1955.0,1127.0,3826.0,1608.0,643.0,2908.0,12.1,8.7,17.6,10.2,8.0,13.3,https://www.meilleursagents.com/prix-immobilier/morannes-sur-sarthe-49640/,49220
+Mouliherne,1599.0,1026.0,2186.0,1370.0,548.0,2317.0,9.1,5.7,16.4,9.6,7.4,12.1,https://www.meilleursagents.com/prix-immobilier/mouliherne-49390/,49221
+Mozé-sur-Louet,2840.0,1910.0,3750.0,2744.0,1117.0,4038.0,11.7,8.5,17.5,10.9,8.3,14.7,https://www.meilleursagents.com/prix-immobilier/moze-sur-louet-49610/,49222
+Mûrs-Erigné,2857.0,1976.0,3814.0,2988.0,1691.0,4448.0,13.0,10.0,23.4,13.4,9.6,18.0,https://www.meilleursagents.com/prix-immobilier/murs-erigne-49610/,49223
+Neuillé,1586.0,1128.0,3173.0,1966.0,834.0,3075.0,10.1,5.7,16.3,9.9,6.3,14.2,https://www.meilleursagents.com/prix-immobilier/neuille-49680/,49224
+Parçay-les-Pins,1557.0,1002.0,2139.0,1318.0,527.0,2481.0,9.6,6.0,13.8,9.5,7.3,13.8,https://www.meilleursagents.com/prix-immobilier/parcay-les-pins-49390/,49228
+Auverse,1870.0,1106.0,3740.0,1191.0,476.0,2382.0,9.1,5.0,16.4,9.6,7.5,12.5,https://www.meilleursagents.com/prix-immobilier/auverse-49490/,49228
+Breil,1556.0,1002.0,2138.0,1350.0,540.0,2695.0,9.2,5.8,16.6,9.9,7.7,12.8,https://www.meilleursagents.com/prix-immobilier/breil-49490/,49228
+Broc,1501.0,1108.0,3003.0,1565.0,701.0,3129.0,9.1,5.7,16.4,9.7,7.0,11.7,https://www.meilleursagents.com/prix-immobilier/broc-49490/,49228
+Chalonnes-sous-le-Lude,2494.0,1718.0,3174.0,1841.0,736.0,3682.0,10.8,8.3,14.3,11.2,8.6,15.3,https://www.meilleursagents.com/prix-immobilier/chalonnes-sous-le-lude-49490/,49228
+Chavaignes,1588.0,1021.0,2174.0,1348.0,539.0,2696.0,12.9,8.4,22.7,11.2,8.1,15.2,https://www.meilleursagents.com/prix-immobilier/chavaignes-49490/,49228
+Chigné,1769.0,1092.0,3537.0,1402.0,561.0,2505.0,9.5,6.6,16.2,9.9,7.2,12.6,https://www.meilleursagents.com/prix-immobilier/chigne-49490/,49228
+Dénezé-sous-le-Lude,1785.0,1091.0,3570.0,1502.0,601.0,3004.0,9.7,6.6,15.4,10.0,7.9,13.2,https://www.meilleursagents.com/prix-immobilier/deneze-sous-le-lude-49490/,49228
+Genneteil,1606.0,989.0,2237.0,1410.0,564.0,2820.0,10.3,7.6,16.2,10.2,8.4,13.7,https://www.meilleursagents.com/prix-immobilier/genneteil-49490/,49228
+Lasse,2026.0,1041.0,4051.0,1254.0,502.0,2509.0,9.1,6.1,16.4,9.6,6.9,13.0,https://www.meilleursagents.com/prix-immobilier/lasse-49490/,49228
+Linières-Bouton,2234.0,1424.0,2856.0,1903.0,819.0,3806.0,12.9,8.4,22.7,11.2,8.1,15.2,https://www.meilleursagents.com/prix-immobilier/linieres-bouton-49490/,49228
+Meigné-le-Vicomte,1488.0,1118.0,2976.0,1274.0,510.0,2168.0,9.5,6.5,15.2,10.4,8.2,13.8,https://www.meilleursagents.com/prix-immobilier/meigne-le-vicomte-49490/,49228
+Méon,1569.0,1009.0,2152.0,1250.0,500.0,2085.0,9.2,5.8,16.6,10.4,7.5,12.6,https://www.meilleursagents.com/prix-immobilier/meon-49490/,49228
+Noyant,1808.0,1085.0,3615.0,1238.0,495.0,2322.0,9.2,5.7,16.5,10.4,7.5,12.6,https://www.meilleursagents.com/prix-immobilier/noyant-49490/,49228
+Nuaillé,2502.0,1990.0,3336.0,2095.0,838.0,3131.0,11.9,8.1,18.9,9.8,6.6,12.4,https://www.meilleursagents.com/prix-immobilier/nuaille-49340/,49231
+Parnay,1812.0,1065.0,2535.0,2104.0,1086.0,3784.0,10.2,6.8,14.7,10.2,8.6,13.5,https://www.meilleursagents.com/prix-immobilier/parnay-49730/,49235
+Passavant-sur-Layon,1691.0,939.0,2479.0,1403.0,561.0,2567.0,12.9,8.4,22.7,11.2,8.1,15.2,https://www.meilleursagents.com/prix-immobilier/passavant-sur-layon-49560/,49236
+La Pellerine,1564.0,1006.0,2146.0,1244.0,502.0,2212.0,9.2,5.7,16.5,9.6,6.9,12.4,https://www.meilleursagents.com/prix-immobilier/la-pellerine-49490/,49237
+La Plaine,2568.0,2020.0,3048.0,1586.0,634.0,2685.0,11.4,8.2,19.3,10.2,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/la-plaine-49360/,49240
+Le Plessis-Grammoire,2401.0,1547.0,3516.0,2868.0,1217.0,4300.0,12.8,9.6,19.6,12.0,8.3,15.8,https://www.meilleursagents.com/prix-immobilier/le-plessis-grammoire-49124/,49241
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/botz-en-mauges-49110/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/bourgneuf-en-mauges-49290/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/saint-laurent-de-la-plaine-49290/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/beausse-49410/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/le-marillais-49410/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/le-mesnil-en-vallee-49410/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/saint-florent-le-vieil-49410/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/saint-laurent-du-mottay-49410/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/montjean-sur-loire-49570/,49244
+Mauges-sur-Loire,1766.0,750.0,2569.0,1942.0,777.0,3252.0,10.1,6.5,16.5,9.9,6.9,13.3,https://www.meilleursagents.com/prix-immobilier/la-pommeraye-49620/,49244
+Les Ponts-de-Cé,2882.0,1614.0,4404.0,3078.0,1549.0,4739.0,13.6,9.7,24.5,14.1,9.0,19.0,https://www.meilleursagents.com/prix-immobilier/les-ponts-de-ce-49130/,49246
+Sorges,2882.0,1614.0,4404.0,3078.0,1549.0,4739.0,13.6,9.7,24.5,14.1,9.0,19.0,https://www.meilleursagents.com/prix-immobilier/sorges-49130/,49246
+La Possonnière,2716.0,1726.0,4042.0,2814.0,1371.0,4483.0,11.2,7.6,17.0,11.3,8.6,16.6,https://www.meilleursagents.com/prix-immobilier/la-possonniere-49170/,49247
+Chazé-Henry,1827.0,877.0,3208.0,1145.0,458.0,2289.0,9.7,6.4,15.2,8.8,6.3,11.3,https://www.meilleursagents.com/prix-immobilier/chaze-henry-49420/,49248
+La Chapelle-Hullin,1839.0,906.0,3369.0,1462.0,587.0,2328.0,10.0,6.5,16.0,9.0,6.6,12.7,https://www.meilleursagents.com/prix-immobilier/la-chapelle-hullin-49420/,49248
+La Prévière,1795.0,838.0,2944.0,1637.0,655.0,2761.0,11.0,6.1,19.8,9.0,6.1,11.4,https://www.meilleursagents.com/prix-immobilier/la-previere-49420/,49248
+Pouancé,1634.0,922.0,2293.0,1439.0,575.0,2877.0,9.4,5.3,16.0,10.1,7.4,13.0,https://www.meilleursagents.com/prix-immobilier/pouance-49420/,49248
+Saint-Michel-et-Chanveaux,1797.0,840.0,2967.0,1473.0,589.0,2810.0,10.0,6.9,15.6,9.5,7.4,14.0,https://www.meilleursagents.com/prix-immobilier/saint-michel-et-chanveaux-49420/,49248
+Vergonnes,2500.0,1668.0,3473.0,1342.0,537.0,2684.0,10.4,8.4,14.6,10.3,7.0,12.0,https://www.meilleursagents.com/prix-immobilier/vergonnes-49420/,49248
+Bel Air,1799.0,910.0,3027.0,1482.0,593.0,2711.0,9.5,6.7,15.7,9.6,7.1,12.1,https://www.meilleursagents.com/prix-immobilier/bel-air-49520/,49248
+Combrée,1799.0,910.0,3027.0,1482.0,593.0,2711.0,9.5,6.7,15.7,9.6,7.1,12.1,https://www.meilleursagents.com/prix-immobilier/combree-49520/,49248
+Grugé-l'Hôpital,1826.0,910.0,3328.0,1465.0,600.0,2608.0,10.2,5.8,17.9,9.5,6.7,12.9,https://www.meilleursagents.com/prix-immobilier/gruge-l-hopital-49520/,49248
+Le Tremblay,1791.0,858.0,3079.0,1605.0,642.0,3210.0,10.1,6.8,16.0,9.2,6.7,11.5,https://www.meilleursagents.com/prix-immobilier/le-tremblay-49520/,49248
+Noëllet,1789.0,861.0,3070.0,1517.0,607.0,3033.0,10.6,5.9,19.2,9.0,5.9,11.8,https://www.meilleursagents.com/prix-immobilier/noellet-49520/,49248
+Le Puy-Notre-Dame,1566.0,1166.0,2304.0,1435.0,574.0,2628.0,9.7,6.4,14.9,9.5,7.0,12.8,https://www.meilleursagents.com/prix-immobilier/le-puy-notre-dame-49260/,49253
+Les Rairies,1881.0,895.0,2259.0,1765.0,779.0,3224.0,9.1,6.3,16.4,9.6,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/les-rairies-49430/,49257
+Rochefort-sur-Loire,2798.0,1825.0,3858.0,2472.0,989.0,4056.0,12.4,9.4,17.0,12.0,9.1,16.3,https://www.meilleursagents.com/prix-immobilier/rochefort-sur-loire-49190/,49259
+La Romagne,2385.0,1883.0,3217.0,2045.0,818.0,2977.0,10.1,7.3,17.7,9.8,6.6,12.6,https://www.meilleursagents.com/prix-immobilier/la-romagne-49740/,49260
+Saint-Martin-de-la-Place,2041.0,1204.0,4083.0,1843.0,768.0,3434.0,11.4,8.6,15.0,10.1,8.3,13.0,https://www.meilleursagents.com/prix-immobilier/saint-martin-de-la-place-49160/,49261
+Gennes-Val de Loire,2164.0,1261.0,4329.0,2127.0,851.0,3978.0,11.0,7.4,19.2,10.1,8.3,14.9,https://www.meilleursagents.com/prix-immobilier/grezille-49320/,49261
+Gennes-Val de Loire,2164.0,1261.0,4329.0,2127.0,851.0,3978.0,11.0,7.4,19.2,10.1,8.3,14.9,https://www.meilleursagents.com/prix-immobilier/gennes-49350/,49261
+Les Rosiers-sur-Loire,2256.0,1287.0,4512.0,2143.0,857.0,3510.0,11.5,7.4,20.7,10.8,8.9,16.2,https://www.meilleursagents.com/prix-immobilier/les-rosiers-sur-loire-49350/,49261
+Gennes-Val de Loire,2164.0,1261.0,4329.0,2127.0,851.0,3978.0,11.0,7.4,19.2,10.1,8.3,14.9,https://www.meilleursagents.com/prix-immobilier/le-thoureil-49350/,49261
+Gennes-Val de Loire,2164.0,1261.0,4329.0,2127.0,851.0,3978.0,11.0,7.4,19.2,10.1,8.3,14.9,https://www.meilleursagents.com/prix-immobilier/saint-georges-des-sept-voies-49350/,49261
+Treves Cunault,2164.0,1261.0,4329.0,2127.0,851.0,3978.0,11.0,7.4,19.2,10.1,8.3,14.9,https://www.meilleursagents.com/prix-immobilier/treves-cunault-49350/,49261
+Rou-Marson,1610.0,1161.0,3220.0,2168.0,867.0,3429.0,11.7,8.4,17.9,10.8,8.8,14.6,https://www.meilleursagents.com/prix-immobilier/rou-marson-49400/,49262
+Saint-Augustin-des-Bois,2476.0,1105.0,3823.0,2384.0,954.0,3446.0,10.7,8.3,16.6,11.0,7.8,16.5,https://www.meilleursagents.com/prix-immobilier/saint-augustin-des-bois-49170/,49266
+Saint-Christophe-du-Bois,2502.0,2012.0,3258.0,2258.0,1142.0,3064.0,12.5,9.4,18.6,10.9,7.8,13.7,https://www.meilleursagents.com/prix-immobilier/saint-christophe-du-bois-49280/,49269
+Saint-Clément-de-la-Place,3044.0,2032.0,4096.0,2630.0,1052.0,4000.0,10.4,8.4,14.8,12.6,9.1,19.0,https://www.meilleursagents.com/prix-immobilier/saint-clement-de-la-place-49370/,49271
+Saint-Clément-des-Levées,2101.0,1219.0,4203.0,1911.0,765.0,3210.0,9.5,6.8,17.2,9.8,7.1,12.4,https://www.meilleursagents.com/prix-immobilier/saint-clement-des-levees-49350/,49272
+Sainte-Gemmes-sur-Loire,2760.0,1574.0,4059.0,3347.0,1794.0,5582.0,13.4,10.3,24.2,12.0,8.2,16.6,https://www.meilleursagents.com/prix-immobilier/sainte-gemmes-sur-loire-49130/,49278
+Saint-Georges-sur-Loire,2709.0,1877.0,4219.0,2482.0,1026.0,4236.0,11.0,7.7,17.7,11.2,8.5,16.5,https://www.meilleursagents.com/prix-immobilier/saint-georges-sur-loire-49170/,49283
+Saint-Germain-des-Prés,2510.0,1063.0,3962.0,2223.0,889.0,3839.0,10.0,6.8,16.9,9.9,7.1,13.3,https://www.meilleursagents.com/prix-immobilier/saint-germain-des-pres-49170/,49284
+Saint-Jean-de-la-Croix,2761.0,1532.0,3987.0,2139.0,927.0,3419.0,11.2,7.9,19.9,9.8,7.1,13.1,https://www.meilleursagents.com/prix-immobilier/saint-jean-de-la-croix-49130/,49288
+Saint-Just-sur-Dive,1612.0,1164.0,2441.0,1442.0,577.0,2543.0,10.9,7.6,18.5,9.6,6.3,11.4,https://www.meilleursagents.com/prix-immobilier/saint-just-sur-dive-49260/,49291
+Val-du-Layon,2448.0,1125.0,3782.0,2162.0,865.0,3487.0,10.9,7.8,15.7,11.4,9.0,16.3,https://www.meilleursagents.com/prix-immobilier/saint-aubin-de-luigne-49190/,49292
+Val-du-Layon,2448.0,1125.0,3782.0,2162.0,865.0,3487.0,10.9,7.8,15.7,11.4,9.0,16.3,https://www.meilleursagents.com/prix-immobilier/saint-lambert-du-lattay-49750/,49292
+Saint-Lambert-la-Potherie,2890.0,1984.0,4297.0,2867.0,1147.0,3985.0,12.7,8.7,18.7,13.7,11.4,18.8,https://www.meilleursagents.com/prix-immobilier/saint-lambert-la-potherie-49070/,49294
+Saint-Jean-de-Linières,2890.0,1995.0,4266.0,2927.0,1302.0,4035.0,12.9,9.2,21.1,14.1,11.6,19.2,https://www.meilleursagents.com/prix-immobilier/saint-jean-de-linieres-49070/,49298
+Saint-Léger-des-Bois,2830.0,1979.0,4171.0,3015.0,1926.0,4991.0,12.7,8.7,18.8,14.4,12.0,19.7,https://www.meilleursagents.com/prix-immobilier/saint-leger-des-bois-49170/,49298
+Saint-Léger-sous-Cholet,2461.0,1953.0,3276.0,2417.0,1094.0,3387.0,12.3,9.3,18.5,11.1,8.2,14.4,https://www.meilleursagents.com/prix-immobilier/saint-leger-sous-cholet-49280/,49299
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/montfaucon-montigne-49230/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/saint-crespin-sur-moine-49230/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/saint-germain-sur-moine-49230/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/tillieres-49230/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/la-renaudiere-49450/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/roussay-49450/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/saint-andre-de-la-marche-49450/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/saint-macaire-en-mauges-49450/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/torfou-49660/,49301
+Sèvremoine,1751.0,971.0,2554.0,2057.0,823.0,3175.0,11.5,8.2,20.0,10.2,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/le-longeron-49710/,49301
+Saint-Macaire-du-Bois,1613.0,1205.0,2212.0,1556.0,623.0,3113.0,9.0,6.4,15.0,9.9,7.2,13.1,https://www.meilleursagents.com/prix-immobilier/saint-macaire-du-bois-49260/,49302
+Saint-Martin-du-Fouilloux,2840.0,1964.0,4241.0,2801.0,1429.0,4126.0,12.7,8.7,18.8,13.5,10.9,18.7,https://www.meilleursagents.com/prix-immobilier/saint-martin-du-fouilloux-49170/,49306
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/baune-49140/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/saint-mathurin-sur-loire-49250/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/corne-49630/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/andard-49800/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/brain-sur-l-authion-49800/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/la-bohalle-49800/,49307
+Loire-Authion,2398.0,1448.0,3488.0,2635.0,1173.0,4105.0,11.7,8.4,17.3,11.9,9.4,16.0,https://www.meilleursagents.com/prix-immobilier/la-dagueniere-49800/,49307
+Saint-Melaine-sur-Aubance,2861.0,2205.0,3754.0,3055.0,1758.0,4697.0,13.0,8.9,19.2,12.0,8.1,16.4,https://www.meilleursagents.com/prix-immobilier/saint-melaine-sur-aubance-49610/,49308
+Saint-Paul-du-Bois,2244.0,1824.0,2760.0,1237.0,495.0,2468.0,11.3,8.2,19.8,9.7,6.3,12.6,https://www.meilleursagents.com/prix-immobilier/saint-paul-du-bois-49310/,49310
+Saint-Philbert-du-Peuple,1897.0,1130.0,3794.0,1819.0,857.0,3165.0,10.7,7.9,19.2,10.0,8.0,13.1,https://www.meilleursagents.com/prix-immobilier/saint-philbert-du-peuple-49160/,49311
+Verrières-en-Anjou,2672.0,1836.0,3479.0,2937.0,1605.0,4349.0,12.8,9.1,21.1,13.6,10.8,18.5,https://www.meilleursagents.com/prix-immobilier/pellouailles-les-vignes-49112/,49323
+Verrières-en-Anjou,2672.0,1836.0,3479.0,2937.0,1605.0,4349.0,12.8,9.1,21.1,13.6,10.8,18.5,https://www.meilleursagents.com/prix-immobilier/saint-sylvain-d-anjou-49480/,49323
+Sarrigné,2620.0,1722.0,3439.0,2554.0,1327.0,3878.0,11.9,9.0,17.7,11.5,8.6,16.2,https://www.meilleursagents.com/prix-immobilier/sarrigne-49800/,49326
+Saumur,1873.0,989.0,3022.0,2148.0,950.0,3591.0,10.7,7.2,18.1,11.0,7.9,16.4,https://www.meilleursagents.com/prix-immobilier/saumur-49400/,49328
+Bagneux,1873.0,989.0,3022.0,2148.0,950.0,3591.0,10.7,7.2,18.1,11.0,7.9,16.4,https://www.meilleursagents.com/prix-immobilier/bagneux-49400/,49328
+Dampierre sur Loire,1873.0,989.0,3022.0,2148.0,950.0,3591.0,10.7,7.2,18.1,11.0,7.9,16.4,https://www.meilleursagents.com/prix-immobilier/dampierre-sur-loire-49400/,49328
+Saint Lambert des Levees,1873.0,989.0,3022.0,2148.0,950.0,3591.0,10.7,7.2,18.1,11.0,7.9,16.4,https://www.meilleursagents.com/prix-immobilier/saint-lambert-des-levees-49400/,49328
+Savennières,2735.0,1716.0,4078.0,2900.0,1160.0,5230.0,13.1,10.2,23.3,12.5,8.8,16.9,https://www.meilleursagents.com/prix-immobilier/savennieres-49170/,49329
+Epire,2735.0,1716.0,4078.0,2900.0,1160.0,5230.0,13.1,10.2,23.3,12.5,8.8,16.9,https://www.meilleursagents.com/prix-immobilier/epire-49170/,49329
+Sceaux-d'Anjou,2096.0,1535.0,2835.0,2372.0,949.0,4024.0,10.3,8.3,14.2,12.8,8.7,15.2,https://www.meilleursagents.com/prix-immobilier/sceaux-d-anjou-49330/,49330
+Aviré,1851.0,875.0,3455.0,1591.0,636.0,2790.0,9.9,6.0,16.0,10.8,8.1,16.5,https://www.meilleursagents.com/prix-immobilier/avire-49500/,49331
+La Chapelle-sur-Oudon,1797.0,822.0,3140.0,1923.0,769.0,3171.0,10.1,6.6,17.3,10.4,7.8,15.8,https://www.meilleursagents.com/prix-immobilier/la-chapelle-sur-oudon-49500/,49331
+La Ferrière-de-Flée,1853.0,877.0,3464.0,1772.0,709.0,2831.0,10.1,6.8,15.8,9.0,7.2,14.0,https://www.meilleursagents.com/prix-immobilier/la-ferriere-de-flee-49500/,49331
+L'Hôtellerie-de-Flée,1852.0,876.0,3461.0,1589.0,636.0,2569.0,10.1,6.6,16.2,9.6,7.2,14.8,https://www.meilleursagents.com/prix-immobilier/l-hotellerie-de-flee-49500/,49331
+Louvaines,1850.0,874.0,3448.0,2036.0,814.0,4072.0,9.9,6.6,15.5,9.8,7.6,15.3,https://www.meilleursagents.com/prix-immobilier/louvaines-49500/,49331
+Marans,1797.0,822.0,3140.0,1901.0,760.0,2966.0,9.9,6.6,15.8,9.7,7.7,15.0,https://www.meilleursagents.com/prix-immobilier/marans-49500/,49331
+Montguillon,1852.0,876.0,3458.0,1684.0,705.0,2827.0,10.6,8.7,14.3,11.0,8.5,13.1,https://www.meilleursagents.com/prix-immobilier/montguillon-49500/,49331
+Nyoiseau,1851.0,874.0,3451.0,1517.0,607.0,2692.0,10.2,5.7,17.9,9.4,6.4,13.2,https://www.meilleursagents.com/prix-immobilier/nyoiseau-49500/,49331
+Segré,1612.0,927.0,2712.0,1822.0,730.0,2872.0,10.1,6.0,18.1,10.7,6.7,16.0,https://www.meilleursagents.com/prix-immobilier/segre-49500/,49331
+Sainte-Gemmes-d'Andigné,1797.0,822.0,3140.0,1929.0,772.0,3165.0,10.1,7.1,15.6,9.3,7.3,14.3,https://www.meilleursagents.com/prix-immobilier/sainte-gemmes-d-andigne-49500/,49331
+Saint-Martin-du-Bois,1899.0,938.0,3420.0,1745.0,698.0,3123.0,10.3,5.8,17.2,10.7,8.0,16.0,https://www.meilleursagents.com/prix-immobilier/saint-martin-du-bois-49500/,49331
+Saint-Sauveur-de-Flée,1853.0,876.0,3463.0,1732.0,693.0,3003.0,10.0,6.5,16.0,9.5,7.7,14.5,https://www.meilleursagents.com/prix-immobilier/saint-sauveur-de-flee-49500/,49331
+Châtelais,1847.0,901.0,3403.0,1549.0,620.0,2698.0,10.6,7.4,15.6,8.8,6.8,12.7,https://www.meilleursagents.com/prix-immobilier/chatelais-49520/,49331
+Le Bourg-d'Iré,1802.0,850.0,3112.0,1581.0,632.0,2684.0,9.5,5.3,16.6,9.3,6.6,14.3,https://www.meilleursagents.com/prix-immobilier/le-bourg-d-ire-49520/,49331
+Noyant-la-Gravoyère,1802.0,851.0,3112.0,1448.0,671.0,2521.0,10.1,7.1,16.7,9.2,6.8,11.7,https://www.meilleursagents.com/prix-immobilier/noyant-la-gravoyere-49520/,49331
+La Séguinière,2168.0,1343.0,3110.0,2250.0,981.0,3403.0,11.6,8.1,20.8,11.4,7.9,15.4,https://www.meilleursagents.com/prix-immobilier/la-seguiniere-49280/,49332
+Seiches-sur-le-Loir,1975.0,1453.0,2579.0,2116.0,878.0,3350.0,10.6,7.1,19.2,12.5,9.5,16.9,https://www.meilleursagents.com/prix-immobilier/seiches-sur-le-loir-49140/,49333
+Matheflon,1975.0,1453.0,2579.0,2116.0,878.0,3350.0,10.6,7.1,19.2,12.5,9.5,16.9,https://www.meilleursagents.com/prix-immobilier/matheflon-49140/,49333
+Sermaise,2255.0,1376.0,4511.0,1881.0,838.0,2985.0,10.4,6.0,15.4,10.3,7.5,13.3,https://www.meilleursagents.com/prix-immobilier/sermaise-49140/,49334
+Somloire,2514.0,1903.0,3185.0,1416.0,566.0,2342.0,9.4,6.1,15.8,9.5,6.7,13.2,https://www.meilleursagents.com/prix-immobilier/somloire-49360/,49336
+Soulaines-sur-Aubance,2837.0,1946.0,3722.0,2802.0,1121.0,4505.0,13.3,10.1,19.1,13.4,9.0,18.4,https://www.meilleursagents.com/prix-immobilier/soulaines-sur-aubance-49610/,49338
+Soulaire-et-Bourg,1915.0,1327.0,2551.0,2528.0,1384.0,3775.0,10.8,7.3,16.3,12.2,9.2,16.7,https://www.meilleursagents.com/prix-immobilier/soulaire-et-bourg-49460/,49339
+Souzay-Champigny,1595.0,1139.0,2468.0,1864.0,746.0,3245.0,10.0,7.0,13.0,,,,https://www.meilleursagents.com/prix-immobilier/souzay-champigny-49400/,49341
+La Tessoualle,2605.0,1875.0,3049.0,2241.0,926.0,3404.0,12.7,8.8,17.8,11.1,8.9,16.6,https://www.meilleursagents.com/prix-immobilier/la-tessoualle-49280/,49343
+Thorigné-d'Anjou,2099.0,1185.0,3229.0,2257.0,1004.0,4055.0,10.7,8.8,16.5,11.7,8.5,17.5,https://www.meilleursagents.com/prix-immobilier/thorigne-d-anjou-49220/,49344
+Bellevigne-en-Layon,2734.0,1822.0,3678.0,2103.0,841.0,3881.0,12.1,8.6,18.5,11.0,9.2,15.7,https://www.meilleursagents.com/prix-immobilier/champ-sur-layon-49380/,49345
+Bellevigne-en-Layon,2734.0,1822.0,3678.0,2103.0,841.0,3881.0,12.1,8.6,18.5,11.0,9.2,15.7,https://www.meilleursagents.com/prix-immobilier/faveraye-machelles-49380/,49345
+Bellevigne-en-Layon,2734.0,1822.0,3678.0,2103.0,841.0,3881.0,12.1,8.6,18.5,11.0,9.2,15.7,https://www.meilleursagents.com/prix-immobilier/faye-d-anjou-49380/,49345
+Bellevigne-en-Layon,2734.0,1822.0,3678.0,2103.0,841.0,3881.0,12.1,8.6,18.5,11.0,9.2,15.7,https://www.meilleursagents.com/prix-immobilier/thouarce-49380/,49345
+Bellevigne-en-Layon,2734.0,1822.0,3678.0,2103.0,841.0,3881.0,12.1,8.6,18.5,11.0,9.2,15.7,https://www.meilleursagents.com/prix-immobilier/rablay-sur-layon-49750/,49345
+Tiercé,2105.0,1646.0,2797.0,2551.0,1189.0,4096.0,11.1,7.4,16.2,12.1,8.4,16.4,https://www.meilleursagents.com/prix-immobilier/tierce-49125/,49347
+Toutlemonde,2683.0,2280.0,3253.0,2138.0,855.0,2810.0,11.7,8.3,16.7,10.7,7.8,16.0,https://www.meilleursagents.com/prix-immobilier/toutlemonde-49360/,49352
+Trémentines,2467.0,1961.0,3290.0,2058.0,859.0,2935.0,12.0,8.7,20.8,9.8,6.6,12.5,https://www.meilleursagents.com/prix-immobilier/trementines-49340/,49355
+Turquant,2318.0,1367.0,2951.0,2014.0,806.0,4028.0,10.0,6.8,16.1,10.2,8.6,13.3,https://www.meilleursagents.com/prix-immobilier/turquant-49730/,49358
+Les Ulmes,1610.0,1164.0,3221.0,1885.0,851.0,2955.0,10.4,6.8,17.0,10.2,8.6,13.3,https://www.meilleursagents.com/prix-immobilier/les-ulmes-49700/,49359
+Varennes-sur-Loire,1820.0,1138.0,2391.0,1877.0,751.0,3489.0,9.0,5.6,15.4,9.7,7.0,12.4,https://www.meilleursagents.com/prix-immobilier/varennes-sur-loire-49730/,49361
+Varrains,2747.0,1886.0,3742.0,2157.0,995.0,3387.0,10.3,6.8,13.4,10.2,8.6,13.5,https://www.meilleursagents.com/prix-immobilier/varrains-49400/,49362
+Vaudelnay,1617.0,1175.0,3233.0,1604.0,642.0,2718.0,9.9,6.5,17.4,9.7,6.2,12.4,https://www.meilleursagents.com/prix-immobilier/vaudelnay-49260/,49364
+Erdre-en-Anjou,1863.0,953.0,3065.0,2039.0,816.0,3390.0,9.9,6.0,16.0,9.3,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/brain-sur-longuenee-49220/,49367
+Erdre-en-Anjou,1863.0,953.0,3065.0,2039.0,816.0,3390.0,9.9,6.0,16.0,9.3,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/gene-49220/,49367
+Erdre-en-Anjou,1863.0,953.0,3065.0,2039.0,816.0,3390.0,9.9,6.0,16.0,9.3,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/vern-d-anjou-49220/,49367
+Erdre-en-Anjou,1863.0,953.0,3065.0,2039.0,816.0,3390.0,9.9,6.0,16.0,9.3,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/la-poueze-49370/,49367
+Vernantes,1557.0,1092.0,3114.0,1565.0,626.0,3131.0,9.2,6.3,15.9,9.8,7.4,13.6,https://www.meilleursagents.com/prix-immobilier/vernantes-49390/,49368
+Vernoil-le-Fourrier,1551.0,1097.0,3101.0,1685.0,674.0,3370.0,9.3,5.1,16.7,10.0,7.9,13.0,https://www.meilleursagents.com/prix-immobilier/vernoil-le-fourrier-49390/,49369
+Verrie,2013.0,1216.0,4025.0,2048.0,1207.0,3474.0,10.6,6.8,16.1,10.8,6.3,14.2,https://www.meilleursagents.com/prix-immobilier/verrie-49400/,49370
+Vezins,2334.0,1887.0,2907.0,1812.0,725.0,2879.0,12.0,8.0,19.9,9.7,7.5,12.3,https://www.meilleursagents.com/prix-immobilier/vezins-49340/,49371
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/les-cerqueux-sous-passavant-49310/,49373
+Saint Hilaire du Bois,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/saint-hilaire-du-bois-49310/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/tancoigne-49310/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/tremont-49310/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/vihiers-49310/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/la-fosse-de-tigne-49540/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/tigne-49540/,49373
+Lys-Haut-Layon,1631.0,1210.0,2197.0,1417.0,567.0,2498.0,9.4,6.0,15.7,10.1,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/nueil-sur-layon-49560/,49373
+Villebernier,1596.0,1143.0,2476.0,1913.0,833.0,3653.0,9.6,8.2,17.4,8.8,5.8,13.5,https://www.meilleursagents.com/prix-immobilier/villebernier-49400/,49374
+Soucelles,2350.0,1676.0,3125.0,2663.0,1560.0,3937.0,11.8,9.1,17.7,11.3,8.6,14.1,https://www.meilleursagents.com/prix-immobilier/soucelles-49140/,49377
+Villevêque,2650.0,1844.0,3419.0,2514.0,1145.0,4049.0,12.4,9.4,16.9,11.7,8.4,16.1,https://www.meilleursagents.com/prix-immobilier/villeveque-49140/,49377
+Vivy,1614.0,1138.0,3229.0,1972.0,842.0,3285.0,11.0,7.7,19.5,9.3,5.4,13.0,https://www.meilleursagents.com/prix-immobilier/vivy-49680/,49378
+Yzernay,2589.0,2031.0,3074.0,1876.0,750.0,2794.0,11.4,8.2,19.8,9.9,6.6,12.6,https://www.meilleursagents.com/prix-immobilier/yzernay-49360/,49381
+Ahuillé,2653.0,1717.0,4861.0,1749.0,699.0,2825.0,10.8,8.9,17.2,10.2,8.1,13.3,https://www.meilleursagents.com/prix-immobilier/ahuille-53940/,53001
+Alexain,2139.0,1604.0,3572.0,1412.0,580.0,2707.0,9.2,6.0,13.4,8.4,6.1,12.2,https://www.meilleursagents.com/prix-immobilier/alexain-53240/,53002
+Ambrières-les-Vallées,1632.0,840.0,3168.0,1174.0,469.0,2347.0,9.5,5.2,14.7,8.2,6.1,11.9,https://www.meilleursagents.com/prix-immobilier/ambrieres-les-vallees-53300/,53003
+Cigne,1632.0,840.0,3168.0,1174.0,469.0,2347.0,9.5,5.2,14.7,8.2,6.1,11.9,https://www.meilleursagents.com/prix-immobilier/cigne-53300/,53003
+Andouillé,3130.0,2044.0,4209.0,1469.0,588.0,2473.0,11.2,7.8,16.6,10.7,8.4,13.3,https://www.meilleursagents.com/prix-immobilier/andouille-53240/,53005
+Argentré,2153.0,1463.0,3539.0,1838.0,735.0,2731.0,11.0,7.6,14.5,10.8,8.4,13.3,https://www.meilleursagents.com/prix-immobilier/argentre-53210/,53007
+Aron,1975.0,1515.0,3350.0,1577.0,631.0,2263.0,11.4,8.3,15.2,10.2,8.1,13.3,https://www.meilleursagents.com/prix-immobilier/aron-53440/,53008
+Arquenay,2114.0,1427.0,3476.0,1540.0,696.0,2690.0,10.2,7.0,16.3,8.7,6.9,12.7,https://www.meilleursagents.com/prix-immobilier/arquenay-53170/,53009
+Assé-le-Bérenger,1945.0,1499.0,3078.0,1145.0,458.0,2088.0,10.4,7.2,16.7,8.1,6.1,11.3,https://www.meilleursagents.com/prix-immobilier/asse-le-berenger-53600/,53010
+Astillé,2051.0,1317.0,3657.0,1638.0,655.0,2574.0,10.6,8.7,16.9,10.0,7.2,12.5,https://www.meilleursagents.com/prix-immobilier/astille-53230/,53011
+Athée,1835.0,925.0,3324.0,1365.0,546.0,2611.0,10.2,6.9,16.0,8.8,6.8,11.8,https://www.meilleursagents.com/prix-immobilier/athee-53400/,53012
+Averton,1757.0,1288.0,2684.0,1033.0,413.0,1922.0,10.0,6.8,17.6,8.1,6.5,10.9,https://www.meilleursagents.com/prix-immobilier/averton-53700/,53013
+La Baconnière,2012.0,1302.0,3518.0,1596.0,639.0,2896.0,10.2,6.8,15.9,9.3,7.1,13.6,https://www.meilleursagents.com/prix-immobilier/la-baconniere-53240/,53015
+Bais,1576.0,856.0,2667.0,1007.0,403.0,2014.0,9.4,5.5,16.4,8.5,6.3,12.3,https://www.meilleursagents.com/prix-immobilier/bais-53160/,53016
+Ballée,1851.0,1009.0,3675.0,1252.0,501.0,2383.0,9.4,6.5,10.9,9.2,6.9,13.5,https://www.meilleursagents.com/prix-immobilier/ballee-53340/,53017
+Épineux-le-Seguin,1816.0,1041.0,2229.0,1187.0,475.0,2303.0,10.4,8.5,16.2,9.9,7.2,12.1,https://www.meilleursagents.com/prix-immobilier/epineux-le-seguin-53340/,53017
+Ballots,1950.0,1186.0,2748.0,1436.0,574.0,2853.0,10.2,7.1,13.9,8.5,7.0,12.4,https://www.meilleursagents.com/prix-immobilier/ballots-53350/,53018
+Bannes,1811.0,1050.0,2219.0,1149.0,459.0,2297.0,9.5,6.1,14.7,8.6,6.1,11.9,https://www.meilleursagents.com/prix-immobilier/bannes-53340/,53019
+La Bazoge-Montpinçon,2008.0,1545.0,3349.0,1809.0,810.0,2409.0,10.9,8.9,17.3,10.0,7.7,12.0,https://www.meilleursagents.com/prix-immobilier/la-bazoge-montpincon-53440/,53021
+La Bazouge-de-Chemeré,2009.0,1408.0,3195.0,1324.0,530.0,2648.0,10.7,7.0,17.9,8.4,6.8,11.0,https://www.meilleursagents.com/prix-immobilier/la-bazouge-de-chemere-53170/,53022
+La Bazouge-des-Alleux,2207.0,1668.0,3652.0,1613.0,645.0,2766.0,10.7,8.8,17.0,9.6,6.6,11.4,https://www.meilleursagents.com/prix-immobilier/la-bazouge-des-alleux-53470/,53023
+Bazougers,2122.0,1436.0,3482.0,1461.0,584.0,2839.0,10.7,8.8,17.0,10.0,7.5,11.9,https://www.meilleursagents.com/prix-immobilier/bazougers-53170/,53025
+Beaulieu-sur-Oudon,2652.0,1839.0,4618.0,1397.0,559.0,2221.0,10.8,8.8,17.1,10.1,7.6,13.8,https://www.meilleursagents.com/prix-immobilier/beaulieu-sur-oudon-53320/,53026
+Beaumont-Pied-de-Bœuf,2944.0,1909.0,4131.0,1498.0,599.0,2996.0,10.1,8.6,11.6,9.5,6.9,13.6,https://www.meilleursagents.com/prix-immobilier/beaumont-pied-de-boeuf-53290/,53027
+Belgeard,2027.0,1561.0,3346.0,1498.0,599.0,2310.0,10.1,6.9,16.0,8.5,7.1,11.3,https://www.meilleursagents.com/prix-immobilier/belgeard-53440/,53028
+Argenton-Notre-Dame,1953.0,1453.0,2665.0,1442.0,577.0,2303.0,9.6,6.3,14.5,9.2,7.0,14.0,https://www.meilleursagents.com/prix-immobilier/argenton-notre-dame-53290/,53029
+Bierné,1839.0,996.0,2328.0,1276.0,510.0,2552.0,9.6,6.1,14.8,9.3,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/bierne-53290/,53029
+Saint-Laurent-des-Mortiers,1839.0,992.0,2328.0,1502.0,625.0,2622.0,9.9,6.7,16.0,9.5,7.6,12.6,https://www.meilleursagents.com/prix-immobilier/saint-laurent-des-mortiers-53290/,53029
+Saint-Michel-de-Feins,2001.0,1211.0,2542.0,1468.0,587.0,2626.0,10.9,7.5,18.7,9.8,7.7,14.6,https://www.meilleursagents.com/prix-immobilier/saint-michel-de-feins-53290/,53029
+Le Bignon-du-Maine,1903.0,1152.0,3492.0,1534.0,625.0,2662.0,10.7,8.7,16.9,10.0,7.8,12.6,https://www.meilleursagents.com/prix-immobilier/le-bignon-du-maine-53170/,53030
+La Bigottière,2151.0,1647.0,2910.0,1478.0,591.0,2586.0,9.8,6.7,15.7,9.2,6.9,13.1,https://www.meilleursagents.com/prix-immobilier/la-bigottiere-53240/,53031
+La Boissière,1842.0,903.0,3387.0,1504.0,602.0,2598.0,10.7,8.8,17.0,10.9,8.3,13.5,https://www.meilleursagents.com/prix-immobilier/la-boissiere-53800/,53033
+Bonchamp-lès-Laval,3143.0,1889.0,4349.0,2181.0,1319.0,3138.0,11.8,9.0,16.4,10.7,7.8,13.5,https://www.meilleursagents.com/prix-immobilier/bonchamp-les-laval-53960/,53034
+Bouchamps-lès-Craon,1837.0,904.0,3373.0,1426.0,570.0,2851.0,10.0,6.8,15.0,8.4,6.4,12.2,https://www.meilleursagents.com/prix-immobilier/bouchamps-les-craon-53800/,53035
+Bouère,1827.0,1025.0,2234.0,1351.0,541.0,2703.0,9.5,6.5,15.0,9.3,7.4,12.9,https://www.meilleursagents.com/prix-immobilier/bouere-53290/,53036
+Bouessay,1838.0,1038.0,2261.0,1600.0,640.0,2592.0,10.1,6.9,17.9,8.9,6.6,12.3,https://www.meilleursagents.com/prix-immobilier/bouessay-53290/,53037
+Boulay-les-Ifs,1431.0,970.0,2364.0,1359.0,543.0,2280.0,9.4,5.9,16.8,7.8,6.6,12.1,https://www.meilleursagents.com/prix-immobilier/boulay-les-ifs-53370/,53038
+Le Bourgneuf-la-Forêt,1994.0,1271.0,3347.0,1553.0,631.0,2732.0,9.9,5.8,16.2,8.8,6.8,12.0,https://www.meilleursagents.com/prix-immobilier/le-bourgneuf-la-foret-53410/,53039
+Bourgon,2124.0,1168.0,2957.0,1326.0,530.0,2498.0,10.3,6.8,15.0,8.3,6.4,10.3,https://www.meilleursagents.com/prix-immobilier/bourgon-53410/,53040
+Brains-sur-les-Marches,1966.0,1148.0,2812.0,1503.0,611.0,3006.0,10.6,7.4,15.6,8.0,6.5,12.0,https://www.meilleursagents.com/prix-immobilier/brains-sur-les-marches-53350/,53041
+Brecé,1902.0,1446.0,3063.0,1241.0,496.0,2482.0,9.7,6.6,14.6,9.2,6.9,12.4,https://www.meilleursagents.com/prix-immobilier/brece-53120/,53042
+Brée,2108.0,1617.0,3411.0,1238.0,501.0,2476.0,9.3,6.4,16.0,8.2,6.5,11.0,https://www.meilleursagents.com/prix-immobilier/bree-53150/,53043
+La Brûlatte,2135.0,1418.0,3278.0,1677.0,692.0,3354.0,10.0,6.7,15.0,9.1,7.2,11.7,https://www.meilleursagents.com/prix-immobilier/la-brulatte-53410/,53045
+Le Buret,1825.0,1053.0,2250.0,1345.0,538.0,2395.0,10.8,8.5,15.0,10.1,7.7,12.5,https://www.meilleursagents.com/prix-immobilier/le-buret-53170/,53046
+Carelles,1619.0,965.0,2479.0,1011.0,439.0,1791.0,10.0,5.9,15.8,8.1,5.8,11.3,https://www.meilleursagents.com/prix-immobilier/carelles-53120/,53047
+Chailland,2129.0,1562.0,3175.0,1426.0,576.0,2852.0,9.8,5.8,15.4,8.1,5.8,12.2,https://www.meilleursagents.com/prix-immobilier/chailland-53420/,53048
+Châlons-du-Maine,2152.0,1481.0,3492.0,1570.0,628.0,2450.0,10.7,8.8,17.0,9.8,8.0,13.2,https://www.meilleursagents.com/prix-immobilier/chalons-du-maine-53470/,53049
+Champéon,1929.0,1481.0,3265.0,1117.0,447.0,2235.0,9.8,7.2,15.8,8.1,6.8,10.8,https://www.meilleursagents.com/prix-immobilier/champeon-53640/,53051
+Champfrémont,1428.0,967.0,2339.0,1411.0,564.0,2345.0,10.0,6.4,16.9,8.9,7.6,13.4,https://www.meilleursagents.com/prix-immobilier/champfremont-53370/,53052
+Champgenéteux,1925.0,1465.0,3149.0,1036.0,414.0,2060.0,10.1,6.7,17.0,7.9,6.5,10.9,https://www.meilleursagents.com/prix-immobilier/champgeneteux-53160/,53053
+Changé,2964.0,2268.0,3639.0,2194.0,1071.0,3259.0,11.8,7.9,17.2,11.6,8.5,14.6,https://www.meilleursagents.com/prix-immobilier/change-53810/,53054
+Chantrigné,1808.0,1383.0,2967.0,1059.0,423.0,2045.0,11.4,8.3,15.2,9.6,7.6,12.0,https://www.meilleursagents.com/prix-immobilier/chantrigne-53300/,53055
+La Chapelle-Anthenaise,2167.0,1483.0,3536.0,1820.0,968.0,2506.0,10.0,6.5,16.0,8.5,6.9,11.5,https://www.meilleursagents.com/prix-immobilier/la-chapelle-anthenaise-53950/,53056
+La Chapelle-au-Riboul,1591.0,758.0,2711.0,1159.0,463.0,2317.0,9.5,5.2,14.7,8.0,6.3,12.0,https://www.meilleursagents.com/prix-immobilier/la-chapelle-au-riboul-53440/,53057
+La Chapelle-Craonnaise,2039.0,1318.0,3617.0,1484.0,593.0,2601.0,10.3,6.7,16.4,8.7,6.7,11.8,https://www.meilleursagents.com/prix-immobilier/la-chapelle-craonnaise-53230/,53058
+La Chapelle-Rainsouin,2136.0,1463.0,3481.0,1601.0,661.0,3021.0,10.2,6.6,16.3,8.3,6.9,11.4,https://www.meilleursagents.com/prix-immobilier/la-chapelle-rainsouin-53150/,53059
+Charchigné,1456.0,974.0,2632.0,972.0,389.0,1551.0,10.5,6.9,17.6,8.2,6.3,10.6,https://www.meilleursagents.com/prix-immobilier/charchigne-53250/,53061
+Azé,1839.0,899.0,3354.0,1913.0,1002.0,3348.0,10.6,8.3,14.6,10.4,7.4,12.5,https://www.meilleursagents.com/prix-immobilier/aze-53200/,53062
+Bazouges,1909.0,1199.0,3654.0,1819.0,825.0,3194.0,10.4,7.0,18.1,10.4,7.5,13.9,https://www.meilleursagents.com/prix-immobilier/bazouges-53200/,53062
+Château-Gontier,1909.0,1199.0,3654.0,1819.0,825.0,3194.0,10.4,7.0,18.1,10.4,7.5,13.9,https://www.meilleursagents.com/prix-immobilier/chateau-gontier-53200/,53062
+Saint-Fort,2659.0,1777.0,3594.0,1888.0,782.0,3777.0,11.0,8.1,15.6,11.3,8.6,14.4,https://www.meilleursagents.com/prix-immobilier/saint-fort-53200/,53062
+Châtelain,1829.0,1000.0,2317.0,1442.0,577.0,2388.0,10.6,7.2,16.9,9.6,7.5,14.6,https://www.meilleursagents.com/prix-immobilier/chatelain-53200/,53063
+Châtillon-sur-Colmont,1612.0,855.0,3031.0,1161.0,464.0,2322.0,9.6,5.6,15.1,7.5,5.5,11.6,https://www.meilleursagents.com/prix-immobilier/chatillon-sur-colmont-53100/,53064
+Chemazé,1849.0,878.0,3451.0,1699.0,679.0,2951.0,10.0,7.0,12.1,8.9,6.8,12.7,https://www.meilleursagents.com/prix-immobilier/chemaze-53200/,53066
+Chémeré-le-Roi,1818.0,1059.0,2244.0,1098.0,439.0,2196.0,11.0,8.2,14.8,9.9,7.0,11.7,https://www.meilleursagents.com/prix-immobilier/chemere-le-roi-53340/,53067
+Chérancé,1844.0,903.0,3393.0,1211.0,539.0,2422.0,10.7,8.8,17.0,10.5,8.0,13.1,https://www.meilleursagents.com/prix-immobilier/cherance-53400/,53068
+Chevaigné-du-Maine,1840.0,938.0,2820.0,925.0,370.0,1850.0,10.6,7.1,17.7,9.6,7.2,13.1,https://www.meilleursagents.com/prix-immobilier/chevaigne-du-maine-53250/,53069
+Colombiers-du-Plessis,1906.0,1447.0,3035.0,1120.0,448.0,2239.0,9.6,5.9,17.0,8.4,5.9,12.5,https://www.meilleursagents.com/prix-immobilier/colombiers-du-plessis-53120/,53071
+Commer,2064.0,1569.0,3461.0,1583.0,633.0,2993.0,10.9,8.9,15.4,9.7,7.6,11.5,https://www.meilleursagents.com/prix-immobilier/commer-53470/,53072
+Congrier,1859.0,918.0,3170.0,1083.0,433.0,2166.0,9.7,5.5,17.4,9.3,6.8,11.5,https://www.meilleursagents.com/prix-immobilier/congrier-53800/,53073
+Contest,2067.0,1589.0,3400.0,1368.0,547.0,2735.0,10.8,8.9,17.2,9.9,7.5,11.9,https://www.meilleursagents.com/prix-immobilier/contest-53100/,53074
+Cosmes,2048.0,1318.0,3647.0,1299.0,555.0,2598.0,10.9,7.5,16.8,10.6,7.5,13.5,https://www.meilleursagents.com/prix-immobilier/cosmes-53230/,53075
+Cossé-en-Champagne,1815.0,1049.0,2224.0,1234.0,493.0,2467.0,10.4,7.2,16.8,8.9,6.6,12.2,https://www.meilleursagents.com/prix-immobilier/cosse-en-champagne-53340/,53076
+Cossé-le-Vivien,2043.0,1325.0,3617.0,1533.0,613.0,2451.0,10.3,7.2,16.0,9.0,7.4,12.9,https://www.meilleursagents.com/prix-immobilier/cosse-le-vivien-53230/,53077
+Coudray,1869.0,940.0,3329.0,1649.0,743.0,2483.0,10.6,6.9,17.0,9.9,7.4,15.0,https://www.meilleursagents.com/prix-immobilier/coudray-53200/,53078
+Couesmes-Vaucé,1548.0,808.0,2928.0,1018.0,407.0,2036.0,10.3,5.9,12.0,8.4,6.1,10.8,https://www.meilleursagents.com/prix-immobilier/couesmes-vauce-53300/,53079
+Vauce,1548.0,808.0,2928.0,1018.0,407.0,2036.0,10.3,5.9,12.0,8.4,6.1,10.8,https://www.meilleursagents.com/prix-immobilier/vauce-53300/,53079
+Couptrain,1840.0,938.0,2812.0,932.0,373.0,1864.0,9.7,6.1,13.6,9.2,6.6,13.9,https://www.meilleursagents.com/prix-immobilier/couptrain-53250/,53080
+Courbeveille,2058.0,1320.0,3681.0,1646.0,659.0,2858.0,10.2,7.0,16.3,8.9,6.9,11.4,https://www.meilleursagents.com/prix-immobilier/courbeveille-53230/,53082
+Courcité,1860.0,1356.0,2903.0,976.0,391.0,1953.0,10.6,6.9,17.6,8.2,6.4,12.0,https://www.meilleursagents.com/prix-immobilier/courcite-53700/,53083
+Craon,2011.0,1105.0,3930.0,1436.0,575.0,2408.0,9.6,6.5,16.3,9.1,7.0,11.9,https://www.meilleursagents.com/prix-immobilier/craon-53400/,53084
+Crennes-sur-Fraubée,1296.0,661.0,2261.0,1418.0,726.0,2693.0,10.3,5.6,15.3,8.4,6.1,12.2,https://www.meilleursagents.com/prix-immobilier/crennes-sur-fraubee-53700/,53085
+La Croixille,2091.0,1169.0,2911.0,1392.0,562.0,2784.0,10.3,6.8,15.0,8.2,6.2,11.7,https://www.meilleursagents.com/prix-immobilier/la-croixille-53380/,53086
+La Cropte,1819.0,1057.0,2245.0,1364.0,546.0,2728.0,10.7,8.8,14.4,9.9,7.3,11.6,https://www.meilleursagents.com/prix-immobilier/la-cropte-53170/,53087
+Cuillé,2102.0,1299.0,2997.0,1337.0,535.0,2673.0,10.3,6.5,16.9,8.6,6.8,12.6,https://www.meilleursagents.com/prix-immobilier/cuille-53540/,53088
+Daon,1872.0,942.0,3327.0,1473.0,589.0,2810.0,9.8,6.6,15.8,9.1,7.0,13.9,https://www.meilleursagents.com/prix-immobilier/daon-53200/,53089
+Denazé,2647.0,1854.0,4528.0,1506.0,603.0,2791.0,10.5,6.3,13.9,9.0,6.6,11.6,https://www.meilleursagents.com/prix-immobilier/denaze-53400/,53090
+Désertines,1535.0,1023.0,2659.0,1014.0,405.0,2027.0,9.9,5.8,15.6,8.5,6.1,10.7,https://www.meilleursagents.com/prix-immobilier/desertines-53190/,53091
+La Dorée,1376.0,758.0,2068.0,1128.0,451.0,2255.0,10.4,6.1,18.4,8.9,5.9,10.8,https://www.meilleursagents.com/prix-immobilier/la-doree-53190/,53093
+Entrammes,1930.0,1158.0,3566.0,1810.0,724.0,3286.0,10.8,8.8,17.1,9.9,7.6,12.3,https://www.meilleursagents.com/prix-immobilier/entrammes-53260/,53094
+Ernée,1932.0,1412.0,2969.0,1255.0,502.0,2509.0,9.4,5.8,16.9,8.4,6.3,12.0,https://www.meilleursagents.com/prix-immobilier/ernee-53500/,53096
+Saint-Christophe-du-Luat,2072.0,1435.0,3610.0,1274.0,510.0,2431.0,9.9,6.5,16.1,7.9,5.7,11.0,https://www.meilleursagents.com/prix-immobilier/saint-christophe-du-luat-53150/,53097
+Évron,1495.0,875.0,2673.0,1476.0,662.0,2333.0,10.2,7.1,17.9,10.0,7.6,13.6,https://www.meilleursagents.com/prix-immobilier/evron-53600/,53097
+Châtres-la-Forêt,2031.0,1427.0,3489.0,1445.0,578.0,2891.0,11.0,9.0,16.0,9.8,7.5,11.8,https://www.meilleursagents.com/prix-immobilier/chatres-la-foret-53600/,53097
+Fontaine-Couverte,2005.0,1160.0,2880.0,1389.0,556.0,2778.0,10.4,7.0,15.9,9.4,6.6,12.9,https://www.meilleursagents.com/prix-immobilier/fontaine-couverte-53350/,53098
+Forcé,2647.0,1879.0,3666.0,1731.0,692.0,2566.0,10.8,8.8,14.6,9.8,7.9,13.0,https://www.meilleursagents.com/prix-immobilier/force-53260/,53099
+Fougerolles-du-Plessis,1399.0,850.0,2045.0,1044.0,418.0,2088.0,9.5,6.3,14.5,7.0,5.1,9.1,https://www.meilleursagents.com/prix-immobilier/fougerolles-du-plessis-53190/,53100
+Fromentières,1868.0,1176.0,3421.0,1591.0,636.0,3182.0,10.2,7.0,16.3,9.2,7.3,14.2,https://www.meilleursagents.com/prix-immobilier/fromentieres-53200/,53101
+Gastines,2009.0,1169.0,2880.0,1281.0,512.0,2562.0,9.8,6.1,14.4,9.9,6.5,12.3,https://www.meilleursagents.com/prix-immobilier/gastines-53540/,53102
+Saint Isle,2022.0,1342.0,3559.0,1626.0,651.0,2573.0,10.8,8.9,17.2,10.0,7.6,13.2,https://www.meilleursagents.com/prix-immobilier/saint-isle-53940/,53103
+Gennes-sur-Glaize,1834.0,1024.0,2329.0,1515.0,606.0,2853.0,10.6,6.9,17.0,9.0,7.0,13.7,https://www.meilleursagents.com/prix-immobilier/gennes-sur-glaize-53200/,53104
+Longuefuye,1829.0,1036.0,2321.0,1441.0,576.0,2882.0,10.5,6.8,16.8,9.0,7.0,13.6,https://www.meilleursagents.com/prix-immobilier/longuefuye-53200/,53104
+Gesnes,2137.0,1499.0,3411.0,1505.0,659.0,2268.0,10.0,6.5,16.0,8.4,6.9,11.2,https://www.meilleursagents.com/prix-immobilier/gesnes-53150/,53105
+Gesvres,1782.0,1301.0,2696.0,1218.0,487.0,2352.0,9.3,6.7,13.7,8.5,7.2,11.8,https://www.meilleursagents.com/prix-immobilier/gesvres-53370/,53106
+Gorron,1580.0,852.0,2953.0,1033.0,413.0,2067.0,9.4,6.2,14.8,7.7,5.8,10.8,https://www.meilleursagents.com/prix-immobilier/gorron-53120/,53107
+La Gravelle,2027.0,1333.0,3096.0,1546.0,618.0,2496.0,10.4,6.7,16.7,9.1,7.0,13.4,https://www.meilleursagents.com/prix-immobilier/la-gravelle-53410/,53108
+Grazay,1990.0,1530.0,3330.0,1391.0,556.0,2451.0,9.4,6.0,14.3,8.5,6.2,12.7,https://www.meilleursagents.com/prix-immobilier/grazay-53440/,53109
+Grez-en-Bouère,1828.0,1031.0,2243.0,1159.0,464.0,2215.0,10.6,7.3,17.1,9.7,7.2,14.3,https://www.meilleursagents.com/prix-immobilier/grez-en-bouere-53290/,53110
+La Haie-Traversaine,1933.0,1487.0,3257.0,1511.0,605.0,3023.0,10.9,7.2,17.9,7.6,5.2,10.5,https://www.meilleursagents.com/prix-immobilier/la-haie-traversaine-53300/,53111
+Le Ham,1796.0,1354.0,2910.0,1024.0,410.0,2048.0,9.6,6.4,16.2,8.6,6.7,11.5,https://www.meilleursagents.com/prix-immobilier/le-ham-53250/,53112
+Hambers,2002.0,1545.0,3291.0,1253.0,501.0,2505.0,9.7,6.7,15.8,8.6,6.6,13.6,https://www.meilleursagents.com/prix-immobilier/hambers-53160/,53113
+Hardanges,1860.0,1421.0,3102.0,927.0,371.0,1676.0,9.4,6.8,14.6,8.3,6.8,11.4,https://www.meilleursagents.com/prix-immobilier/hardanges-53640/,53114
+Hercé,1868.0,1428.0,2968.0,1408.0,630.0,2815.0,9.6,6.0,17.1,8.8,6.3,11.0,https://www.meilleursagents.com/prix-immobilier/herce-53120/,53115
+Le Horps,1831.0,1398.0,3070.0,1067.0,427.0,1995.0,9.5,5.2,14.6,8.4,6.4,12.5,https://www.meilleursagents.com/prix-immobilier/le-horps-53640/,53116
+Houssay,1922.0,1161.0,3535.0,1591.0,731.0,2445.0,10.7,8.7,14.5,9.9,7.3,12.0,https://www.meilleursagents.com/prix-immobilier/houssay-53360/,53117
+Le Housseau-Brétignolles,1433.0,953.0,2620.0,1234.0,494.0,2468.0,9.6,5.6,16.7,8.4,6.7,13.1,https://www.meilleursagents.com/prix-immobilier/le-housseau-bretignolles-53110/,53118
+Bretignolles le Moulin,1433.0,953.0,2620.0,1234.0,494.0,2468.0,9.6,5.6,16.7,8.4,6.7,13.1,https://www.meilleursagents.com/prix-immobilier/bretignolles-le-moulin-53110/,53118
+Izé,1937.0,1365.0,3286.0,1143.0,457.0,2248.0,9.6,5.3,14.8,8.6,6.3,12.4,https://www.meilleursagents.com/prix-immobilier/ize-53160/,53120
+Javron-les-Chapelles,1837.0,936.0,2815.0,963.0,385.0,1926.0,9.3,6.5,13.4,8.5,6.6,11.7,https://www.meilleursagents.com/prix-immobilier/javron-les-chapelles-53250/,53121
+Les Chapelles,1837.0,936.0,2815.0,963.0,385.0,1926.0,9.3,6.5,13.4,8.5,6.6,11.7,https://www.meilleursagents.com/prix-immobilier/les-chapelles-53250/,53121
+Jublains,2030.0,1563.0,3348.0,1199.0,480.0,2399.0,9.2,5.9,14.0,8.5,6.1,12.4,https://www.meilleursagents.com/prix-immobilier/jublains-53160/,53122
+Juvigné,2069.0,1169.0,2873.0,1337.0,535.0,2675.0,9.8,5.8,15.4,8.0,5.9,11.2,https://www.meilleursagents.com/prix-immobilier/juvigne-53380/,53123
+Ampoigné,1848.0,879.0,3446.0,1389.0,562.0,2157.0,10.2,6.7,16.4,9.2,7.4,14.3,https://www.meilleursagents.com/prix-immobilier/ampoigne-53200/,53124
+Laigné,1843.0,896.0,3394.0,1385.0,567.0,2269.0,10.3,6.9,16.1,8.9,7.1,13.8,https://www.meilleursagents.com/prix-immobilier/laigne-53200/,53124
+Landivy,1352.0,808.0,1972.0,1179.0,472.0,2358.0,9.5,6.2,14.1,7.8,6.2,11.6,https://www.meilleursagents.com/prix-immobilier/landivy-53190/,53125
+Larchamp,1905.0,1100.0,2664.0,1174.0,470.0,2348.0,10.0,5.9,15.8,8.7,6.4,12.3,https://www.meilleursagents.com/prix-immobilier/larchamp-53220/,53126
+Lassay-les-Châteaux,1912.0,992.0,3053.0,1255.0,502.0,2510.0,9.7,5.4,14.7,8.0,6.4,12.4,https://www.meilleursagents.com/prix-immobilier/lassay-les-chateaux-53110/,53127
+La Baroche Gondouin,1912.0,992.0,3053.0,1255.0,502.0,2510.0,9.7,5.4,14.7,8.0,6.4,12.4,https://www.meilleursagents.com/prix-immobilier/la-baroche-gondouin-53110/,53127
+Melleray la Vallee,1912.0,992.0,3053.0,1255.0,502.0,2510.0,9.7,5.4,14.7,8.0,6.4,12.4,https://www.meilleursagents.com/prix-immobilier/melleray-la-vallee-53110/,53127
+Niort la Fontaine,1912.0,992.0,3053.0,1255.0,502.0,2510.0,9.7,5.4,14.7,8.0,6.4,12.4,https://www.meilleursagents.com/prix-immobilier/niort-la-fontaine-53110/,53127
+Laubrières,2095.0,1297.0,2997.0,1391.0,556.0,2782.0,10.2,7.0,13.9,7.6,6.1,10.9,https://www.meilleursagents.com/prix-immobilier/laubrieres-53540/,53128
+Launay-Villiers,2123.0,1397.0,3250.0,1732.0,693.0,2708.0,9.9,5.8,15.6,9.0,6.9,13.8,https://www.meilleursagents.com/prix-immobilier/launay-villiers-53410/,53129
+Lesbois,1569.0,1190.0,2526.0,1125.0,450.0,2250.0,10.3,6.9,18.0,9.2,7.3,13.3,https://www.meilleursagents.com/prix-immobilier/lesbois-53120/,53131
+Levaré,1732.0,1289.0,2718.0,1091.0,522.0,2059.0,9.8,6.6,14.8,8.4,6.7,12.2,https://www.meilleursagents.com/prix-immobilier/levare-53120/,53132
+Lignières-Orgères,1837.0,936.0,2806.0,1124.0,450.0,2248.0,9.9,5.5,15.3,8.1,6.9,12.7,https://www.meilleursagents.com/prix-immobilier/lignieres-orgeres-53140/,53133
+Orgeres la Roche,1837.0,936.0,2806.0,1124.0,450.0,2248.0,9.9,5.5,15.3,8.1,6.9,12.7,https://www.meilleursagents.com/prix-immobilier/orgeres-la-roche-53140/,53133
+Livet,2067.0,1434.0,3583.0,1444.0,578.0,2888.0,9.2,6.3,15.9,8.5,6.4,11.3,https://www.meilleursagents.com/prix-immobilier/livet-53150/,53134
+Livré-la-Touche,2192.0,1418.0,3712.0,1370.0,548.0,2741.0,10.2,6.9,16.0,8.7,6.8,11.7,https://www.meilleursagents.com/prix-immobilier/livre-la-touche-53400/,53135
+Loigné-sur-Mayenne,1859.0,904.0,3419.0,1686.0,779.0,2436.0,10.8,8.8,17.1,10.5,7.6,12.8,https://www.meilleursagents.com/prix-immobilier/loigne-sur-mayenne-53200/,53136
+Saint-Sulpice,1907.0,1158.0,3495.0,1605.0,741.0,2468.0,10.3,7.1,16.4,8.5,6.8,13.4,https://www.meilleursagents.com/prix-immobilier/saint-sulpice-53360/,53136
+Loiron-Ruillé,1997.0,1320.0,3523.0,1698.0,679.0,2739.0,10.3,7.0,16.7,8.7,6.9,11.6,https://www.meilleursagents.com/prix-immobilier/loiron-53320/,53137
+Loiron-Ruillé,1997.0,1320.0,3523.0,1698.0,679.0,2739.0,10.3,7.0,16.7,8.7,6.9,11.6,https://www.meilleursagents.com/prix-immobilier/ruille-le-gravelais-53320/,53137
+Loupfougères,1828.0,1378.0,2991.0,1223.0,489.0,2446.0,9.4,6.4,16.2,8.2,6.9,11.4,https://www.meilleursagents.com/prix-immobilier/loupfougeres-53700/,53139
+Louverné,2615.0,2037.0,3556.0,1955.0,928.0,2785.0,11.1,7.9,15.2,10.7,8.4,13.8,https://www.meilleursagents.com/prix-immobilier/louverne-53950/,53140
+Louvigné,2126.0,1441.0,3505.0,1664.0,665.0,2425.0,9.9,6.8,16.0,8.9,7.1,13.0,https://www.meilleursagents.com/prix-immobilier/louvigne-53210/,53141
+Madré,1418.0,920.0,2553.0,1043.0,417.0,2086.0,9.6,6.2,13.4,8.6,6.4,13.9,https://www.meilleursagents.com/prix-immobilier/madre-53250/,53142
+Maisoncelles-du-Maine,1906.0,1153.0,3500.0,1634.0,709.0,2578.0,10.2,7.0,16.5,8.8,7.0,12.5,https://www.meilleursagents.com/prix-immobilier/maisoncelles-du-maine-53170/,53143
+Marcillé-la-Ville,1959.0,1505.0,3306.0,1193.0,492.0,2386.0,9.3,5.4,15.2,8.2,6.5,12.2,https://www.meilleursagents.com/prix-immobilier/marcille-la-ville-53440/,53144
+Marigné-Peuton,1858.0,902.0,3421.0,1294.0,518.0,2330.0,10.2,7.0,16.4,8.8,6.8,13.8,https://www.meilleursagents.com/prix-immobilier/marigne-peuton-53200/,53145
+Martigné-sur-Mayenne,2185.0,1651.0,3620.0,1674.0,747.0,2594.0,9.1,6.3,14.8,9.4,7.2,13.7,https://www.meilleursagents.com/prix-immobilier/martigne-sur-mayenne-53470/,53146
+Mayenne,1745.0,960.0,2947.0,1615.0,721.0,2632.0,10.0,6.9,17.9,10.1,7.6,13.8,https://www.meilleursagents.com/prix-immobilier/mayenne-53100/,53147
+Mée,1848.0,878.0,3449.0,1226.0,490.0,2350.0,10.3,6.7,16.5,9.2,7.4,13.9,https://www.meilleursagents.com/prix-immobilier/mee-53400/,53148
+Ménil,1895.0,939.0,3417.0,1731.0,692.0,3357.0,10.3,6.7,16.5,10.2,7.7,15.7,https://www.meilleursagents.com/prix-immobilier/menil-53200/,53150
+Méral,2216.0,1436.0,3437.0,1253.0,501.0,2505.0,10.3,5.8,15.8,8.7,7.0,12.2,https://www.meilleursagents.com/prix-immobilier/meral-53230/,53151
+Meslay-du-Maine,1821.0,932.0,3490.0,1563.0,625.0,2493.0,9.3,6.2,15.7,9.2,6.9,12.0,https://www.meilleursagents.com/prix-immobilier/meslay-du-maine-53170/,53152
+Mézangers,2040.0,1577.0,3291.0,1410.0,564.0,2546.0,9.3,6.2,12.8,8.4,6.5,12.7,https://www.meilleursagents.com/prix-immobilier/mezangers-53600/,53153
+Montaudin,1709.0,1229.0,2819.0,1049.0,420.0,2099.0,10.0,5.9,15.9,8.4,6.2,11.8,https://www.meilleursagents.com/prix-immobilier/montaudin-53220/,53154
+Montenay,2075.0,1612.0,2791.0,1268.0,507.0,2535.0,9.6,5.3,14.1,7.7,5.6,11.6,https://www.meilleursagents.com/prix-immobilier/montenay-53500/,53155
+Montflours,3141.0,2042.0,4234.0,1695.0,766.0,3389.0,10.6,7.3,14.4,8.8,6.4,11.6,https://www.meilleursagents.com/prix-immobilier/montflours-53240/,53156
+Montigné-le-Brillant,2655.0,1852.0,4562.0,1897.0,777.0,3034.0,11.4,8.9,16.9,10.0,7.6,12.5,https://www.meilleursagents.com/prix-immobilier/montigne-le-brillant-53970/,53157
+Montjean,2045.0,1339.0,3613.0,1427.0,571.0,2120.0,10.8,8.9,17.7,10.0,7.9,13.1,https://www.meilleursagents.com/prix-immobilier/montjean-53320/,53158
+Montreuil-Poulay,1847.0,1407.0,3105.0,952.0,400.0,1905.0,9.6,6.1,14.6,8.2,6.0,11.9,https://www.meilleursagents.com/prix-immobilier/montreuil-poulay-53640/,53160
+Poulay,1847.0,1407.0,3105.0,952.0,400.0,1905.0,9.6,6.1,14.6,8.2,6.0,11.9,https://www.meilleursagents.com/prix-immobilier/poulay-53640/,53160
+Montsûrs,1574.0,905.0,2638.0,1285.0,514.0,2376.0,9.2,6.3,15.8,8.6,6.4,11.6,https://www.meilleursagents.com/prix-immobilier/montsurs-53150/,53161
+Deux-Évailles,1607.0,896.0,2722.0,1264.0,505.0,2357.0,9.3,5.1,14.3,8.7,6.4,12.5,https://www.meilleursagents.com/prix-immobilier/deux-evailles-53150/,53161
+Montourtier,2112.0,1609.0,3523.0,1498.0,599.0,2364.0,9.9,6.8,15.6,9.8,7.8,12.2,https://www.meilleursagents.com/prix-immobilier/montourtier-53150/,53161
+Saint-Céneré,2146.0,1470.0,3498.0,1464.0,586.0,2297.0,10.0,6.6,16.1,8.4,6.9,11.2,https://www.meilleursagents.com/prix-immobilier/saint-cenere-53150/,53161
+Saint-Ouën-des-Vallons,2168.0,1643.0,3580.0,1568.0,627.0,2808.0,9.9,6.5,16.1,8.7,6.5,11.6,https://www.meilleursagents.com/prix-immobilier/saint-ouen-des-vallons-53150/,53161
+Moulay,1743.0,1256.0,2472.0,1635.0,654.0,2350.0,9.6,6.0,14.2,9.0,6.6,12.8,https://www.meilleursagents.com/prix-immobilier/moulay-53100/,53162
+Neau,2076.0,1613.0,3332.0,1205.0,482.0,2410.0,10.0,6.6,16.7,8.7,6.6,11.4,https://www.meilleursagents.com/prix-immobilier/neau-53150/,53163
+Neuilly-le-Vendin,1846.0,941.0,2821.0,934.0,374.0,1602.0,9.6,5.7,16.9,7.9,6.8,12.4,https://www.meilleursagents.com/prix-immobilier/neuilly-le-vendin-53250/,53164
+Niafles,1837.0,909.0,3366.0,1280.0,512.0,2560.0,9.9,6.5,15.0,8.5,6.6,11.4,https://www.meilleursagents.com/prix-immobilier/niafles-53400/,53165
+Nuillé-sur-Vicoin,1940.0,1163.0,3555.0,1534.0,614.0,2492.0,10.9,8.5,15.8,10.6,8.2,13.2,https://www.meilleursagents.com/prix-immobilier/nuille-sur-vicoin-53970/,53168
+Olivet,2014.0,1305.0,3526.0,1402.0,561.0,2803.0,10.2,6.8,16.3,9.1,7.1,11.6,https://www.meilleursagents.com/prix-immobilier/olivet-53410/,53169
+Oisseau,1958.0,1530.0,3191.0,1141.0,457.0,2283.0,9.3,6.0,14.2,8.3,6.0,11.8,https://www.meilleursagents.com/prix-immobilier/oisseau-53300/,53170
+Origné,2617.0,1857.0,3653.0,1802.0,839.0,3064.0,10.7,8.7,16.9,9.8,7.4,12.2,https://www.meilleursagents.com/prix-immobilier/origne-53360/,53172
+La Pallu,1389.0,898.0,2428.0,1047.0,419.0,1906.0,11.0,7.4,17.8,8.7,5.7,12.7,https://www.meilleursagents.com/prix-immobilier/la-pallu-53140/,53173
+Parigné-sur-Braye,1975.0,1509.0,3336.0,1738.0,695.0,3055.0,10.9,7.3,17.0,9.6,7.8,13.1,https://www.meilleursagents.com/prix-immobilier/parigne-sur-braye-53100/,53174
+Parné-sur-Roc,1907.0,1151.0,3512.0,1853.0,741.0,3397.0,10.8,8.9,17.2,9.9,7.2,11.9,https://www.meilleursagents.com/prix-immobilier/parne-sur-roc-53260/,53175
+Le Pas,1895.0,1463.0,3122.0,1045.0,418.0,2089.0,9.7,5.3,14.9,7.5,5.5,10.8,https://www.meilleursagents.com/prix-immobilier/le-pas-53300/,53176
+La Pellerine,1922.0,1051.0,2727.0,1224.0,490.0,2188.0,10.2,6.4,16.2,9.4,7.5,12.6,https://www.meilleursagents.com/prix-immobilier/la-pellerine-53220/,53177
+Peuton,2613.0,1858.0,3642.0,1493.0,597.0,2987.0,10.7,8.8,17.0,10.3,7.9,13.0,https://www.meilleursagents.com/prix-immobilier/peuton-53360/,53178
+Placé,2105.0,1610.0,3470.0,1205.0,531.0,2409.0,10.4,7.0,16.2,9.6,7.2,12.8,https://www.meilleursagents.com/prix-immobilier/place-53240/,53179
+Pommerieux,1840.0,882.0,3420.0,1226.0,491.0,2013.0,10.2,6.8,15.9,10.0,7.3,14.1,https://www.meilleursagents.com/prix-immobilier/pommerieux-53400/,53180
+Pontmain,1648.0,970.0,2525.0,1207.0,483.0,1722.0,9.9,5.9,17.5,9.4,6.2,11.4,https://www.meilleursagents.com/prix-immobilier/pontmain-53220/,53181
+Port-Brillet,1999.0,1325.0,3468.0,1435.0,574.0,2338.0,9.3,6.6,15.9,9.3,6.6,12.1,https://www.meilleursagents.com/prix-immobilier/port-brillet-53410/,53182
+Préaux,1810.0,1046.0,2226.0,1347.0,539.0,2357.0,10.4,6.8,16.8,8.9,6.9,13.4,https://www.meilleursagents.com/prix-immobilier/preaux-53340/,53184
+Pré-en-Pail-Saint-Samson,1426.0,970.0,2369.0,1094.0,438.0,2110.0,9.5,6.6,13.6,8.8,6.6,14.1,https://www.meilleursagents.com/prix-immobilier/pre-en-pail-53140/,53185
+Pré-en-Pail-Saint-Samson,1426.0,970.0,2369.0,1094.0,438.0,2110.0,9.5,6.6,13.6,8.8,6.6,14.1,https://www.meilleursagents.com/prix-immobilier/saint-samson-53140/,53185
+Saint Gault,1921.0,1160.0,3533.0,1500.0,600.0,2505.0,10.1,6.7,13.3,9.1,7.4,14.0,https://www.meilleursagents.com/prix-immobilier/saint-gault-53360/,53186
+Renazé,1591.0,820.0,2326.0,1049.0,420.0,2099.0,9.6,6.7,15.4,8.5,6.3,10.8,https://www.meilleursagents.com/prix-immobilier/renaze-53800/,53188
+Rennes-en-Grenouilles,1850.0,944.0,2836.0,1220.0,488.0,2440.0,8.4,6.1,10.7,,,,https://www.meilleursagents.com/prix-immobilier/rennes-en-grenouilles-53110/,53189
+Le Ribay,1804.0,1361.0,2976.0,1103.0,441.0,2060.0,10.3,7.4,14.4,8.1,6.5,11.6,https://www.meilleursagents.com/prix-immobilier/le-ribay-53640/,53190
+La Roë,1970.0,1187.0,2786.0,1226.0,490.0,2375.0,10.5,7.3,15.4,8.4,6.8,12.1,https://www.meilleursagents.com/prix-immobilier/la-roe-53350/,53191
+La Rouaudière,1861.0,1066.0,2631.0,1351.0,540.0,2702.0,10.8,6.8,17.0,9.3,6.4,12.9,https://www.meilleursagents.com/prix-immobilier/la-rouaudiere-53390/,53192
+Ruillé-Froid-Fonds,1824.0,1194.0,3138.0,1397.0,559.0,2793.0,10.4,6.8,16.7,8.8,7.0,13.9,https://www.meilleursagents.com/prix-immobilier/ruille-froid-fonds-53170/,53193
+Sacé,2153.0,1479.0,3505.0,1670.0,668.0,2884.0,10.7,8.8,17.0,9.8,8.0,13.2,https://www.meilleursagents.com/prix-immobilier/sace-53470/,53195
+Saint-Aignan-de-Couptrain,1426.0,952.0,2454.0,1002.0,401.0,2003.0,10.9,8.1,17.8,8.2,6.5,11.6,https://www.meilleursagents.com/prix-immobilier/saint-aignan-de-couptrain-53250/,53196
+Saint-Aignan-sur-Roë,1940.0,1071.0,2754.0,1181.0,473.0,2054.0,10.4,7.5,12.4,8.6,6.9,12.7,https://www.meilleursagents.com/prix-immobilier/saint-aignan-sur-roe-53390/,53197
+Saint-Aubin-du-Désert,1297.0,754.0,2432.0,1200.0,480.0,2400.0,9.2,6.6,14.3,8.4,6.9,12.3,https://www.meilleursagents.com/prix-immobilier/saint-aubin-du-desert-53700/,53198
+Saint-Aubin-Fosse-Louvain,1483.0,770.0,2765.0,1126.0,551.0,2253.0,10.4,5.9,16.2,8.3,5.9,10.3,https://www.meilleursagents.com/prix-immobilier/saint-aubin-fosse-louvain-53120/,53199
+Saint-Baudelle,3140.0,2043.0,4231.0,1776.0,710.0,2923.0,11.3,8.8,16.7,10.3,8.0,12.9,https://www.meilleursagents.com/prix-immobilier/saint-baudelle-53100/,53200
+Saint-Berthevin,2411.0,1641.0,4194.0,2058.0,1144.0,3069.0,10.6,6.9,16.2,11.2,8.1,15.4,https://www.meilleursagents.com/prix-immobilier/saint-berthevin-53940/,53201
+Saint-Berthevin-la-Tannière,1623.0,966.0,2486.0,1037.0,415.0,2074.0,9.9,5.8,15.6,8.8,6.2,12.6,https://www.meilleursagents.com/prix-immobilier/saint-berthevin-la-tanniere-53220/,53202
+Saint-Brice,1840.0,1031.0,2257.0,1244.0,498.0,2087.0,10.2,7.0,18.0,9.4,7.0,12.9,https://www.meilleursagents.com/prix-immobilier/saint-brice-53290/,53203
+Saint-Calais-du-Désert,1420.0,952.0,2393.0,923.0,388.0,1618.0,9.6,6.3,14.3,9.1,6.6,14.1,https://www.meilleursagents.com/prix-immobilier/saint-calais-du-desert-53140/,53204
+Saint-Charles-la-Forêt,1816.0,1200.0,3100.0,1427.0,571.0,2710.0,10.6,8.7,16.8,9.8,7.3,12.1,https://www.meilleursagents.com/prix-immobilier/saint-charles-la-foret-53170/,53206
+Saint-Cyr-en-Pail,1431.0,966.0,2432.0,1020.0,408.0,2040.0,10.6,7.3,17.0,8.2,6.0,11.1,https://www.meilleursagents.com/prix-immobilier/saint-cyr-en-pail-53140/,53208
+Saint-Cyr-le-Gravelais,2188.0,1455.0,3394.0,1499.0,600.0,2551.0,10.0,6.9,13.6,9.1,6.9,12.4,https://www.meilleursagents.com/prix-immobilier/saint-cyr-le-gravelais-53320/,53209
+Saint-Denis-d'Anjou,1826.0,995.0,2217.0,1441.0,576.0,2624.0,9.3,6.5,10.9,9.3,6.9,12.0,https://www.meilleursagents.com/prix-immobilier/saint-denis-d-anjou-53290/,53210
+Saint-Denis-de-Gastines,1606.0,854.0,3013.0,1193.0,477.0,2385.0,10.5,5.8,15.9,7.8,5.7,10.9,https://www.meilleursagents.com/prix-immobilier/saint-denis-de-gastines-53500/,53211
+Saint-Denis-du-Maine,2014.0,1409.0,3207.0,1529.0,612.0,3058.0,10.7,8.7,16.9,9.9,7.3,11.7,https://www.meilleursagents.com/prix-immobilier/saint-denis-du-maine-53170/,53212
+Saint-Ellier-du-Maine,1901.0,1087.0,2675.0,1289.0,516.0,2579.0,10.1,6.0,16.0,8.8,6.2,12.6,https://www.meilleursagents.com/prix-immobilier/saint-ellier-du-maine-53220/,53213
+Saint-Erblon,1867.0,919.0,3167.0,1210.0,506.0,2421.0,11.0,6.1,19.2,9.0,6.0,11.5,https://www.meilleursagents.com/prix-immobilier/saint-erblon-53390/,53214
+Saint-Fraimbault-de-Prières,1907.0,1474.0,3180.0,1359.0,543.0,2328.0,9.3,6.4,15.1,8.4,6.5,12.2,https://www.meilleursagents.com/prix-immobilier/saint-fraimbault-de-prieres-53300/,53216
+Sainte-Gemmes-le-Robert,1976.0,1397.0,3393.0,1676.0,671.0,3353.0,9.3,5.5,16.3,7.2,5.5,10.5,https://www.meilleursagents.com/prix-immobilier/sainte-gemmes-le-robert-53600/,53218
+Saint-Georges-Buttavent,1921.0,1438.0,3206.0,1333.0,533.0,2667.0,9.1,6.2,14.8,7.8,5.7,10.8,https://www.meilleursagents.com/prix-immobilier/saint-georges-buttavent-53100/,53219
+Fontaine Daniel,1921.0,1438.0,3206.0,1333.0,533.0,2667.0,9.1,6.2,14.8,7.8,5.7,10.8,https://www.meilleursagents.com/prix-immobilier/fontaine-daniel-53100/,53219
+Saint-Georges-le-Fléchard,2125.0,1450.0,3459.0,1361.0,544.0,2455.0,10.4,6.8,16.7,8.2,6.8,11.5,https://www.meilleursagents.com/prix-immobilier/saint-georges-le-flechard-53480/,53220
+Saint-Georges-sur-Erve,1928.0,1484.0,2998.0,1150.0,460.0,2299.0,9.3,5.8,16.7,8.0,6.0,10.7,https://www.meilleursagents.com/prix-immobilier/saint-georges-sur-erve-53600/,53221
+Saint-Germain-d'Anxure,2155.0,1619.0,3553.0,1348.0,539.0,2696.0,10.3,7.2,16.8,9.0,6.8,12.0,https://www.meilleursagents.com/prix-immobilier/saint-germain-d-anxure-53240/,53222
+Saint-Germain-de-Coulamer,1285.0,729.0,2436.0,944.0,378.0,1747.0,9.1,6.6,14.5,8.4,6.8,12.2,https://www.meilleursagents.com/prix-immobilier/saint-germain-de-coulamer-53700/,53223
+Saint-Germain-le-Fouilloux,3144.0,2056.0,4222.0,1845.0,738.0,3071.0,11.8,9.4,17.3,11.3,8.7,14.3,https://www.meilleursagents.com/prix-immobilier/saint-germain-le-fouilloux-53240/,53224
+Saint-Germain-le-Guillaume,2154.0,1626.0,2964.0,1412.0,669.0,2824.0,9.5,5.6,14.9,7.7,5.6,11.9,https://www.meilleursagents.com/prix-immobilier/saint-germain-le-guillaume-53240/,53225
+Saint-Hilaire-du-Maine,1949.0,1265.0,3380.0,1358.0,543.0,2609.0,10.2,6.8,15.9,9.3,7.2,13.7,https://www.meilleursagents.com/prix-immobilier/saint-hilaire-du-maine-53380/,53226
+Blandouet,1995.0,1341.0,2535.0,1095.0,438.0,2191.0,10.3,6.1,18.4,8.4,6.0,12.4,https://www.meilleursagents.com/prix-immobilier/blandouet-53270/,53228
+Saint-Jean-sur-Erve,3053.0,1915.0,4219.0,1074.0,430.0,2148.0,10.2,6.5,13.0,8.6,6.4,11.3,https://www.meilleursagents.com/prix-immobilier/saint-jean-sur-erve-53270/,53228
+Saint-Jean-sur-Mayenne,3059.0,1998.0,4114.0,1894.0,757.0,2710.0,10.8,8.9,17.2,9.6,7.8,12.8,https://www.meilleursagents.com/prix-immobilier/saint-jean-sur-mayenne-53240/,53229
+Saint-Julien-du-Terroux,1414.0,916.0,2606.0,1170.0,468.0,2341.0,9.6,5.7,16.8,8.4,6.3,12.4,https://www.meilleursagents.com/prix-immobilier/saint-julien-du-terroux-53110/,53230
+Saint-Léger,2114.0,1482.0,3376.0,1478.0,591.0,2956.0,10.1,6.9,16.3,8.7,6.7,13.8,https://www.meilleursagents.com/prix-immobilier/saint-leger-53480/,53232
+Saint-Loup-du-Dorat,1824.0,1035.0,2240.0,1229.0,492.0,2235.0,10.6,6.8,17.9,9.0,6.4,12.8,https://www.meilleursagents.com/prix-immobilier/saint-loup-du-dorat-53290/,53233
+Saint-Loup-du-Gast,1843.0,1412.0,3083.0,1356.0,542.0,2711.0,10.9,7.4,17.3,8.4,6.8,11.4,https://www.meilleursagents.com/prix-immobilier/saint-loup-du-gast-53300/,53234
+Sainte-Marie-du-Bois,1424.0,935.0,2625.0,1204.0,485.0,2408.0,9.8,6.2,15.0,8.4,6.1,12.3,https://www.meilleursagents.com/prix-immobilier/sainte-marie-du-bois-53110/,53235
+Saint-Mars-du-Désert,1281.0,731.0,2423.0,932.0,373.0,1848.0,9.2,6.7,14.6,8.4,6.8,12.5,https://www.meilleursagents.com/prix-immobilier/saint-mars-du-desert-53700/,53236
+Saint-Mars-sur-Colmont,1926.0,1486.0,3175.0,1247.0,499.0,2495.0,9.6,6.1,14.7,7.5,5.4,10.8,https://www.meilleursagents.com/prix-immobilier/saint-mars-sur-colmont-53300/,53237
+Saint-Mars-sur-la-Futaie,1841.0,1129.0,2867.0,1240.0,496.0,2480.0,9.9,5.8,16.3,9.5,6.3,11.5,https://www.meilleursagents.com/prix-immobilier/saint-mars-sur-la-futaie-53220/,53238
+Saint-Martin-du-Limet,1837.0,905.0,3371.0,1343.0,537.0,2686.0,10.5,7.3,15.4,8.5,6.8,12.8,https://www.meilleursagents.com/prix-immobilier/saint-martin-du-limet-53800/,53240
+Saint-Michel-de-la-Roë,2664.0,1701.0,3687.0,1286.0,544.0,2573.0,10.6,7.0,13.8,8.0,6.3,11.8,https://www.meilleursagents.com/prix-immobilier/saint-michel-de-la-roe-53350/,53242
+Saint-Ouën-des-Toits,1996.0,1300.0,3469.0,1677.0,671.0,2796.0,10.9,8.9,17.2,9.6,7.1,12.0,https://www.meilleursagents.com/prix-immobilier/saint-ouen-des-toits-53410/,53243
+Saint-Pierre-des-Landes,1974.0,1093.0,2716.0,1226.0,490.0,2451.0,10.0,5.9,15.9,8.2,5.9,11.4,https://www.meilleursagents.com/prix-immobilier/saint-pierre-des-landes-53500/,53245
+Saint-Pierre-des-Nids,1514.0,999.0,2424.0,1327.0,531.0,2328.0,9.4,6.8,13.9,9.0,7.7,15.4,https://www.meilleursagents.com/prix-immobilier/saint-pierre-des-nids-53370/,53246
+Saint-Pierre-la-Cour,2013.0,1269.0,2878.0,1784.0,726.0,2826.0,10.1,7.0,15.5,8.3,6.3,10.4,https://www.meilleursagents.com/prix-immobilier/saint-pierre-la-cour-53410/,53247
+Saint-Pierre-sur-Erve,2956.0,1908.0,4152.0,1334.0,534.0,2669.0,10.6,8.7,14.4,9.6,6.4,13.9,https://www.meilleursagents.com/prix-immobilier/saint-pierre-sur-erve-53270/,53248
+Saint-Martin-de-Connée,1986.0,1464.0,3037.0,1130.0,452.0,2260.0,9.9,6.2,14.6,8.2,6.5,11.5,https://www.meilleursagents.com/prix-immobilier/saint-martin-de-connee-53160/,53249
+Saint-Pierre-sur-Orthe,1285.0,736.0,2431.0,1147.0,459.0,2293.0,9.7,5.4,15.0,8.1,6.5,12.4,https://www.meilleursagents.com/prix-immobilier/saint-pierre-sur-orthe-53160/,53249
+Vimarcé,2006.0,1465.0,3068.0,1044.0,418.0,2089.0,9.4,6.4,16.7,9.2,6.8,12.3,https://www.meilleursagents.com/prix-immobilier/vimarce-53160/,53249
+Saint-Poix,2182.0,1439.0,3368.0,1315.0,526.0,2314.0,10.2,6.7,15.5,9.1,7.1,12.1,https://www.meilleursagents.com/prix-immobilier/saint-poix-53540/,53250
+Saint-Quentin-les-Anges,1849.0,878.0,3450.0,1216.0,486.0,1972.0,10.2,6.6,16.3,9.0,7.3,13.9,https://www.meilleursagents.com/prix-immobilier/saint-quentin-les-anges-53400/,53251
+Saint-Saturnin-du-Limet,1849.0,933.0,3275.0,1154.0,462.0,2268.0,9.7,6.3,16.5,8.5,6.3,10.2,https://www.meilleursagents.com/prix-immobilier/saint-saturnin-du-limet-53800/,53253
+Sainte-Suzanne-et-Chammes,1993.0,1411.0,3364.0,1348.0,539.0,2696.0,9.5,6.1,12.4,8.6,6.5,12.4,https://www.meilleursagents.com/prix-immobilier/chammes-53270/,53255
+Sainte-Suzanne-et-Chammes,1993.0,1411.0,3364.0,1348.0,539.0,2696.0,9.5,6.1,12.4,8.6,6.5,12.4,https://www.meilleursagents.com/prix-immobilier/sainte-suzanne-53270/,53255
+Saint-Thomas-de-Courceriers,1523.0,742.0,2698.0,1115.0,446.0,2229.0,9.3,6.4,16.0,8.8,6.4,12.4,https://www.meilleursagents.com/prix-immobilier/saint-thomas-de-courceriers-53160/,53256
+Saulges,1835.0,998.0,3651.0,1265.0,506.0,2531.0,9.3,7.1,12.8,,,,https://www.meilleursagents.com/prix-immobilier/saulges-53340/,53257
+La Selle-Craonnaise,1843.0,938.0,3252.0,1197.0,479.0,2394.0,10.2,6.8,15.9,8.8,7.0,12.1,https://www.meilleursagents.com/prix-immobilier/la-selle-craonnaise-53800/,53258
+Senonnes,1867.0,1058.0,2639.0,1246.0,499.0,2271.0,10.5,7.3,17.2,9.5,6.8,12.5,https://www.meilleursagents.com/prix-immobilier/senonnes-53390/,53259
+Simplé,1954.0,1063.0,3508.0,1567.0,627.0,2661.0,10.2,6.8,16.4,9.9,6.9,13.2,https://www.meilleursagents.com/prix-immobilier/simple-53360/,53260
+Soucé,1538.0,805.0,2905.0,1036.0,520.0,2072.0,9.4,6.2,14.4,8.3,6.3,11.2,https://www.meilleursagents.com/prix-immobilier/souce-53300/,53261
+Soulgé-sur-Ouette,2117.0,1449.0,3451.0,1417.0,567.0,2281.0,11.0,7.8,15.1,10.4,8.2,12.9,https://www.meilleursagents.com/prix-immobilier/soulge-sur-ouette-53210/,53262
+Nuille sur Ouette,2117.0,1449.0,3451.0,1417.0,567.0,2281.0,11.0,7.8,15.1,10.4,8.2,12.9,https://www.meilleursagents.com/prix-immobilier/nuille-sur-ouette-53210/,53262
+Thubœuf,1415.0,915.0,2603.0,1186.0,475.0,2107.0,10.2,6.6,17.2,8.7,6.7,11.3,https://www.meilleursagents.com/prix-immobilier/thuboeuf-53110/,53263
+Thorigné-en-Charnie,1818.0,991.0,3613.0,1343.0,537.0,2687.0,8.9,6.3,14.8,8.9,6.1,12.4,https://www.meilleursagents.com/prix-immobilier/thorigne-en-charnie-53270/,53264
+Torcé-Viviers-en-Charnie,1989.0,1482.0,2984.0,1118.0,447.0,2236.0,9.5,6.5,11.0,8.8,7.3,12.4,https://www.meilleursagents.com/prix-immobilier/torce-viviers-en-charnie-53270/,53265
+Viviers En Charnie,1989.0,1482.0,2984.0,1118.0,447.0,2236.0,9.5,6.5,11.0,8.8,7.3,12.4,https://www.meilleursagents.com/prix-immobilier/viviers-en-charnie-53270/,53265
+Trans,1850.0,1402.0,2962.0,1225.0,490.0,2450.0,9.6,6.1,14.7,7.9,6.2,11.5,https://www.meilleursagents.com/prix-immobilier/trans-53160/,53266
+Vaiges,2043.0,1431.0,3249.0,1442.0,577.0,2884.0,9.5,6.1,12.3,8.6,6.4,12.0,https://www.meilleursagents.com/prix-immobilier/vaiges-53480/,53267
+Vautorte,1982.0,1500.0,3151.0,1233.0,493.0,2467.0,9.9,6.6,17.3,8.8,6.1,11.8,https://www.meilleursagents.com/prix-immobilier/vautorte-53500/,53269
+Vieuvy,1275.0,761.0,2328.0,1174.0,470.0,2348.0,9.5,6.3,14.6,8.3,6.6,12.0,https://www.meilleursagents.com/prix-immobilier/vieuvy-53120/,53270
+Villaines-la-Juhel,1500.0,720.0,2611.0,1073.0,429.0,1980.0,9.6,6.6,17.4,10.0,7.3,13.6,https://www.meilleursagents.com/prix-immobilier/villaines-la-juhel-53700/,53271
+Villepail,1451.0,987.0,2484.0,1009.0,404.0,2018.0,8.2,6.2,11.4,,,,https://www.meilleursagents.com/prix-immobilier/villepail-53250/,53272
+Villiers-Charlemagne,1902.0,1154.0,3482.0,1508.0,603.0,2578.0,10.7,8.7,14.5,9.9,7.4,11.8,https://www.meilleursagents.com/prix-immobilier/villiers-charlemagne-53170/,53273
+Voutré,1925.0,1484.0,2964.0,1118.0,447.0,2236.0,10.5,6.7,17.8,8.3,6.8,12.3,https://www.meilleursagents.com/prix-immobilier/voutre-53600/,53276
+Aigné,2508.0,1440.0,3461.0,1815.0,787.0,2818.0,12.1,9.2,15.6,11.8,8.8,13.6,https://www.meilleursagents.com/prix-immobilier/aigne-72650/,72001
+Aillières-Beauvoir,1542.0,1008.0,2142.0,1412.0,565.0,2473.0,10.1,8.6,11.6,9.0,6.3,10.7,https://www.meilleursagents.com/prix-immobilier/aillieres-beauvoir-72600/,72002
+Allonnes,1539.0,927.0,2074.0,1728.0,1057.0,2646.0,11.9,8.1,19.3,10.9,7.2,14.7,https://www.meilleursagents.com/prix-immobilier/allonnes-72700/,72003
+Amné,2407.0,1367.0,3316.0,1567.0,627.0,2661.0,10.6,8.6,14.0,10.0,7.3,12.2,https://www.meilleursagents.com/prix-immobilier/amne-72540/,72004
+Ancinnes,1593.0,1053.0,2201.0,1424.0,569.0,2781.0,10.1,6.9,16.2,9.0,7.0,13.7,https://www.meilleursagents.com/prix-immobilier/ancinnes-72610/,72005
+Arçonnay,1268.0,624.0,2175.0,1598.0,652.0,2546.0,11.1,7.8,18.2,10.2,8.0,12.6,https://www.meilleursagents.com/prix-immobilier/arconnay-72610/,72006
+Ardenay-sur-Mérize,1576.0,1053.0,2288.0,1634.0,654.0,2697.0,10.6,7.8,17.9,9.0,6.7,11.4,https://www.meilleursagents.com/prix-immobilier/ardenay-sur-merize-72370/,72007
+Arnage,1637.0,1049.0,2465.0,1845.0,962.0,2950.0,11.3,8.0,17.2,11.3,8.8,14.6,https://www.meilleursagents.com/prix-immobilier/arnage-72230/,72008
+Arthezé,1893.0,1022.0,2237.0,1397.0,559.0,2177.0,10.2,7.3,15.8,9.4,6.0,13.0,https://www.meilleursagents.com/prix-immobilier/artheze-72270/,72009
+Asnières-sur-Vègre,1855.0,1052.0,2260.0,1276.0,510.0,2552.0,10.2,7.0,16.3,9.4,7.3,11.6,https://www.meilleursagents.com/prix-immobilier/asnieres-sur-vegre-72430/,72010
+Assé-le-Boisne,1582.0,1018.0,2225.0,1147.0,459.0,2219.0,10.4,7.1,16.6,8.2,6.8,12.0,https://www.meilleursagents.com/prix-immobilier/asse-le-boisne-72130/,72011
+Assé-le-Riboul,1661.0,1032.0,2411.0,1072.0,429.0,2039.0,9.3,7.9,13.2,,,,https://www.meilleursagents.com/prix-immobilier/asse-le-riboul-72170/,72012
+Aubigné-Racan,1558.0,1178.0,2051.0,1177.0,476.0,2336.0,9.2,5.7,16.7,9.7,7.4,12.3,https://www.meilleursagents.com/prix-immobilier/aubigne-racan-72800/,72013
+Les Aulneaux,1517.0,999.0,2085.0,1415.0,566.0,2582.0,8.4,6.9,11.4,,,,https://www.meilleursagents.com/prix-immobilier/les-aulneaux-72600/,72015
+Auvers-le-Hamon,1835.0,1048.0,2254.0,1371.0,549.0,2743.0,9.7,6.6,17.2,8.6,6.3,11.8,https://www.meilleursagents.com/prix-immobilier/auvers-le-hamon-72300/,72016
+Auvers-sous-Montfaucon,1599.0,1220.0,2058.0,1668.0,915.0,3011.0,9.8,6.7,15.5,9.2,7.7,11.4,https://www.meilleursagents.com/prix-immobilier/auvers-sous-montfaucon-72540/,72017
+Avesnes-en-Saosnois,1608.0,1022.0,2276.0,1203.0,481.0,2405.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/avesnes-en-saosnois-72260/,72018
+Avessé,1831.0,1060.0,2237.0,1332.0,533.0,2508.0,10.4,7.2,16.8,8.8,6.9,11.1,https://www.meilleursagents.com/prix-immobilier/avesse-72350/,72019
+Avezé,1551.0,983.0,2197.0,1463.0,585.0,2812.0,13.4,9.6,20.2,10.9,8.7,16.7,https://www.meilleursagents.com/prix-immobilier/aveze-72400/,72020
+Avoise,1861.0,1045.0,2257.0,1426.0,570.0,2711.0,9.8,6.7,17.2,7.7,5.4,10.3,https://www.meilleursagents.com/prix-immobilier/avoise-72430/,72021
+Le Bailleul,1880.0,1015.0,2265.0,1461.0,584.0,2691.0,9.7,6.6,17.2,9.8,7.3,14.0,https://www.meilleursagents.com/prix-immobilier/le-bailleul-72200/,72022
+Ballon-Saint Mars,1674.0,1063.0,2418.0,1290.0,516.0,2376.0,9.4,6.4,13.7,9.1,7.7,12.6,https://www.meilleursagents.com/prix-immobilier/ballon-72290/,72023
+Ballon-Saint Mars,1674.0,1063.0,2418.0,1290.0,516.0,2376.0,9.4,6.4,13.7,9.1,7.7,12.6,https://www.meilleursagents.com/prix-immobilier/saint-mars-sous-ballon-72290/,72023
+La Bazoge,2242.0,1297.0,3115.0,1911.0,764.0,2931.0,11.2,8.3,14.5,10.2,8.7,13.1,https://www.meilleursagents.com/prix-immobilier/la-bazoge-72650/,72024
+Bazouges-sur-le-Loir,2345.0,1605.0,3143.0,1600.0,640.0,3018.0,11.2,8.0,15.3,12.1,8.9,16.1,https://www.meilleursagents.com/prix-immobilier/bazouges-sur-le-loir-72200/,72025
+Cré-sur-Loir,1847.0,911.0,2217.0,1591.0,636.0,2890.0,9.1,6.3,16.4,9.6,6.8,12.8,https://www.meilleursagents.com/prix-immobilier/cre-sur-loir-72200/,72025
+Beaufay,1490.0,949.0,2151.0,1613.0,660.0,2793.0,9.8,7.2,16.5,9.4,7.0,11.6,https://www.meilleursagents.com/prix-immobilier/beaufay-72110/,72026
+Beaumont-sur-Dême,2374.0,1818.0,2942.0,1273.0,593.0,2546.0,11.2,8.6,15.1,10.0,7.0,12.8,https://www.meilleursagents.com/prix-immobilier/beaumont-sur-deme-72340/,72027
+Beaumont-Pied-de-Bœuf,1554.0,1137.0,2072.0,1244.0,498.0,2317.0,10.5,7.8,18.8,9.2,6.6,11.6,https://www.meilleursagents.com/prix-immobilier/beaumont-pied-de-boeuf-72500/,72028
+Beaumont-sur-Sarthe,1400.0,861.0,2362.0,1270.0,508.0,2540.0,9.1,5.7,14.7,9.0,6.3,11.9,https://www.meilleursagents.com/prix-immobilier/beaumont-sur-sarthe-72170/,72029
+Beillé,1630.0,1032.0,2347.0,1334.0,553.0,2180.0,10.8,7.2,15.8,9.1,7.5,12.2,https://www.meilleursagents.com/prix-immobilier/beille-72160/,72031
+Berfay,1554.0,1095.0,2011.0,1260.0,504.0,2347.0,9.5,6.7,12.1,,,,https://www.meilleursagents.com/prix-immobilier/berfay-72320/,72032
+Bérus,1268.0,624.0,2175.0,1784.0,791.0,2765.0,11.4,8.4,14.6,11.0,9.0,14.1,https://www.meilleursagents.com/prix-immobilier/berus-72610/,72034
+Bessé-sur-Braye,1885.0,824.0,3381.0,1061.0,424.0,1971.0,9.3,5.9,14.3,9.4,5.8,12.5,https://www.meilleursagents.com/prix-immobilier/besse-sur-braye-72310/,72035
+Béthon,1560.0,1042.0,2151.0,1471.0,592.0,2465.0,10.4,7.1,16.7,9.2,6.8,12.1,https://www.meilleursagents.com/prix-immobilier/bethon-72610/,72036
+Blèves,1200.0,685.0,2350.0,1210.0,484.0,2372.0,9.8,5.4,17.2,8.9,6.6,12.3,https://www.meilleursagents.com/prix-immobilier/bleves-72600/,72037
+Boëssé-le-Sec,1605.0,976.0,2342.0,1279.0,512.0,2140.0,9.6,6.8,16.5,9.1,6.7,11.8,https://www.meilleursagents.com/prix-immobilier/boesse-le-sec-72400/,72038
+Bonnétable,1575.0,964.0,2285.0,1323.0,529.0,2478.0,9.2,5.7,15.5,9.1,6.3,11.7,https://www.meilleursagents.com/prix-immobilier/bonnetable-72110/,72039
+La Bosse,2366.0,1363.0,4473.0,1617.0,740.0,2674.0,8.2,6.3,11.7,,,,https://www.meilleursagents.com/prix-immobilier/la-bosse-72400/,72040
+Bouër,2364.0,1421.0,3448.0,1487.0,650.0,2627.0,13.7,9.5,22.7,10.7,8.5,14.0,https://www.meilleursagents.com/prix-immobilier/bouer-72390/,72041
+Bouloire,1804.0,983.0,2552.0,1445.0,578.0,2508.0,9.1,5.6,15.9,9.1,6.3,11.2,https://www.meilleursagents.com/prix-immobilier/bouloire-72440/,72042
+Bourg-le-Roi,1230.0,733.0,2300.0,1149.0,460.0,1774.0,11.2,7.9,14.6,11.5,9.4,14.6,https://www.meilleursagents.com/prix-immobilier/bourg-le-roi-72610/,72043
+Bousse,1864.0,1017.0,2254.0,1245.0,534.0,2491.0,10.4,7.3,18.7,9.5,7.2,11.5,https://www.meilleursagents.com/prix-immobilier/bousse-72270/,72044
+Brains-sur-Gée,1579.0,1199.0,2027.0,1550.0,620.0,2730.0,10.6,8.6,14.3,10.2,8.4,12.2,https://www.meilleursagents.com/prix-immobilier/brains-sur-gee-72550/,72045
+Le Breil-sur-Mérize,1543.0,1009.0,2253.0,1366.0,546.0,2091.0,10.2,7.5,17.1,9.1,6.8,11.8,https://www.meilleursagents.com/prix-immobilier/le-breil-sur-merize-72370/,72046
+Brette-les-Pins,1964.0,1245.0,2988.0,1705.0,835.0,2555.0,12.4,9.6,18.1,11.0,9.0,14.0,https://www.meilleursagents.com/prix-immobilier/brette-les-pins-72250/,72047
+Briosne-lès-Sables,1642.0,1039.0,2374.0,1446.0,579.0,2430.0,10.6,8.1,17.6,8.9,6.6,12.1,https://www.meilleursagents.com/prix-immobilier/briosne-les-sables-72110/,72048
+La Bruère-sur-Loir,2029.0,1272.0,2883.0,1299.0,605.0,2408.0,9.2,5.7,14.7,9.8,7.2,13.6,https://www.meilleursagents.com/prix-immobilier/la-bruere-sur-loir-72500/,72049
+Brûlon,1802.0,1105.0,2228.0,1284.0,514.0,2382.0,9.2,6.3,15.6,8.3,5.8,11.7,https://www.meilleursagents.com/prix-immobilier/brulon-72350/,72050
+Cérans-Foulletourte,1603.0,1228.0,2065.0,1626.0,650.0,2791.0,10.4,6.9,18.8,9.6,7.4,11.8,https://www.meilleursagents.com/prix-immobilier/cerans-foulletourte-72330/,72051
+Chahaignes,1573.0,774.0,2272.0,1323.0,627.0,2646.0,9.2,5.7,14.9,9.5,6.2,12.5,https://www.meilleursagents.com/prix-immobilier/chahaignes-72340/,72052
+Challes,1541.0,1049.0,2163.0,1609.0,644.0,2671.0,9.9,7.3,16.6,9.2,6.8,12.7,https://www.meilleursagents.com/prix-immobilier/challes-72250/,72053
+Champagné,1498.0,1043.0,2184.0,1782.0,713.0,2585.0,10.3,7.9,15.5,10.3,8.1,14.8,https://www.meilleursagents.com/prix-immobilier/champagne-72470/,72054
+Champfleur,1543.0,1025.0,2119.0,1567.0,723.0,2587.0,11.2,7.8,18.3,10.1,8.1,11.8,https://www.meilleursagents.com/prix-immobilier/champfleur-72610/,72056
+Champrond,1525.0,1067.0,2034.0,1340.0,536.0,2110.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/champrond-72320/,72057
+Changé,2109.0,1474.0,2913.0,2094.0,1006.0,2996.0,12.2,8.7,18.6,11.2,8.8,14.5,https://www.meilleursagents.com/prix-immobilier/change-72560/,72058
+Chantenay-Villedieu,1822.0,1108.0,2252.0,1285.0,514.0,2464.0,10.1,7.0,17.9,8.3,5.8,10.8,https://www.meilleursagents.com/prix-immobilier/chantenay-villedieu-72430/,72059
+La Chapelle-aux-Choux,1447.0,867.0,2108.0,1133.0,473.0,2267.0,9.3,6.7,15.2,9.6,7.1,12.1,https://www.meilleursagents.com/prix-immobilier/la-chapelle-aux-choux-72800/,72060
+La Chapelle-d'Aligné,1887.0,996.0,2269.0,1517.0,607.0,2986.0,10.7,6.9,18.1,9.8,6.7,13.4,https://www.meilleursagents.com/prix-immobilier/la-chapelle-d-aligne-72300/,72061
+La Chapelle-du-Bois,1554.0,956.0,2235.0,1425.0,570.0,2335.0,9.6,7.2,12.3,9.1,7.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-chapelle-du-bois-72400/,72062
+La Chapelle-Huon,1578.0,1130.0,2038.0,1204.0,482.0,2083.0,8.2,5.4,11.1,,,,https://www.meilleursagents.com/prix-immobilier/la-chapelle-huon-72310/,72064
+La Chartre-sur-le-Loir,1756.0,936.0,2344.0,1162.0,465.0,2298.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/la-chartre-sur-le-loir-72340/,72068
+Chassillé,1602.0,1226.0,2059.0,1294.0,518.0,2589.0,10.6,7.0,17.2,9.0,7.2,11.5,https://www.meilleursagents.com/prix-immobilier/chassille-72540/,72070
+Château-du-Loir,1551.0,1030.0,2261.0,1274.0,509.0,2262.0,10.7,7.0,18.5,11.6,7.8,15.6,https://www.meilleursagents.com/prix-immobilier/chateau-du-loir-72500/,72071
+Coemont,1736.0,1103.0,2323.0,1209.0,484.0,2418.0,9.4,5.3,16.6,9.9,7.0,13.2,https://www.meilleursagents.com/prix-immobilier/coemont-72500/,72071
+Montabon,1548.0,1155.0,2070.0,1383.0,553.0,2474.0,9.1,5.7,16.5,10.1,7.1,12.2,https://www.meilleursagents.com/prix-immobilier/montabon-72500/,72071
+Vouvray-sur-Loir,1736.0,1103.0,2323.0,1209.0,484.0,2418.0,9.4,5.3,16.6,9.9,7.0,13.2,https://www.meilleursagents.com/prix-immobilier/vouvray-sur-loir-72500/,72071
+Château-l'Hermitage,1601.0,1178.0,2066.0,1569.0,628.0,2469.0,10.4,7.6,16.6,9.0,6.0,11.2,https://www.meilleursagents.com/prix-immobilier/chateau-l-hermitage-72510/,72072
+Chaufour-Notre-Dame,1710.0,1222.0,2229.0,1830.0,806.0,2779.0,10.6,8.6,13.9,11.1,8.6,13.6,https://www.meilleursagents.com/prix-immobilier/chaufour-notre-dame-72550/,72073
+Chemiré-en-Charnie,1446.0,771.0,2268.0,1378.0,551.0,2756.0,8.4,6.2,10.7,,,,https://www.meilleursagents.com/prix-immobilier/chemire-en-charnie-72540/,72074
+Chemiré-le-Gaudin,1604.0,1222.0,2067.0,1571.0,659.0,2932.0,11.2,8.4,14.6,11.2,8.8,14.7,https://www.meilleursagents.com/prix-immobilier/chemire-le-gaudin-72210/,72075
+Chenay,1268.0,624.0,2175.0,1680.0,971.0,2231.0,12.4,8.7,15.5,11.1,8.9,14.3,https://www.meilleursagents.com/prix-immobilier/chenay-72610/,72076
+Chenu,1848.0,1183.0,2437.0,1120.0,448.0,2240.0,9.1,5.7,14.7,10.1,7.1,12.5,https://www.meilleursagents.com/prix-immobilier/chenu-72500/,72077
+Chérancé,1645.0,1030.0,2360.0,1189.0,531.0,2379.0,9.2,5.7,14.1,8.4,6.6,11.8,https://www.meilleursagents.com/prix-immobilier/cherance-72170/,72078
+Chérisay,1605.0,1046.0,2247.0,1497.0,599.0,2459.0,12.3,9.2,15.6,9.9,7.5,11.8,https://www.meilleursagents.com/prix-immobilier/cherisay-72610/,72079
+Cherré,2366.0,1363.0,4473.0,1904.0,1120.0,2872.0,11.5,7.1,20.4,10.2,7.2,13.2,https://www.meilleursagents.com/prix-immobilier/cherre-72400/,72080
+Cherreau,2456.0,1431.0,3633.0,1495.0,665.0,2991.0,12.5,9.2,19.2,10.3,7.8,14.8,https://www.meilleursagents.com/prix-immobilier/cherreau-72400/,72080
+Chevillé,1822.0,1104.0,2254.0,1416.0,566.0,2831.0,10.8,7.5,18.5,8.6,5.9,11.4,https://www.meilleursagents.com/prix-immobilier/cheville-72350/,72083
+Clermont-Créans,1839.0,1008.0,2238.0,1544.0,618.0,2831.0,10.5,7.2,18.8,9.2,5.8,11.2,https://www.meilleursagents.com/prix-immobilier/clermont-creans-72200/,72084
+Cogners,1874.0,818.0,3340.0,1253.0,501.0,2457.0,9.3,5.8,15.0,9.6,6.0,12.4,https://www.meilleursagents.com/prix-immobilier/cogners-72310/,72085
+Commerveil,1580.0,1017.0,2217.0,1319.0,528.0,2419.0,12.7,9.7,15.6,9.6,6.0,14.5,https://www.meilleursagents.com/prix-immobilier/commerveil-72600/,72086
+Conflans-sur-Anille,1564.0,1112.0,2019.0,1231.0,493.0,2463.0,8.9,6.7,10.2,8.5,5.9,11.8,https://www.meilleursagents.com/prix-immobilier/conflans-sur-anille-72120/,72087
+Congé-sur-Orne,2237.0,1301.0,3103.0,1158.0,463.0,2177.0,11.2,9.6,18.9,9.7,8.1,11.7,https://www.meilleursagents.com/prix-immobilier/conge-sur-orne-72290/,72088
+Conlie,1749.0,1075.0,2537.0,1447.0,579.0,2675.0,9.1,5.7,16.4,9.2,6.0,12.7,https://www.meilleursagents.com/prix-immobilier/conlie-72240/,72089
+Connerré,1968.0,1200.0,2926.0,1503.0,624.0,2421.0,9.2,5.7,14.1,9.1,6.6,12.2,https://www.meilleursagents.com/prix-immobilier/connerre-72160/,72090
+Contilly,1266.0,709.0,2278.0,1320.0,528.0,2484.0,12.3,8.2,20.5,10.1,8.6,12.7,https://www.meilleursagents.com/prix-immobilier/contilly-72600/,72091
+Cormes,1575.0,1072.0,2145.0,1629.0,652.0,3258.0,9.6,7.3,12.4,8.6,6.2,11.3,https://www.meilleursagents.com/prix-immobilier/cormes-72400/,72093
+Coudrecieux,1526.0,983.0,2192.0,1136.0,454.0,2272.0,11.5,8.8,17.2,10.0,7.0,12.7,https://www.meilleursagents.com/prix-immobilier/coudrecieux-72440/,72094
+Coulaines,2092.0,1186.0,3702.0,2055.0,1151.0,3175.0,11.9,8.0,19.5,10.5,6.8,14.0,https://www.meilleursagents.com/prix-immobilier/coulaines-72190/,72095
+Coulans-sur-Gée,2407.0,1366.0,3317.0,1635.0,654.0,2719.0,10.6,8.5,14.2,11.1,9.4,13.0,https://www.meilleursagents.com/prix-immobilier/coulans-sur-gee-72550/,72096
+Coulongé,1579.0,1163.0,2044.0,1294.0,518.0,2437.0,9.8,7.1,12.4,,,,https://www.meilleursagents.com/prix-immobilier/coulonge-72800/,72098
+Courcebœufs,1676.0,1068.0,2419.0,1543.0,740.0,2376.0,11.2,9.6,18.9,10.6,8.7,12.6,https://www.meilleursagents.com/prix-immobilier/courceboeufs-72290/,72099
+Courcelles-la-Forêt,1598.0,1229.0,2055.0,1329.0,531.0,2571.0,10.3,7.6,16.5,9.4,6.3,11.8,https://www.meilleursagents.com/prix-immobilier/courcelles-la-foret-72270/,72100
+Courcemont,1655.0,1049.0,2391.0,1430.0,572.0,2861.0,11.1,7.8,16.6,9.0,7.5,13.5,https://www.meilleursagents.com/prix-immobilier/courcemont-72110/,72101
+Courcival,1620.0,1019.0,2316.0,1366.0,629.0,2731.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/courcival-72110/,72102
+Courdemanche,1515.0,1091.0,2149.0,1119.0,447.0,2237.0,9.5,6.6,17.0,9.6,7.4,12.9,https://www.meilleursagents.com/prix-immobilier/courdemanche-72150/,72103
+Brives,1515.0,1091.0,2149.0,1119.0,447.0,2237.0,9.5,6.6,17.0,9.6,7.4,12.9,https://www.meilleursagents.com/prix-immobilier/brives-72150/,72103
+Courgains,1200.0,684.0,2351.0,1184.0,473.0,2357.0,9.3,5.8,14.9,9.1,6.8,14.1,https://www.meilleursagents.com/prix-immobilier/courgains-72260/,72104
+Courgenard,1572.0,1057.0,2126.0,1259.0,504.0,2436.0,8.9,6.7,10.2,8.9,6.3,12.3,https://www.meilleursagents.com/prix-immobilier/courgenard-72320/,72105
+Courtillers,1886.0,998.0,2294.0,1719.0,688.0,2804.0,10.9,7.5,18.7,9.3,6.8,12.3,https://www.meilleursagents.com/prix-immobilier/courtillers-72300/,72106
+Crannes-en-Champagne,1727.0,988.0,2440.0,1643.0,657.0,2672.0,11.5,8.0,16.2,11.4,8.9,15.1,https://www.meilleursagents.com/prix-immobilier/crannes-en-champagne-72540/,72107
+Crissé,1696.0,1201.0,2214.0,1290.0,516.0,2580.0,10.4,6.8,17.4,8.2,6.1,11.0,https://www.meilleursagents.com/prix-immobilier/crisse-72140/,72109
+Crosmières,1861.0,998.0,2278.0,1485.0,594.0,2279.0,10.4,7.3,18.7,9.7,6.9,12.7,https://www.meilleursagents.com/prix-immobilier/crosmieres-72200/,72110
+Cures,1714.0,1223.0,2236.0,1474.0,590.0,2927.0,10.6,8.7,14.4,10.0,6.6,12.0,https://www.meilleursagents.com/prix-immobilier/cures-72240/,72111
+Dangeul,1654.0,1060.0,2352.0,1361.0,603.0,2723.0,9.6,6.8,16.5,8.9,6.7,12.0,https://www.meilleursagents.com/prix-immobilier/dangeul-72260/,72112
+Degré,2510.0,1440.0,3463.0,1711.0,881.0,2494.0,10.4,8.5,13.4,11.0,8.5,13.5,https://www.meilleursagents.com/prix-immobilier/degre-72550/,72113
+Dehault,1558.0,959.0,2245.0,1347.0,539.0,2694.0,9.2,7.0,11.9,,,,https://www.meilleursagents.com/prix-immobilier/dehault-72400/,72114
+Dissay-sous-Courcillon,2066.0,1277.0,2967.0,1303.0,521.0,2467.0,11.2,8.6,15.1,10.1,7.1,13.0,https://www.meilleursagents.com/prix-immobilier/dissay-sous-courcillon-72500/,72115
+Dollon,1667.0,1039.0,2398.0,1300.0,520.0,2373.0,10.5,7.9,17.4,9.1,6.7,12.7,https://www.meilleursagents.com/prix-immobilier/dollon-72390/,72118
+Domfront-en-Champagne,1718.0,1223.0,2241.0,1718.0,809.0,3124.0,11.3,7.9,14.8,10.5,8.4,12.3,https://www.meilleursagents.com/prix-immobilier/domfront-en-champagne-72240/,72119
+Doucelles,1658.0,1065.0,2354.0,1368.0,611.0,2289.0,11.4,8.2,15.6,10.1,8.6,12.6,https://www.meilleursagents.com/prix-immobilier/doucelles-72170/,72120
+Douillet,1614.0,1122.0,2191.0,1191.0,485.0,2383.0,10.6,7.3,17.0,8.5,6.5,11.8,https://www.meilleursagents.com/prix-immobilier/douillet-72130/,72121
+Duneau,1520.0,978.0,2215.0,1610.0,664.0,2776.0,10.0,5.8,17.0,9.2,6.6,11.7,https://www.meilleursagents.com/prix-immobilier/duneau-72160/,72122
+Dureil,1879.0,1067.0,2931.0,1491.0,597.0,2826.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/dureil-72270/,72123
+Écommoy,1583.0,1060.0,2216.0,1616.0,730.0,2747.0,10.9,7.4,18.6,11.0,7.9,15.1,https://www.meilleursagents.com/prix-immobilier/ecommoy-72220/,72124
+Écorpain,2126.0,1286.0,3096.0,1259.0,503.0,2517.0,11.9,8.3,18.6,11.5,9.8,14.4,https://www.meilleursagents.com/prix-immobilier/ecorpain-72120/,72125
+Épineu-le-Chevreuil,1708.0,1242.0,2221.0,1161.0,464.0,2321.0,9.9,6.8,17.5,8.2,5.9,12.2,https://www.meilleursagents.com/prix-immobilier/epineu-le-chevreuil-72540/,72126
+Étival-lès-le-Mans,1665.0,887.0,2404.0,1802.0,907.0,2653.0,11.0,8.2,14.8,11.6,9.4,14.7,https://www.meilleursagents.com/prix-immobilier/etival-les-le-mans-72700/,72127
+Évaillé,1611.0,839.0,2293.0,1238.0,495.0,2474.0,10.8,7.6,16.4,11.4,9.7,14.3,https://www.meilleursagents.com/prix-immobilier/evaille-72120/,72128
+Sainte-Osmane,1543.0,1018.0,2189.0,1228.0,491.0,2362.0,11.5,8.1,17.6,9.9,6.9,12.6,https://www.meilleursagents.com/prix-immobilier/sainte-osmane-72120/,72128
+Fatines,1506.0,1052.0,2198.0,1764.0,995.0,2438.0,10.4,8.0,15.6,11.0,8.2,14.9,https://www.meilleursagents.com/prix-immobilier/fatines-72470/,72129
+Fay,1725.0,947.0,2444.0,2020.0,808.0,2964.0,12.7,10.8,15.8,11.4,8.5,13.2,https://www.meilleursagents.com/prix-immobilier/fay-72550/,72130
+Fercé-sur-Sarthe,1603.0,1230.0,2059.0,1452.0,581.0,2359.0,10.4,7.2,18.0,9.5,7.2,11.9,https://www.meilleursagents.com/prix-immobilier/ferce-sur-sarthe-72430/,72131
+La Ferté-Bernard,1934.0,925.0,3547.0,1589.0,647.0,2793.0,10.3,7.0,16.7,10.0,6.1,13.0,https://www.meilleursagents.com/prix-immobilier/la-ferte-bernard-72400/,72132
+Fillé,1663.0,882.0,2406.0,1855.0,742.0,3130.0,12.0,8.9,18.2,11.6,9.5,14.8,https://www.meilleursagents.com/prix-immobilier/fille-72210/,72133
+Flée,1505.0,1057.0,2164.0,1300.0,568.0,2599.0,10.2,8.4,12.2,9.5,6.3,10.9,https://www.meilleursagents.com/prix-immobilier/flee-72500/,72134
+Fontenay-sur-Vègre,1894.0,1083.0,2933.0,1239.0,496.0,2470.0,10.6,8.7,14.4,10.4,8.7,11.9,https://www.meilleursagents.com/prix-immobilier/fontenay-sur-vegre-72350/,72136
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/villeneuve-en-perseigne-72600/,72137
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/chasse-72600/,72137
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/montigny-72600/,72137
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/roullee-72600/,72137
+Le Buisson,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/le-buisson-72610/,72137
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/lignieres-la-carelle-72610/,72137
+Villeneuve-en-Perseigne,1519.0,1024.0,2060.0,1512.0,605.0,3024.0,10.1,6.9,16.2,9.2,7.8,14.0,https://www.meilleursagents.com/prix-immobilier/saint-rigomer-des-bois-72610/,72137
+Fresnay-sur-Sarthe,1235.0,737.0,2296.0,1042.0,417.0,2083.0,9.4,6.5,13.5,9.5,6.7,12.8,https://www.meilleursagents.com/prix-immobilier/fresnay-sur-sarthe-72130/,72138
+Coulombiers,1643.0,1031.0,2352.0,1184.0,474.0,2214.0,10.4,8.2,15.7,8.7,6.2,12.1,https://www.meilleursagents.com/prix-immobilier/coulombiers-72130/,72138
+La Hutte,1648.0,1032.0,2362.0,1351.0,612.0,2551.0,10.4,7.0,16.9,9.3,7.6,12.7,https://www.meilleursagents.com/prix-immobilier/la-hutte-72130/,72138
+Saint-Germain-sur-Sarthe,1648.0,1032.0,2362.0,1351.0,612.0,2551.0,10.4,7.0,16.9,9.3,7.6,12.7,https://www.meilleursagents.com/prix-immobilier/saint-germain-sur-sarthe-72130/,72138
+Fyé,1620.0,1109.0,2213.0,1261.0,504.0,1989.0,10.3,8.5,13.5,10.3,8.1,13.2,https://www.meilleursagents.com/prix-immobilier/fye-72610/,72139
+Gesnes-le-Gandelin,1559.0,1039.0,2145.0,1402.0,561.0,2248.0,11.3,9.6,19.0,9.1,6.3,10.9,https://www.meilleursagents.com/prix-immobilier/gesnes-le-gandelin-72130/,72141
+Grandchamp,1633.0,1031.0,2328.0,1100.0,440.0,2169.0,10.3,7.0,16.5,9.2,7.1,12.2,https://www.meilleursagents.com/prix-immobilier/grandchamp-72610/,72142
+Le Grand-Lucé,1589.0,1073.0,2306.0,1197.0,479.0,2321.0,9.2,5.7,14.6,9.6,6.7,12.5,https://www.meilleursagents.com/prix-immobilier/le-grand-luce-72150/,72143
+Gréez-sur-Roc,2101.0,1192.0,4202.0,1220.0,488.0,2440.0,9.3,5.3,15.5,9.0,5.9,11.1,https://www.meilleursagents.com/prix-immobilier/greez-sur-roc-72320/,72144
+Le Grez,1680.0,1198.0,2186.0,1113.0,445.0,2008.0,9.1,6.7,14.5,9.6,6.5,13.3,https://www.meilleursagents.com/prix-immobilier/le-grez-72140/,72145
+Guécélard,1579.0,1199.0,2027.0,1800.0,822.0,2849.0,11.3,7.7,14.9,11.2,8.7,14.7,https://www.meilleursagents.com/prix-immobilier/guecelard-72230/,72146
+La Guierche,1732.0,1096.0,2527.0,1724.0,690.0,2538.0,10.3,8.5,13.5,10.7,9.1,12.9,https://www.meilleursagents.com/prix-immobilier/la-guierche-72380/,72147
+Jauzé,1625.0,1013.0,2343.0,1253.0,533.0,2506.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/jauze-72110/,72148
+Joué-en-Charnie,1604.0,1243.0,2089.0,1229.0,491.0,2065.0,10.7,7.4,18.2,8.2,5.8,12.2,https://www.meilleursagents.com/prix-immobilier/joue-en-charnie-72540/,72149
+Joué-l'Abbé,2238.0,1299.0,3105.0,1628.0,651.0,2345.0,11.2,8.2,14.5,10.3,8.3,13.1,https://www.meilleursagents.com/prix-immobilier/joue-l-abbe-72380/,72150
+Juigné-sur-Sarthe,1873.0,1037.0,2299.0,1521.0,656.0,2440.0,9.9,6.8,15.8,9.6,7.6,11.3,https://www.meilleursagents.com/prix-immobilier/juigne-sur-sarthe-72300/,72151
+Juillé,1238.0,743.0,2294.0,1542.0,628.0,2612.0,9.1,5.6,14.6,8.8,6.2,11.8,https://www.meilleursagents.com/prix-immobilier/juille-72170/,72152
+Jupilles,1515.0,966.0,2182.0,1396.0,558.0,2792.0,8.9,6.7,10.2,9.0,6.0,10.5,https://www.meilleursagents.com/prix-immobilier/jupilles-72500/,72153
+La Flèche,1761.0,793.0,3229.0,1789.0,786.0,3031.0,10.6,7.1,17.0,10.7,8.2,14.8,https://www.meilleursagents.com/prix-immobilier/la-fleche-72200/,72154
+Laigné-en-Belin,1592.0,1133.0,2090.0,1784.0,714.0,2681.0,11.5,8.9,14.7,11.1,8.7,14.7,https://www.meilleursagents.com/prix-immobilier/laigne-en-belin-72220/,72155
+Saint-Gervais-en-Belin,1592.0,1173.0,2044.0,1813.0,725.0,2628.0,11.5,9.0,15.0,11.0,8.8,13.9,https://www.meilleursagents.com/prix-immobilier/saint-gervais-en-belin-72220/,72155
+Lamnay,1588.0,988.0,2244.0,1343.0,537.0,2139.0,9.4,7.1,12.6,9.5,7.1,12.5,https://www.meilleursagents.com/prix-immobilier/lamnay-72320/,72156
+Lavardin,2508.0,1440.0,3461.0,1763.0,705.0,3097.0,12.5,9.7,16.5,11.8,8.8,13.8,https://www.meilleursagents.com/prix-immobilier/lavardin-72240/,72157
+Lavaré,1638.0,1010.0,2330.0,1415.0,566.0,2616.0,9.2,5.7,14.8,9.5,7.0,12.3,https://www.meilleursagents.com/prix-immobilier/lavare-72390/,72158
+Lavernat,1555.0,1147.0,2071.0,1428.0,571.0,2857.0,9.7,6.7,17.3,9.6,7.0,13.1,https://www.meilleursagents.com/prix-immobilier/lavernat-72500/,72160
+Lhomme,1569.0,752.0,2258.0,1206.0,482.0,1934.0,9.2,5.7,14.8,9.3,6.4,11.9,https://www.meilleursagents.com/prix-immobilier/lhomme-72340/,72161
+Ligron,1762.0,1165.0,2184.0,1552.0,621.0,2705.0,10.1,7.1,18.2,9.1,7.0,11.0,https://www.meilleursagents.com/prix-immobilier/ligron-72270/,72163
+Livet-en-Saosnois,1584.0,1048.0,2190.0,1423.0,601.0,2748.0,11.7,7.9,19.2,10.1,7.4,13.4,https://www.meilleursagents.com/prix-immobilier/livet-en-saosnois-72610/,72164
+Lombron,1498.0,963.0,2155.0,1640.0,663.0,2604.0,10.1,7.4,17.0,9.1,6.8,11.5,https://www.meilleursagents.com/prix-immobilier/lombron-72450/,72165
