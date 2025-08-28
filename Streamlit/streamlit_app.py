@@ -16,28 +16,45 @@ st.set_page_config(
 
 # --- Chargement des données ---
 #@st.cache_data
+st.cache_data.clear()
 def load_data():
     # Charger le fichier GeoJSON des communes
     geojson_path = "communes.geojson" 
     # Charger les données de meilleur agent
     data_MA = "df_MA_clean.csv"
     # Charger les données avec pandas
-    communes_df = pd.read_csv(data_MA)
+    communes_data = pd.read_csv(data_MA)
 
-    return geojson_path, communes_df
+    return geojson_path, communes_data
 
 geojson_path, communes_data = load_data()
 
-#Ajout des données global + ratio
-communes_data['prix_global'] = (communes_data['prix_appartement']+communes_data['prix_maison'])/2
-communes_data['min_global'] = (communes_data['min_appartement']+communes_data['min_maison'])/2
-communes_data['max_global'] = (communes_data['max_appartement']+communes_data['max_maison'])/2
-communes_data['loyer_global'] = (communes_data['loyer_appartement']+communes_data['loyer_maison'])/2
-communes_data['loyer_min_global'] = (communes_data['loyer_min_appartement']+communes_data['loyer_min_maison'])/2
-communes_data['loyer_max_global'] = (communes_data['loyer_max_appartement']+communes_data['loyer_max_maison'])/2
-communes_data['ratio_m2_apt'] = round(((communes_data['loyer_appartement']*12)/communes_data['prix_appartement'])*100,2)
-communes_data['ratio_m2_msn'] = round(((communes_data['loyer_maison']*12)/communes_data['prix_maison'])*100,2)
-communes_data['ratio_m2_glb'] = round(((communes_data['loyer_global']*12)/communes_data['prix_global'])*100,2)
+# #Ajout des données global + ratio en Python
+# communes_data['prix_global'] = (communes_data['prix_appartement']+communes_data['prix_maison'])/2
+# communes_data['min_global'] = (communes_data['min_appartement']+communes_data['min_maison'])/2
+# communes_data['max_global'] = (communes_data['max_appartement']+communes_data['max_maison'])/2
+# communes_data['loyer_global'] = (communes_data['loyer_appartement']+communes_data['loyer_maison'])/2
+# communes_data['loyer_min_global'] = (communes_data['loyer_min_appartement']+communes_data['loyer_min_maison'])/2
+# communes_data['loyer_max_global'] = (communes_data['loyer_max_appartement']+communes_data['loyer_max_maison'])/2
+# communes_data['ratio_m2_apt'] = round(((communes_data['loyer_appartement']*12)/communes_data['prix_appartement'])*100,2)
+# communes_data['ratio_m2_msn'] = round(((communes_data['loyer_maison']*12)/communes_data['prix_maison'])*100,2)
+# communes_data['ratio_m2_glb'] = round(((communes_data['loyer_global']*12)/communes_data['prix_global'])*100,2)
+
+# #Ajout des données global + ratio en SQL
+communes_data = duckdb.sql("""
+    SELECT 
+       *,
+       (prix_appartement+prix_maison)/2 AS prix_global,
+       (min_appartement+min_maison)/2 AS min_global,
+       (max_appartement+max_maison)/2 AS max_global,
+       (loyer_appartement+loyer_maison)/2 AS loyer_global,
+       (loyer_min_appartement+loyer_min_maison)/2 AS loyer_min_global,
+       (loyer_max_appartement+loyer_max_maison)/2 AS loyer_max_global,
+       round(((loyer_appartement*12)/prix_appartement)*100,2) AS ratio_m2_apt,
+       round(((loyer_maison*12)/prix_maison)*100,2) AS ratio_m2_msn,
+       round(((loyer_global*12)/prix_global)*100,2)AS ratio_m2_glb
+    FROM communes_data
+""").df()
 
 
 # --- SideBar ---
@@ -54,18 +71,18 @@ with st.sidebar:
     #     options=communes_data['ville'].unique(),
     #     default=communes_data['ville'][91]
     # )
-    nbm2=st.number_input(
-        "Surface du projet",
-        value=None,
-        placeholder="en m2"
-        )
-    fraisdagence=st.slider(
-        "Selectionné les frais d'agences (en %)",
-        0.0,
-        10.0,
-        5.0,
-        step=0.5
-        )
+    # nbm2=st.number_input(
+    #     "Surface du projet",
+    #     value=None,
+    #     placeholder="en m2"
+    #     )
+    # fraisdagence=st.slider(
+    #     "Selectionné les frais d'agences (en %)",
+    #     0.0,
+    #     10.0,
+    #     5.0,
+    #     step=0.5
+    #     )
 
 
 st.divider()
@@ -136,11 +153,12 @@ st.divider()
 st.header("Page 2")
 st.divider()
 
-#Selection des villes
+#Selection de la ville
 ville=st.multiselect(
         "Selectionner la Ville",
         options=communes_data['ville'].unique(),
-        default=communes_data['ville'][91]
+        default="Nantes",
+        max_selections=1
     )
 
 # Créez le DataFrame filtré
@@ -148,8 +166,8 @@ df_filtre = communes_data[communes_data['ville'].isin(ville)]
 df_filtre = df_filtre.set_index(['ville'])
 df_filtre_apt = df_filtre[['prix_appartement','min_appartement','max_appartement','ratio_m2_apt']] 
 df_filtre_apt_loc = df_filtre[['loyer_appartement', 'loyer_min_appartement', 'loyer_max_appartement']]
-df_filtre_maison = df_filtre[['prix_maison',"min_maison",'max_maison','ratio_m2_msn']]
-df_filtre_maison_loc = df_filtre[['loyer_maison', 'loyer_min_maison', 'loyer_max_maison']]
+df_filtre_msn = df_filtre[['prix_maison',"min_maison",'max_maison','ratio_m2_msn']]
+df_filtre_msn_loc = df_filtre[['loyer_maison', 'loyer_min_maison', 'loyer_max_maison']]
 df_filtre_glb = df_filtre[['prix_global',"min_global",'max_global','ratio_m2_glb']]
 df_filtre_glb_loc = df_filtre[['loyer_global', 'loyer_min_global', 'loyer_max_global']]
 Code_postal = df_filtre['Code_postal']
@@ -159,53 +177,111 @@ with st.expander('Data Preview'):
 
 
 
-tab1, tab2, tab3 = st.tabs(["Appartements", "Maisons", "Global"])
+tab1, tab2, tab3 = st.tabs(["Global", "Appartements", "Maisons"])
 
 with tab1:
     a, b = st.columns(2)
     c, d = st.columns(2)
-    a.subheader("Rantabilité Brute moyenne au m2 pour les maisons")
-    a.metric("Rentabilité Brut", df_filtre_maison['ratio_m2_msn'], border=True)
-    b.subheader("Rantabilité Brute moyenne au m2 pour les appartements")
-    b.metric("Rentabilité Brut", df_filtre_apt['ratio_m2_apt'], border=True)
-    c.subheader(f'Prix immobilier à {df_filtre.index[0]}')
-    c.bar_chart(df_filtre_apt, y_label="Prix m2 en €",stack=False)
-    d.subheader(f'Loyer mensuel à {df_filtre.index[0]}')
+    a.subheader(f"Rantabilité Brute au m2 à {df_filtre.index[0]}")
+    a.metric("Rentabilité Brut moyenne", df_filtre_glb['ratio_m2_glb'], border=True)
+    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
+    c.bar_chart(df_filtre_glb, y_label="Prix m2 en €", stack=False)
+    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
+    d.bar_chart(df_filtre_glb_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
+     
+
+with tab2:
+    a, b = st.columns(2)
+    c, d = st.columns(2)
+    a.subheader(f"Rantabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
+    a.metric("Rentabilité Brut moyenne", df_filtre_apt['ratio_m2_apt'], border=True)
+    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
+    c.bar_chart(df_filtre_apt, y_label="Prix m2 en €", stack=False)
+    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
     d.bar_chart(df_filtre_apt_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
     
 
-with tab2:
-    st.subheader("Standart ratio au m2 pour les Maisons")
-    a, b = st.columns(2)
-    c, d = st.columns(2)
-    a.metric("Rentabilité Brut Loc", df_filtre_maison['ratio_m2_msn'], border=True)
-    c.bar_chart(df_filtre_maison, y_label="Prix m2 en €", stack=False)
-    d.bar_chart(df_filtre_maison_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
 
 with tab3:
-    st.subheader("Standart ratio au m2 pour la ville")
     a, b = st.columns(2)
     c, d = st.columns(2)
-    a.metric("Rentabilité Brut", df_filtre_glb['ratio_m2_glb'], border=True)
-    c.bar_chart(df_filtre_maison, y_label="Prix m2 en €", stack=False)
-    d.bar_chart(df_filtre_maison_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
+    a.subheader(f"Rantabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
+    a.metric("Rentabilité Brut moyenne", df_filtre_msn['ratio_m2_msn'], border=True)
+    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
+    c.bar_chart(df_filtre_msn, y_label="Prix m2 en €", stack=False)
+    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
+    d.bar_chart(df_filtre_msn_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
 
+
+st.subheader(f"Exemple appartement 42m2")
+
+e, f, g = st.columns(3)
+nbm2 = e.number_input(
+    "Surface du projet",
+    value=42,
+    max_value=1000,
+    placeholder="en m2"
+    )
+e.slider(
+    "Selectionné les frais d'agences (en %)",
+    0.0,
+    10.0,
+    5.0,
+    step=0.5
+    )
+e.pills(
+    "Sélectionnez le type du bien :",
+    ["Ancien", "Neuf"],
+    default="Ancien"
+)
+f.number_input(
+    "Assurance PNO (propriétaire non occupant en €)",
+    value=250,
+    placeholder="en €"
+    )
+f.number_input(
+    "Assurance GLI (garantie loyers impayés en €)",
+    value=300,
+    placeholder="en €"
+    )
+f.number_input(
+    "Comptabilité annuelle (en €)",
+    value=600,
+    placeholder="en €"
+    )
+g.slider(
+    "Taux d'occupation (en %)",
+    0,
+    100,
+    95,
+    step=1
+    )
+g.number_input(
+    "Assurance habitation annuelle",
+    value=600,
+    placeholder="en €"
+    )
+g.number_input(
+    "Frais de gestion locative (en €)",
+    value=200,
+    placeholder="en €"
+    )
+
+h, i, j = st.columns(3)
+h.metric("Prix du bien", f"{int(nbm2*df_filtre_apt['prix_appartement'])} €", "€", border=True) 
+i.metric("Rentabilité brute", "3.2%","-1.28 pt", border=True) 
+j.metric("Rentabilité Net", "2.6", delta="2.6", delta_color="off",border=True)
 
 
 st.divider()
 st.header("Page 3")
 st.divider()
 
-# with st.container():
-#     st.header('Test map')
-#     m2 = folium.Map(location=nantes_coords, zoom_start=8)
-#     folium.GeoJson(geojson_path).add_to(m)
-#     m2
 
 
-# # Block : Looker
-# with st.container():
-#     st.header("Dashboard Looker intégré")
-#     url = "https://lookerstudio.google.com/embed/reporting/5ba61afc-11d4-47d4-9bd4-81021534e0ef/page/p_fcin9i4nvd"
-#     # Insérer avec iframe
-#     st.components.v1.iframe(url, width=1200, height=675, scrolling=True)
+ # Block : Looker
+with st.container():
+    st.header("Dashboard Looker intégré")
+    url = "https://lookerstudio.google.com/embed/reporting/664389ba-e673-461b-88b2-1eb27c02248e/page/p_fcin9i4nvd"
+    # Insérer avec iframe
+    st.components.v1.iframe(url, width=1200, height=675, scrolling=True)
