@@ -32,7 +32,7 @@ SCOPES = [
 ]
 
 # Authenticate with the service account
-creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(creds)
 
 # Open the Google Sheet by name
