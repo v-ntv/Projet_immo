@@ -1,0 +1,17 @@
+name: Run All Workflows
+
+on:
+  workflow_dispatch:   # Manual trigger
+  push:
+    branches:
+      - branch_v           # (optional) auto-run when you push to the branch indicated
+
+jobs:
+  run_workflow_1:
+    uses: ./.github/workflows/workflow1.yaml
+
+  run_workflow_2:
+    uses: ./.github/workflows/workflow2.yaml
+
+  run_workflow_3:
+    uses: ./.github/workflows/workflow3.yaml
