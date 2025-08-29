@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "projet-immo-gsheet",
+  "private_key_id": "fb206d3e6ac104655fafd784e00786c17006c1e9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXdLbhwnhkNif8\nDhJ/vt3cpA1qEFELEgCuZYlZCPjcg/kmye2aHa7b6wxk88RcNOQVPz2Raud6ukL5\nA7FCrSdIQCrIF9SRdEHdtOB247THkfvM7FOBZfbmp23/0hyem5q0rGETfYsTrEHP\nJBjYASABwLHayXpKjC16NInKSOv5bjAYI3jiPjZ8i1OB6+ME7Kx/tLGSdFva6xvX\nFZVF11eODJLQRdspUl5f0IzWPBz0HRiGILCDz824jUyZcklMSNQnmnsWG5umvz+A\nO9t7+z2YcDrM/oZANIdOofqhareGW9jc43QTFlsYxJZ9d2oBLd4E3YUh76/sLMJf\n9W7pB9CTAgMBAAECggEAP75uuxVbpB5nrwmEzJmuLzC0LUydhZ5yaCZvP9HJOwiq\npqC4dM/SY4tDk/yQ/EzDrEuVDhhoWuWPmffPMnBjPluJrMBsKgqQ0CTLAjG1UxQs\nQMEspYyCw1QG1diWkhBscYbMg8UxaAUfRUcjOIkArLQTiqzwSuz1KYIwwBHaCuXV\nAwCmci4bq6gjhsosIJH9Zndf5P0hGNyR8XcuAzNUUqbviOyWLGoiM2gK9xNDctAE\nDjflJ4dfoiFmPMNF9kjmlV0uCD1c6eSTITK28CH0G8ukvUUdfkVikhI4VhTf6iNq\nYM65VMORSCAj1nVj6DGiOSvvJ0bMtQMpIj0XCwus9QKBgQD6KYEyCkZuAEonORT3\nvFW2lfL6WylKybzES0+yJWp6+XOavOv5z61PUg1fA4nDVV+6B8Z7jU4/m9ZZzXhO\nNdssNH9Clu90PWyJNweuHAFduBBWMWRixCOinxz2j4sy5ffE4FMX9T8Xo0ytI6LX\nLIyqyv82F5uRsdd6VxGhPIOEZwKBgQDce97/hDvOnVtpXNboLyps8F4nTgquVcS9\nfG3xMjEmkghhWguJ8jb/M/f/14oHGaWqMlR8LKa7kfNQe7jGU9tykPpdyH2Amd7q\nJoIh+DH1MIAZ75u2gHUlXHf/uohHdp5qWDfKyNJD/APMS917E8XJabouVWvgi7tE\nJdPzECTW9QKBgCp3IzRQZDZGHFBeMz3+nXo6KB3xnafRaRbVRfkSuumXMNWinlgw\ntdXSMuzfF+KtumtE6J+OlCreFFv4MiTspYDyhGvUXV+ZEbSVP9uBa4XyOeu3xLez\nXe08H1mHcnS4bv/fqJtXiVdE5D4732exa0uO3BXdmg34Z4CgCSEauaSfAoGAajFr\nNWwuFhSqK3QguhHFgFTBNHMdJ9x9drpQhaQkEiyxxpnFBvrXTFFueBYLD+JlbTTy\nhiBHaf4gz7nXRAatol97huICuIbj26kScmQFQ8/JUzSZrevvAECqN0xTSQAzyoqU\nzKGuzDm8ZpB/q0DZuWmn15si6zLBzk/d5qr242UCgYEAo6U8GVuMqhDl9pPWdPFr\n3wA964BvfJoaJjsj4I50hRDOqa+ssWrHRjmRnMm4vMcjcT/exH7qT/3Ro6AZGhu9\n3fZ/jqhL2sQZ4HoaiY4Z8HEvfPMIYm74C13UVyvWdUkbKrY2MnLVy7ZoFrjKJ6F8\ndZY4AoYCAviqAWMGObmHdTU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-automation@projet-immo-gsheet.iam.gserviceaccount.com",
+  "client_id": "101816417217402641536",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-automation%40projet-immo-gsheet.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
