@@ -215,6 +215,7 @@ with tab1:
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_glb'][0]} %", border=True)
+    # affichage des graphiques
     c.plotly_chart(fig_glb)
     d.plotly_chart(fig_glb_loc)
      
@@ -224,6 +225,7 @@ with tab2:
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_apt'][0]} %", border=True)
+    # affichage des graphiques
     c.plotly_chart(fig_apt)
     d.plotly_chart(fig_apt_loc)
     
@@ -234,6 +236,7 @@ with tab3:
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
+    # affichage des graphiques
     c.plotly_chart(fig_msn)
     d.plotly_chart(fig_msn_loc)
 
@@ -310,3 +313,45 @@ with st.container():
     url = "https://lookerstudio.google.com/embed/reporting/664389ba-e673-461b-88b2-1eb27c02248e/page/p_fcin9i4nvd"
     # Insérer avec iframe
     st.components.v1.iframe(url, width=1200, height=675, scrolling=True)
+
+
+
+st.subheader('Comparaison')
+
+#Selection de la ville
+ville2=st.multiselect(
+        "Selectionner les Villes à comparer",
+        options=communes_data['ville'].unique(),
+        default="Nantes",
+        max_selections=6
+    )
+
+# Créez le DataFrame filtré
+df_filtre2 = communes_data[communes_data['ville'].isin(ville2)]
+df_filtre2 = df_filtre2.set_index(['ville'])
+
+with st.expander('Data Preview 2'):
+    st.dataframe(df_filtre2)
+
+# Étape 1 : Réinitialiser l'index
+df_reset = df_filtre2.reset_index()
+
+# Étape 2 : Faire fondre le DataFrame
+melted_df = df_reset.melt(id_vars='ville',
+                          value_vars=['prix_appartement', 'prix_global', 'prix_maison'],
+                          var_name='type_prix',
+                          value_name='valeur')
+
+
+# Étape 3 : Créer le graphique avec les facettes
+fig = px.bar(melted_df,
+             x='type_prix',
+             y='valeur',
+             facet_col='ville',  # Une colonne par ville (votre ancienne ligne)
+             facet_col_wrap=3, # Le nombre de colonnes maximal souhaité
+             title="Prix m2 par ville",
+             color='type_prix',
+             text_auto=True)
+
+# Afficher le graphique dans Streamlit
+st.plotly_chart(fig)
