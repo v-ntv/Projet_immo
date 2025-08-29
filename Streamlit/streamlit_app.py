@@ -17,7 +17,6 @@ st.set_page_config(
 
 # --- Chargement des données ---
 #@st.cache_data
-st.cache_data.clear()
 def load_data():
     # Charger le fichier GeoJSON des communes
     geojson_path = "communes.geojson" 
@@ -114,7 +113,7 @@ folium.Choropleth(
     columns=["Code_insee", colonne_valeur], # Colonnes pour lier les données
     key_on="feature.properties.code", # Clé de liaison dans le GeoJSON
     fill_color="YlOrRd", # Palette de couleurs (ex: YellowOrangeRed)
-    nan_fill_color="purple",
+    nan_fill_color="grey",
     fill_opacity=0.7,
     line_opacity=0.2,
     legend_name=nom_legende, # Nom de la légende dynamique
@@ -147,7 +146,7 @@ df_filtre = df_filtre.set_index(['ville'])
 with st.expander('Data Preview'):
     st.dataframe(df_filtre)
 
-#Créationd des graphique Plotly
+#Création des graphique Plotly
 fig_glb = px.bar(
     df_filtre,
     x=df_filtre.index,
@@ -208,20 +207,22 @@ fig_apt_loc.update_layout(yaxis_title="Prix en €")
 fig_msn.update_layout(yaxis_title="Prix en €")
 fig_msn_loc.update_layout(yaxis_title="Prix en €")
 
+
 tab1, tab2, tab3 = st.tabs(["Global", "Appartements", "Maisons"])
 
 with tab1:
-    a, b = st.columns(2)
+    a, b, x = st.columns(3)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_glb'][0]} %", border=True)
     # affichage des graphiques
     c.plotly_chart(fig_glb)
     d.plotly_chart(fig_glb_loc)
+   
      
 
 with tab2:
-    a, b = st.columns(2)
+    a, b, x = st.columns(3)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_apt'][0]} %", border=True)
@@ -232,16 +233,34 @@ with tab2:
 
 
 with tab3:
-    a, b = st.columns(2)
+    a, b, x = st.columns(3)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
     a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
     # affichage des graphiques
     c.plotly_chart(fig_msn)
     d.plotly_chart(fig_msn_loc)
+    
 
+option_map = {
+    0: "Appartement",
+    1: "Maison",
+}
 
-st.subheader(f"Exemple appartement 42m2")
+st.subheader(f"Simulation")
+
+selection = st.segmented_control(
+    "Type de bien",
+    options=option_map.keys(),
+    format_func=lambda option: option_map[option],
+    selection_mode="single",
+)
+bien_choisi = option_map.get(selection)
+
+if "Appartement" in bien_choisi:
+    prix, loyer = "prix_appartement", "loyer_appartement"
+elif "Maison" in bien_choisi:
+    prix, loyer = "prix_maison", "loyer_maison"
 
 e, f, g = st.columns(3)
 nbm2 = e.number_input(
@@ -250,55 +269,102 @@ nbm2 = e.number_input(
     max_value=1000,
     placeholder="en m2"
     )
-e.slider(
+frag =e.slider(
     "Selectionné les frais d'agences (en %)",
     0.0,
     10.0,
     5.0,
     step=0.5
     )
-e.pills(
+# Mappage des options de sélection aux valeurs de taux
+taux_par_type = {
+    "Ancien": 0.08,
+    "Neuf": 0.05
+}
+annf = e.pills(
     "Sélectionnez le type du bien :",
     ["Ancien", "Neuf"],
     default="Ancien"
 )
-f.number_input(
+taux_choisi = taux_par_type.get(annf)
+pno = f.number_input(
     "Assurance PNO (propriétaire non occupant en €)",
     value=250,
     placeholder="en €"
     )
-f.number_input(
+gli = f.number_input(
     "Assurance GLI (garantie loyers impayés en €)",
     value=300,
     placeholder="en €"
     )
-f.number_input(
+coan = f.number_input(
     "Comptabilité annuelle (en €)",
     value=600,
     placeholder="en €"
     )
-g.slider(
+aha = g.number_input(
+    "Assurance habitation annuelle",
+    value=300,
+    placeholder="en €"
+    )
+frgl = g.number_input(
+    "Frais de gestion locative (en €)",
+    value=200,
+    placeholder="en €"
+    )
+txo = g.slider(
     "Taux d'occupation (en %)",
     0,
     100,
     95,
     step=1
     )
-g.number_input(
-    "Assurance habitation annuelle",
-    value=600,
-    placeholder="en €"
-    )
-g.number_input(
-    "Frais de gestion locative (en €)",
-    value=200,
-    placeholder="en €"
-    )
+
+
+
+#Création du DataFrame Simulation
+def df_simulation(prix, loyer):
+
+    df_simu = pd.DataFrame()
+    df_simu['Prix au m2']= df_filtre[prix]
+    df_simu['Surface en m2']= nbm2
+    df_simu['Prix net vendeur'] = df_simu['Prix au m2']*df_simu['Surface en m2']
+    df_simu["Frais d'agence en %"] = frag/100 # slider
+    df_simu["Frais de notaire en %"] = taux_choisi # 3% sur neuf 8% sur ancien
+    df_simu["Frais d'agence en €"] = df_simu["Prix net vendeur"]*df_simu["Frais d'agence en %"]
+    df_simu["Frais de notaire en €"] = df_simu["Prix net vendeur"]*df_simu["Frais de notaire en %"]
+    df_simu["Loyer m2"] = df_filtre[loyer]
+    df_simu["Taux d'occupation"] = txo # slider
+    df_simu["Loyer mensuel"] = df_simu['Surface en m2']*df_simu["Loyer m2"]*df_simu["Taux d'occupation"]
+    df_simu["Loyer annuel"] = df_simu["Loyer mensuel"]*12
+    df_simu["Assurance annuelle PNO"] = pno # à remplir
+    df_simu["GLI annuelle (Garantie Loyers Impayés)"] = gli #0.03*df_simu["Loyer annuel"] # à mettre par défaut
+    df_simu["Comptabilité annuelle"] = coan # à remplir
+    df_simu["Valeur cadastrale"] = df_simu['Surface en m2']*df_simu["Loyer m2"]
+    df_simu["Taux global TFPB"] = df_filtre['Taux_Global_TFB']
+    df_simu["Taxe foncière annuelle"] = (df_simu["Valeur cadastrale"]*0.5)*df_simu["Taux global TFPB"]
+    df_simu["provisions entretien annuel"] = df_simu['Loyer annuel']*0.02
+    df_simu["provisions gros oeuvres annuel"] = df_simu['Prix net vendeur']*0.005
+    df_simu["Assurance habitation annuelle"] = aha #à remplir
+    df_simu["Frais de gestion locative annuel"] = df_simu['Loyer mensuel']*0.07*12
+    df_simu["Prix achat total"] = df_simu["Prix net vendeur"]+df_simu["Frais d'agence en €"]+df_simu["Frais de notaire en €"]
+    df_simu['Rentabilité Brute'] = round(df_simu['Loyer annuel']/df_simu["Prix achat total"],2)
+    df_simu['Charges Annuelles'] = round(df_simu["Assurance annuelle PNO"]+df_simu["GLI annuelle (Garantie Loyers Impayés)"]+df_simu["Comptabilité annuelle"]+df_simu["Taux global TFPB"]+df_simu["provisions entretien annuel"]+df_simu["provisions gros oeuvres annuel"]+df_simu["Assurance habitation annuelle"]+df_simu["Frais de gestion locative annuel"],2)
+    df_simu['Rentabilité Net'] = round((df_simu['Loyer annuel']-df_simu['Charges Annuelles'])/df_simu["Prix achat total"],2)
+    return df_simu
+
+df_simu= df_simulation(prix, loyer)
+
+with st.expander('Data Simulation'):
+    st.dataframe(df_simu)
+
+with st.expander('Data Indicateurs'):
+    st.dataframe(df_simu[['Prix achat total','Rentabilité Brute','Charges Annuelles','Rentabilité Net']])
 
 h, i, j = st.columns(3)
-h.metric("Prix du bien", f"{int(nbm2*df_filtre['prix_appartement'])} €", "€", border=True) 
-i.metric("Rentabilité brute", "3.2%","-1.28 pt", border=True) 
-j.metric("Rentabilité Net", "2.6", delta="2.6", delta_color="off",border=True)
+h.metric("Prix d'achat total", f"{int(df_simu['Prix achat total'])} €", border=True) 
+i.metric("Ratio achat/loc Brut", f"{df_simu['Rentabilité Brute'][0]} %", border=True) 
+j.metric("Ratio achat/loc Net", f"{df_simu['Rentabilité Net'][0]} %",border=True)
 
 
 st.divider()
@@ -312,7 +378,7 @@ with st.container():
     st.header("Dashboard Looker intégré")
     url = "https://lookerstudio.google.com/embed/reporting/664389ba-e673-461b-88b2-1eb27c02248e/page/p_fcin9i4nvd"
     # Insérer avec iframe
-    st.components.v1.iframe(url, width=1200, height=675, scrolling=True)
+    st.components.v1.iframe(url, width=1200, height=1000, scrolling=True)
 
 
 
