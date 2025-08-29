@@ -5,6 +5,7 @@ from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
 import duckdb
 import plotly.express as px
+import plotly.graph_objects as go
 
 # Configuration de la page
 st.set_page_config(
@@ -60,29 +61,7 @@ communes_data = duckdb.sql("""
 # --- SideBar ---
 with st.sidebar:
     st.image("Logo_le_wagon.png", caption="Le wagon")
-    # st.header("Filtres")
-    # type_de_bien = st.pills(
-    #     "Sélectionnez le type de bien :",
-    #     ["Appartements", "Maisons"],
-    #     selection_mode="multi"
-    # )
-    # ville=st.multiselect(
-    #     "Select Ville",
-    #     options=communes_data['ville'].unique(),
-    #     default=communes_data['ville'][91]
-    # )
-    # nbm2=st.number_input(
-    #     "Surface du projet",
-    #     value=None,
-    #     placeholder="en m2"
-    #     )
-    # fraisdagence=st.slider(
-    #     "Selectionné les frais d'agences (en %)",
-    #     0.0,
-    #     10.0,
-    #     5.0,
-    #     step=0.5
-    #     )
+
 
 
 st.divider()
@@ -164,18 +143,70 @@ ville=st.multiselect(
 # Créez le DataFrame filtré
 df_filtre = communes_data[communes_data['ville'].isin(ville)]
 df_filtre = df_filtre.set_index(['ville'])
-df_filtre_apt = df_filtre[['prix_appartement','min_appartement','max_appartement','ratio_m2_apt']] 
-df_filtre_apt_loc = df_filtre[['loyer_appartement', 'loyer_min_appartement', 'loyer_max_appartement']]
-df_filtre_msn = df_filtre[['prix_maison',"min_maison",'max_maison','ratio_m2_msn']]
-df_filtre_msn_loc = df_filtre[['loyer_maison', 'loyer_min_maison', 'loyer_max_maison']]
-df_filtre_glb = df_filtre[['prix_global',"min_global",'max_global','ratio_m2_glb']]
-df_filtre_glb_loc = df_filtre[['loyer_global', 'loyer_min_global', 'loyer_max_global']]
-Code_postal = df_filtre['Code_postal']
 
 with st.expander('Data Preview'):
     st.dataframe(df_filtre)
 
+#Créationd des graphique Plotly
+fig_glb = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['min_global','prix_global','max_global'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    text_auto=True
+)
+fig_glb_loc = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['loyer_min_global','loyer_global','loyer_max_global'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    color_discrete_sequence=["#fd0", "#f0f", "#04f"],
+    text_auto=True
+)
+fig_apt = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['min_appartement','prix_appartement','max_appartement'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    text_auto=True
+)
+fig_apt_loc = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['loyer_min_appartement','loyer_appartement','loyer_max_appartement'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    color_discrete_sequence=["#fd0", "#f0f", "#04f"],
+    text_auto=True
+)
+fig_msn = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['min_maison','prix_maison','max_maison'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    text_auto=True
+)
+fig_msn_loc = px.bar(
+    df_filtre,
+    x=df_filtre.index,
+    y=['loyer_min_maison','loyer_maison','loyer_max_maison'],
+    title = f"Prix m2 à {df_filtre.index[0]}",
+    barmode="group",
+    color_discrete_sequence=["#fd0", "#f0f", "#04f"],
+    text_auto=True
+)
 
+# Modifier le titre de l'axe Y
+fig_glb.update_layout(yaxis_title="Prix en €")
+fig_glb_loc.update_layout(yaxis_title="Prix en €")
+fig_apt.update_layout(yaxis_title="Prix en €")
+fig_apt_loc.update_layout(yaxis_title="Prix en €")
+fig_msn.update_layout(yaxis_title="Prix en €")
+fig_msn_loc.update_layout(yaxis_title="Prix en €")
 
 tab1, tab2, tab3 = st.tabs(["Global", "Appartements", "Maisons"])
 
@@ -183,22 +214,18 @@ with tab1:
     a, b = st.columns(2)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute au m2 à {df_filtre.index[0]}")
-    a.metric("Rentabilité Brut moyenne", df_filtre_glb['ratio_m2_glb'], border=True)
-    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
-    c.bar_chart(df_filtre_glb, y_label="Prix m2 en €", stack=False)
-    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
-    d.bar_chart(df_filtre_glb_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
+    a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_glb'][0]} %", border=True)
+    c.plotly_chart(fig_glb)
+    d.plotly_chart(fig_glb_loc)
      
 
 with tab2:
     a, b = st.columns(2)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
-    a.metric("Rentabilité Brut moyenne", df_filtre_apt['ratio_m2_apt'], border=True)
-    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
-    c.bar_chart(df_filtre_apt, y_label="Prix m2 en €", stack=False)
-    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
-    d.bar_chart(df_filtre_apt_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
+    a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_apt'][0]} %", border=True)
+    c.plotly_chart(fig_apt)
+    d.plotly_chart(fig_apt_loc)
     
 
 
@@ -206,11 +233,9 @@ with tab3:
     a, b = st.columns(2)
     c, d = st.columns(2)
     a.subheader(f"Rantabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
-    a.metric("Rentabilité Brut moyenne", df_filtre_msn['ratio_m2_msn'], border=True)
-    c.subheader(f'Prix m2 à {df_filtre.index[0]}')
-    c.bar_chart(df_filtre_msn, y_label="Prix m2 en €", stack=False)
-    d.subheader(f'Loyer m2 mensuel à {df_filtre.index[0]}')
-    d.bar_chart(df_filtre_msn_loc, y_label="Loyer m2 en €", color=["#fd0", "#f0f", "#04f"], stack=False)
+    a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
+    c.plotly_chart(fig_msn)
+    d.plotly_chart(fig_msn_loc)
 
 
 st.subheader(f"Exemple appartement 42m2")
@@ -268,7 +293,7 @@ g.number_input(
     )
 
 h, i, j = st.columns(3)
-h.metric("Prix du bien", f"{int(nbm2*df_filtre_apt['prix_appartement'])} €", "€", border=True) 
+h.metric("Prix du bien", f"{int(nbm2*df_filtre['prix_appartement'])} €", "€", border=True) 
 i.metric("Rentabilité brute", "3.2%","-1.28 pt", border=True) 
 j.metric("Rentabilité Net", "2.6", delta="2.6", delta_color="off",border=True)
 
@@ -277,7 +302,7 @@ st.divider()
 st.header("Page 3")
 st.divider()
 
-
+    
 
  # Block : Looker
 with st.container():
