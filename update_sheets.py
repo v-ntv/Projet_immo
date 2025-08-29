@@ -5,6 +5,9 @@ import gspread
 from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 
+print("The directory where I'm is :")
+print(os.getcwd())
+
 df = pd.read_csv('df_MA_calcul.csv')
 
 mask_dep44 = (df['Departement'] == 'Loire-Atlantique')
