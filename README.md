@@ -165,8 +165,3 @@ préparation présentation
 
 # J10:
 présentation
-
-
-# Jour 2
-
-# Jour 3
