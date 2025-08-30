@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
-import folium
-from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
 import duckdb
 import plotly.express as px
 import plotly.graph_objects as go
+import json
+import requests
+import numpy as np
 
 # Configuration de la page
 st.set_page_config(
@@ -16,18 +17,41 @@ st.set_page_config(
 
 
 # --- Chargement des données ---
-#@st.cache_data
+st.cache_data.clear()
 def load_data():
-    # Charger le fichier GeoJSON des communes
-    geojson_path = "communes.geojson" 
+    # Charger les fichiers GeoJSON 
+    geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
+    geojson_depts = 'departements-version-simplifiee.geojson'
     # Charger les données de meilleur agent
     data_MA = "df_MA_clean.csv"
     # Charger les données avec pandas
     communes_data = pd.read_csv(data_MA)
 
-    return geojson_path, communes_data
+    return geojson, communes_data
 
-geojson_path, communes_data = load_data()
+geojson, geojson_depts, communes_data = load_data()
+
+# Filtrer aux pays de la loire
+features_filtrees = [
+    feature for feature in geojson["features"]
+    if feature["properties"].get("reg") == "52"
+]
+# Créer un nouveau GeoJSON
+geojson_filtre = {
+    "type": "FeatureCollection",
+    "features": features_filtrees
+}
+# Créer un DataFrame avec TOUS les départements comme fond
+dept_codes = [feat["properties"]["code"] for feat in geojson_depts["features"]]
+df_fond = pd.DataFrame({"code": dept_codes, "valeur": np.nan})
+
+# Pour superposer les communes :
+# - on utilise ton DataFrame existant communes_data
+# - on aligne les codes avec ceux du geojson des COMMUNES
+communes_data_plot = communes_data.copy()
+communes_data_plot["valeur"] = communes_data_plot["Taux_Global_TFB"]
+
+
 
 # #Ajout des données global + ratio en Python
 # communes_data['prix_global'] = (communes_data['prix_appartement']+communes_data['prix_maison'])/2
@@ -97,35 +121,66 @@ else:
 
 
 # --- Préparation des données pour la carte ----
-# Le fichier GeoJSON doit avoir une propriété 'code' qui correspond à la colonne 'code_commune' du CSV.
+# Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
 communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
 
-# --- Création de la carte Folium ---
-# Coordonnées initiales centrées sur Nantes
-nantes_coords = [47.216671, -1.55]
-m = folium.Map(location=nantes_coords, zoom_start=8)
+#Carte Plotly
+# Carte choropleth
+# mapgeo = px.choropleth(
+#     communes_data,
+#     geojson=geojson_filtre,
+#     locations="Code_insee",       # clé commune dans ton df
+#     featureidkey="properties.codgeo", # clé commune dans le geojson
+#     color="Taux_Global_TFB",         # valeur à afficher
+#     hover_name='ville',
+#     color_continuous_scale="RdYlGn_r",  # vert=faible, rouge=fort
+#     range_color=(0,1),
+#     projection="equirectangular",
+#     center={"lat": 47.2, "lon": -0.6},  # centre Pays de la Loire
+#     basemap_visible=True,
+#     title=nom_legende,
+#     width=1200,
+#     height=800
+# )
+# mapgeo.update_geos(fitbounds="locations", visible=False)
 
-# Création de la carte choroplèthe
-folium.Choropleth(
-    geo_data=geojson_path, # Le fichier GeoJSON
-    name="choropleth",
-    data=communes_data,
-    columns=["Code_insee", colonne_valeur], # Colonnes pour lier les données
-    key_on="feature.properties.code", # Clé de liaison dans le GeoJSON
-    fill_color="YlOrRd", # Palette de couleurs (ex: YellowOrangeRed)
-    nan_fill_color="grey",
-    fill_opacity=0.7,
-    line_opacity=0.2,
-    legend_name=nom_legende, # Nom de la légende dynamique
-    smooth_factor=0.5,
-    zoom_on_click=True
-).add_to(m)
+# 1️⃣ Affichage des départements (fond gris)
+mapgeo = px.choropleth(
+    df_fond,
+    geojson=geojson_depts,
+    locations="code",
+    featureidkey="properties.code",
+    color="valeur",
+    color_continuous_scale=[[0, "lightgrey"], [1, "lightgrey"]],
+    title=nom_legende,
+    width=1200,
+    height=800
+)
 
-# Ajout d'une couche de contrôle pour activer/désactiver la carte choroplèthe
-folium.LayerControl().add_to(m)
+# 2️⃣ Ajout des communes colorées
+mapgeo2 = px.choropleth(
+    communes_data_plot,
+    geojson=geojson_communes,  # GeoJSON communes Pays de la Loire
+    locations="Code_insee",
+    featureidkey="properties.codgeo",
+    color="valeur",
+    hover_name="ville",
+    color_continuous_scale="RdYlGn_r",
+    range_color=(0,1)
+)
+
+# Fusion des deux cartes (départements + communes)
+for trace in mapgeo2.data:
+    mapgeo.add_trace(trace)
+
+# Ajustement vue
+mapgeo.update_geos(
+    fitbounds="locations",
+    visible=False
+)
 
 # Affichage de la carte dans Streamlit
-st_folium(m, width=1200, height=800)
+st.plotly_chart(mapgeo)
 
 st.divider()
 st.header("Page 2")
