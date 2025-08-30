@@ -254,6 +254,7 @@ selection = st.segmented_control(
     options=option_map.keys(),
     format_func=lambda option: option_map[option],
     selection_mode="single",
+    default=0
 )
 bien_choisi = option_map.get(selection)
 
