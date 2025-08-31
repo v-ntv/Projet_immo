@@ -37,12 +37,13 @@ def intro():
     import requests
     import numpy as np
 
+    st.cache_data.clear()
     # --- Chargement des données ---
     def load_data():
         # Charger les fichiers GeoJSON 
         geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
         # Charger les données de meilleur agent
-        data_MA = "df_MA_clean.csv"
+        data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
         
@@ -147,7 +148,7 @@ def intro():
 
     # )
 
-    # --- Création de la carte Folium ---
+    # --- Création de la carte Folium ----
     # Coordonnées initiales centrées sur Nantes
     nantes_coords = [47.216671, -1.55]
     m = folium.Map(location=nantes_coords, zoom_start=8)
