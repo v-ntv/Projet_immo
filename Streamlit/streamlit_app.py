@@ -198,7 +198,7 @@ def simu_ville():
         # Charger les fichiers GeoJSON 
         geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
         # Charger les données de meilleur agent
-        data_MA = "df_MA_clean.csv"
+        data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
         
@@ -510,7 +510,7 @@ def comparaison():
         # Charger les fichiers GeoJSON 
         geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
         # Charger les données de meilleur agent
-        data_MA = "df_MA_clean.csv"
+        data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
         
