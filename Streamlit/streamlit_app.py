@@ -354,7 +354,7 @@ def simu_ville():
     with tab1:
         a, b, x = st.columns(3)
         c, d = st.columns(2)
-        a.subheader(f"Rantabilité Brute au m2 à {df_filtre.index[0]}")
+        a.subheader(f"Rentabilité Brute au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_glb'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_glb)
@@ -365,7 +365,7 @@ def simu_ville():
     with tab2:
         a, b, x = st.columns(3)
         c, d = st.columns(2)
-        a.subheader(f"Rantabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
+        a.subheader(f"Rentabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_apt'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_apt)
@@ -376,7 +376,7 @@ def simu_ville():
     with tab3:
         a, b, x = st.columns(3)
         c, d = st.columns(2)
-        a.subheader(f"Rantabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
+        a.subheader(f"Rentabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_msn)
