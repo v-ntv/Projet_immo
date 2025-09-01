@@ -1,8 +1,10 @@
 name: Update Google Sheets
 
+# déclenchement manuel
 on:
-  workflow_dispatch:  # déclenchement manuel
+  workflow_dispatch:  
 
+# lancement des étapes
 jobs:
   update-sheet:
     runs-on: ubuntu-latest
@@ -13,12 +15,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: branch_v
-          
-      - name: Show working directory
-        run: pwd
-
-      - name: List files in working directory
-        run: ls -R
 
       # Installer Python
       - name: Set up Python
@@ -30,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install pandas gspread gspread-dataframe google-auth
 
-      # Lancer le script Python
+      # Lancer le script Python en utilisant le json du compte GCP (mis sur github en secret)
       - name: Run Python script
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
