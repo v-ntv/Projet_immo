@@ -106,14 +106,12 @@ def region():
     tab1, tab2 = st.tabs(["Tension Locative", "Ration Achat/Loc"])
 
     with tab1:
-    #Selection du type de bien à afficher sur la map
         st.subheader('Tension Locative')
-
         # --- Préparation des données pour la carte ----
         # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
         communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
         #Ajouter la variable tension_loc au df_MA
-        df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+        df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG','CROI_POP_16_22']]
         df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
         communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
@@ -199,7 +197,7 @@ def region():
         # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
         communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
         #Ajouter la variable tension_loc au df_MA
-        df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+        df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG','CROI_POP_16_22']]
         df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
         communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
@@ -335,7 +333,7 @@ def simu_ville():
     # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
     communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
     #Ajouter la variable tension_loc au df_MA
-    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG','CROI_POP_16_22']]
     df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
     communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
@@ -423,6 +421,8 @@ def simu_ville():
         c, d = st.columns(2)
         a.subheader(f"Rentabilité Brute au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_glb'][0]} %", border=True)
+        b.subheader(f"Evolution de la population à {df_filtre.index[0]} entre 2016 et 2022")
+        b.metric("Croissance pop", f"{df_filtre['CROI_POP_16_22'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_glb)
         d.plotly_chart(fig_glb_loc)
@@ -434,6 +434,8 @@ def simu_ville():
         c, d = st.columns(2)
         a.subheader(f"Rentabilité Brute pour les appartements au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_apt'][0]} %", border=True)
+        b.subheader(f"Evolution de la population à {df_filtre.index[0]} entre 2016 et 2022")
+        b.metric("Croissance pop", f"{df_filtre['CROI_POP_16_22'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_apt)
         d.plotly_chart(fig_apt_loc)
@@ -445,6 +447,8 @@ def simu_ville():
         c, d = st.columns(2)
         a.subheader(f"Rentabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
         a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
+        b.subheader(f"Evolution de la population à {df_filtre.index[0]} entre 2016 et 2022")
+        b.metric("Croissance pop", f"{df_filtre['CROI_POP_16_22'][0]} %", border=True)
         # affichage des graphiques
         c.plotly_chart(fig_msn)
         d.plotly_chart(fig_msn_loc)
@@ -580,9 +584,11 @@ def comparaison():
     import pandas as pd
     import duckdb
     import plotly.express as px
+    import plotly.graph_objects as go
     import json
     import requests
     import numpy as np
+    from sklearn.preprocessing import MinMaxScaler
 
     # --- Chargement des données ---
     def load_data():
@@ -647,7 +653,7 @@ def comparaison():
     # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
     communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
     #Ajouter la variable tension_loc au df_MA
-    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG','CROI_POP_16_22']]
     df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
     communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
@@ -655,7 +661,7 @@ def comparaison():
     ville2=st.multiselect(
             "Selectionner les Villes à comparer",
             options=communes_data['ville'].unique(),
-            default="Nantes",
+            default=["Nantes","Angers","Vertou"],
             max_selections=6
         )
 
@@ -666,34 +672,97 @@ def comparaison():
     with st.expander('Data Preview 2'):
         st.dataframe(df_filtre2)
 
-    # Étape 1 : Réinitialiser l'index
-    df_reset = df_filtre2.reset_index()
-
-    # Étape 2 : Faire fondre le DataFrame
-    melted_df = df_reset.melt(id_vars='ville',
-                            value_vars=['prix_appartement', 'prix_global', 'prix_maison'],
-                            var_name='type_prix',
-                            value_name='valeur')
+    #Init couleurs
+    couleurs_palette = px.colors.qualitative.Plotly
 
 
-    # Étape 3 : Créer le graphique avec les facettes
-    fig = px.bar(melted_df,
-                x='type_prix',
-                y='valeur',
-                facet_col='ville',  # Une colonne par ville (votre ancienne ligne)
-                facet_col_wrap=3, # Le nombre de colonnes maximal souhaité
-                title="Prix m2 par ville",
-                color='type_prix',
-                text_auto=True)
+    #Création des graphique Plotly
+    fig_prixm2 = px.bar(
+        df_filtre2,
+        x=df_filtre2.index,
+        y=['prix_global'],
+        title = f"Prix m2 à {df_filtre2.index[0]}",
+        barmode="group",
+        color=df_filtre2.index,
+        color_discrete_sequence=couleurs_palette
+    )
 
-    # Afficher le graphique dans Streamlit
-    st.plotly_chart(fig)
+    fig_loyerm2 = px.bar(
+        df_filtre2,
+        x=df_filtre2.index,
+        y=['loyer_global'],
+        title = f"Loyer m2 à {df_filtre2.index[0]}",
+        barmode="group",
+        color=df_filtre2.index,
+        color_discrete_sequence=couleurs_palette
+    )
+
+    fig_ratiom2 = px.bar(
+        df_filtre2,
+        x=df_filtre2.index,
+        y=['ratio_m2_glb'],
+        title = f"Ratio en l'achat et la mise en location en m2",
+        barmode="group",
+        color=df_filtre2.index,
+        color_discrete_sequence=couleurs_palette
+    )
+
+    fig_tension = px.bar(
+        df_filtre2,
+        x=df_filtre2.index,
+        y=['INDICE_TENSION_LOG'],
+        title = f"Tension locative",
+        barmode="group",
+        color=df_filtre2.index,
+        color_discrete_sequence=couleurs_palette
+    )
+
+    fig_croipop = px.bar(
+        df_filtre2,
+        x=df_filtre2.index,
+        y=['CROI_POP_16_22'],
+        title = f"Croissance de la population",
+        barmode="group",
+        color=df_filtre2.index,
+        color_discrete_sequence=couleurs_palette
+    )
+
+    #Afficher le graphique dans Streamlit
+    a, b, c = st.columns(3)
+    a.plotly_chart(fig_prixm2)
+    b.plotly_chart(fig_loyerm2)
+    c.plotly_chart(fig_ratiom2)
+    a.plotly_chart(fig_tension)
+    b.plotly_chart(fig_croipop)
+
 
 
 def glos():
     import streamlit as st
+    import pandas as pd
+    
+    # Votre dictionnaire de glossaire
+    glossaire = {
+        "**Rentabilité Brute**": "Rendement du bien calculé uniquement sur les loyers perçus par rapport au prix d'achat.",
+        "**Rentabilité Nette**": "Rendement réel après déduction des charges, impôts et frais.",
+        "**GLI** (Garantie Loyers Impayés)": "Assurance couvrant le risque de loyers non payés.",
+        "**PNO** (Propriétaire Non Occupant)": "Assurance protégeant un logement loué ou vacant.",
+        "**Valeur cadastrale**": "Valeur estimée par l'administration pour calculer les impôts locaux.",
+        "**Taux global TFPB** (Taxe Foncière sur les Propriétés Bâties)": "Pourcentage appliqué sur la valeur cadastrale pour calculer la taxe foncière.",
+        "**Provisions** (entretien / gros œuvres)": "Sommes mises de côté pour financer réparations et travaux importants.",
+        "**Assurance habitation**": "Couverture des risques liés au logement (incendie, dégâts des eaux, etc.).",
+        "**Taux d'occupation**": "Proportion de temps où le bien est loué par rapport au temps total.",
+        "**Frais de gestion locative**": "Coût facturé par une agence ou un gestionnaire pour s'occuper du bien.",
+        "**IDE**": "Environnement de développement."
+    }
 
-    st.title('Glossaire')
+    st.title("Glossaire des termes techniques")
+    st.write("Cliquez sur un terme pour voir sa définition.")
+
+    # Boucle pour afficher chaque terme et sa définition
+    for terme, definition in glossaire.items():
+        with st.expander(terme):
+            st.write(definition)
 
 page_names_to_funcs = {
     "Introduction": intro,
