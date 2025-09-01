@@ -5,7 +5,6 @@ from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
 import duckdb
 import plotly.express as px
-import plotly.graph_objects as go
 import json
 import requests
 import numpy as np
@@ -22,9 +21,14 @@ with st.sidebar:
     st.image("Logo_le_wagon.png", caption="Le wagon")
     
 
-
-
 def intro():
+    import streamlit as st
+
+    st.title("Présentation projet")
+    st.subheader("Outils")
+    st.subheader('Sources')
+
+def region():
     import streamlit as st
     import pandas as pd
     import folium
@@ -32,7 +36,6 @@ def intro():
     from geopy.geocoders import Nominatim
     import duckdb
     import plotly.express as px
-    import plotly.graph_objects as go
     import json
     import requests
     import numpy as np
@@ -46,11 +49,14 @@ def intro():
         data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
+        #Tension Locative
+        tension_loc = "df_norm.csv"
+        df_norm = pd.read_csv(tension_loc)
         
 
-        return geojson, communes_data
+        return geojson, communes_data, df_norm
 
-    geojson, communes_data = load_data()
+    geojson, communes_data, df_norm = load_data()
 
 
     # Filtrer aux pays de la loire
@@ -63,7 +69,6 @@ def intro():
         "type": "FeatureCollection",
         "features": features_filtrees
     }
-
 
 
     # #Ajout des données global + ratio en Python
@@ -94,10 +99,10 @@ def intro():
     """).df()
 
     #Titre de la page
-    st.title("Dashboard")
+    st.title("Zoom Pays de la Loire")
+    st.subheader("Carte des Pays de la Loire ")
 
     #Selection du type de bien à afficher sur la map
-    st.markdown("Filtres")
     type_de_bien = st.pills(
         "Sélectionnez le type de bien :",
         ["Appartements", "Maisons"],
@@ -118,13 +123,17 @@ def intro():
         nom_legende = "Prix moyen des maisons (€/m²)"
     else:
         # Cas où rien n'est sélectionné, utilisez les données par défaut ou affichez un message
-        colonne_valeur = "ratio_m2_glb"
+        colonne_valeur = "INDICE_TENSION_LOG"
         nom_legende = "Sélectionnez un type de bien"
 
 
     # --- Préparation des données pour la carte ----
     # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
     communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
+    #Ajouter la variable tension_loc au df_MA
+    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+    df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
+    communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
     #Carte Plotly
     # Carte choropleth
@@ -179,6 +188,12 @@ def intro():
     # Affichage de la carte dans Streamlit
     #st.plotly_chart(mapgeo)
 
+    # Block : Looker
+    with st.container():
+        st.header("KPI Départements")
+        url = "https://lookerstudio.google.com/embed/reporting/664389ba-e673-461b-88b2-1eb27c02248e/page/p_fcin9i4nvd"
+        # Insérer avec iframe
+        st.components.v1.iframe(url, width=1200, height=1000, scrolling=True)
 
 def simu_ville():
     import streamlit as st
@@ -188,7 +203,6 @@ def simu_ville():
     from geopy.geocoders import Nominatim
     import duckdb
     import plotly.express as px
-    import plotly.graph_objects as go
     import json
     import requests
     import numpy as np
@@ -201,11 +215,14 @@ def simu_ville():
         data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
+        #Tension Locative
+        tension_loc = "df_norm.csv"
+        df_norm = pd.read_csv(tension_loc)
         
 
-        return geojson, communes_data
+        return geojson, communes_data, df_norm
 
-    geojson, communes_data = load_data()
+    geojson, communes_data, df_norm = load_data()
 
 
     # Filtrer aux pays de la loire
@@ -247,6 +264,13 @@ def simu_ville():
         round(((loyer_global*12)/prix_global)*100,2)AS ratio_m2_glb
         FROM communes_data
     """).df()
+
+    # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
+    communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
+    #Ajouter la variable tension_loc au df_MA
+    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+    df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
+    communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
 
     #Selection de la ville
     ville=st.multiselect(
@@ -484,23 +508,11 @@ def simu_ville():
 
 
 
-    
-def looker():
-    import streamlit as st
-    # Block : Looker
-    with st.container():
-        st.header("Dashboard Looker intégré")
-        url = "https://lookerstudio.google.com/embed/reporting/664389ba-e673-461b-88b2-1eb27c02248e/page/p_fcin9i4nvd"
-        # Insérer avec iframe
-        st.components.v1.iframe(url, width=1200, height=1000, scrolling=True)
-
-
 def comparaison():
     import streamlit as st
     import pandas as pd
     import duckdb
     import plotly.express as px
-    import plotly.graph_objects as go
     import json
     import requests
     import numpy as np
@@ -513,11 +525,14 @@ def comparaison():
         data_MA = "df_MA_clean2.csv"
         # Charger les données avec pandas
         communes_data = pd.read_csv(data_MA)
+        #Tension Locative
+        tension_loc = "df_norm.csv"
+        df_norm = pd.read_csv(tension_loc)
         
 
-        return geojson, communes_data
+        return geojson, communes_data, df_norm
 
-    geojson, communes_data = load_data()
+    geojson, communes_data, df_norm = load_data()
 
 
     # Filtrer aux pays de la loire
@@ -562,6 +577,13 @@ def comparaison():
 
     st.subheader('Comparaison')
 
+    # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
+    communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
+    #Ajouter la variable tension_loc au df_MA
+    df_norm = df_norm[['CODE_INSEE','INDICE_TENSION_LOG']]
+    df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
+    communes_data = pd.merge(communes_data, df_norm,left_on=['Code_insee'], right_on=["CODE_INSEE"], how="left")
+
     #Selection de la ville
     ville2=st.multiselect(
             "Selectionner les Villes à comparer",
@@ -601,11 +623,17 @@ def comparaison():
     st.plotly_chart(fig)
 
 
+def glos():
+    import streamlit as st
+
+    st.title('Glossaire')
+
 page_names_to_funcs = {
     "Introduction": intro,
+    "Zoom Région Pays de la Loire": region,
     "Simulation par ville": simu_ville,
-    "KPI région": looker,
-    "Comparaison entre plusieurs villes" : comparaison
+    "Comparaison entre plusieurs villes" : comparaison,
+    "Glossaire": glos
 }
 
 page_name = st.sidebar.selectbox("Selectiez nos pages.", page_names_to_funcs.keys())
