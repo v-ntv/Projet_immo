@@ -14,7 +14,7 @@ jobs:
       - name: Checkout branch_v
         uses: actions/checkout@v3
         with:
-          ref: branch_v
+          ref: main
 
       # Installer Python
       - name: Set up Python
