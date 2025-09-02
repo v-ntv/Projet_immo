@@ -1,7 +1,6 @@
 # importer les librairies
 import pandas as pd
 import numpy as np
-import plotly.express as px
 from sklearn.preprocessing import MinMaxScaler
 import os
 import json
