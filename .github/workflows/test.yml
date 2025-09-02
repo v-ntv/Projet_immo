@@ -2,7 +2,10 @@ name: Run test scripts
 
 # déclenchement manuel
 on:
-  workflow_dispatch:  
+  push:
+    branches:
+      - test_main
+  workflow_dispatch:
 
 # lancement des étapes
 jobs:
