@@ -108,8 +108,10 @@ if (df_merged_clean.loc[mask_dep72, 'Taux_Global_TFB'].isna().any()):
 cols_to_numeric = [
     'prix_appartement', 'prix_maison',
     'min_appartement', 'min_maison',
+    'max_appartement', 'max_maison',
     'loyer_appartement', 'loyer_maison',
     'loyer_min_appartement', 'loyer_min_maison'
+    'loyer_max_appartement', 'loyer_max_maison'
 ]
 
 for col in cols_to_numeric:
