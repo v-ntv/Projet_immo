@@ -33,7 +33,7 @@ jobs:
       - name: test
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python calcul_data.py
+        run: python analyse_tension_locative.py
 
       #- name: Run ###
       #  run: python ###.py

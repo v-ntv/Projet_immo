@@ -16,6 +16,7 @@ gc = gspread.authorize(creds)
 
 # ouverture du fichier csv
 sheet = gc.open_by_key("1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq").sheet1  
+sheet2 = gc.open_by_key("1B8sqSuWEjtfEoGOibpErG52CaejEz7TdiUosFzWyJ7s").sheet1  
 
 # récupérer toutes les valeurs
 data = sheet.get_all_records()
@@ -280,3 +281,4 @@ map_villes = {
 top10_villes["CODE_INSEE"] = top10_villes["CODE_INSEE"].astype(str).str.zfill(5)
 top10_villes["NOM_COMMUNE"] = top10_villes["CODE_INSEE"].map(map_villes)
 
+set_with_dataframe(sheet2, df_norm)
