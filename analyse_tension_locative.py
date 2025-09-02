@@ -9,7 +9,14 @@ from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 import gdown
 
-# Importer le fichier CSV 
+SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
+
+# scope where we need to search files
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive'
+]
+
 creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(creds)
 
