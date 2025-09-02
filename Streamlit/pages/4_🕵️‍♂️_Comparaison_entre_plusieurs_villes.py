@@ -15,12 +15,18 @@ st.set_page_config(
     page_icon="🏛",
     layout="wide"
  )
+# --- SideBar ---
 with st.sidebar:
-    st.success("Select a page above")
-    st.image("Logo_le_wagon.png", caption="Le wagon")
+    st.success("Selectionner les pages au dessus")
+    st.image("Logo_Red&Black.png")
     st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
+    st.subheader('Auteurs')
+    st.write('<a href="https://www.linkedin.com/in/amaury-guilbaud-a20950183/" target="_blank">Amaury Guilbaud</a>',unsafe_allow_html=True)
+    st.write('<a href="https://www.linkedin.com/in/vincent-verhulst-vntv/" target="_blank">Vincent Verhulst</a>',unsafe_allow_html=True)
+    st.write('<a href="https://www.linkedin.com/in/antoine-jard1/" target="_blank">Antoine Jardin</a>',unsafe_allow_html=True)
 
 # --- Chargement des données ---
+@st.cache_data
 def load_data():
     # Charger les fichiers GeoJSON 
     geojson_filtre = "pays_de_la_loire.geojson"
