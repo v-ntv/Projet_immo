@@ -7,11 +7,21 @@ from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 import gdown
 
-# importation du fichier csv
-file_id = "1nXNPVMBbRfJWzFaB4b_YoQdnjBLzzJAn"
-gdown.download(f"https://drive.google.com/uc?export=download&id={file_id}", "df_MA_clean.csv", quiet=False)
+# chemin vers mon secret github (clé json GCP) 
+SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
-df = pd.read_csv("df_MA_clean.csv")
+# on défini où chercher les fichiers
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive'
+]
+
+# authentification avec le compte GCP
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
+
+# importation du fichier csv
+df = gc.open_by_key("15dEZnnqY9KjnVhFm47SyHbhFMQc9PDXEtZenwBpBCAw").sheet1  
 
 # création de masques sur les départements
 mask_dep44 = (df['Departement'] == 'Loire-Atlantique')
@@ -25,19 +35,6 @@ df_dep85 = df.loc[mask_dep85]
 df_dep49 = df.loc[mask_dep49]
 df_dep53 = df.loc[mask_dep53]
 df_dep72 = df.loc[mask_dep72]
-
-# chemin vers mon secret github (clé json GCP) 
-SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
-
-# on défini où chercher les fichiers
-SCOPES = [
-    'https://www.googleapis.com/auth/spreadsheets',
-    'https://www.googleapis.com/auth/drive'
-]
-
-# authentification avec le compte GCP
-creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-gc = gspread.authorize(creds)
 
 # ouverture des fichiers csv
 for_df_dep44 = gc.open_by_key("1wqVyh3TCP974SMXgXuWFHaRbfjqR0rJYMTwIB7b8_OA").sheet1  

@@ -1,15 +1,35 @@
+#importation des librairies
+import os
+import json
 import pandas as pd
+import gspread
+from gspread_dataframe import set_with_dataframe
+from google.oauth2.service_account import Credentials
+import gdown
 import unicodedata
 import re
-import gdown
 
-# importation du fichier csv
-file_id = "1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E"
-gdown.download(f"https://drive.google.com/uc?export=download&id={file_id}", "df_pdl.csv", quiet=False)
+# chemin vers mon secret github (clé json GCP) 
+SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
-df = pd.read_csv("df_pdl.csv")
+# on défini où chercher les fichiers
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive'
+]
 
-# Fonction pour mettre en minuscules et avec des tirets les villes
+# authentification avec le compte GCP
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
+
+# ouverture du fichier csv
+df = gc.open_by_key("1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E-HoB0").sheet1  
+
+import pandas as pd
+import re
+import unicodedata
+
+# fonction pour mettre les villes en minuscules, sans accents et avec des tirets
 def slugify_ville(ville: str) -> str:
     if pd.isna(ville):  # gérer les NaN
         return ville
@@ -28,13 +48,25 @@ def slugify_ville(ville: str) -> str:
     ville = re.sub(r"-+", "-", ville).strip("-")
     return ville
 
-# Exemple : ton DataFrame avec 1200 lignes
-# Ici je simule quelques données
-df = pd.DataFrame({
-    "ville": ["Évry Courcouronnes", "Aix-en-Provence", "Saint Étienne", "Nîmes", "L'Haÿ-les-Roses"]
-})
+# application du filtre
+df_new = df.copy()
+df_new["ville_slug"] = df_new["ville"].apply(slugify_ville)
 
-# Création de la nouvelle colonne
-df["ville_slug"] = df["ville"].apply(slugify_ville)
 
-print(df.head())
+# remplacer les colonnes :
+# ville	
+# Code_insee	
+
+# par les colonnes :
+# #Code_commune_INSEE	
+# Lib_MA	
+# Nom_de_la_commune_url	
+# url
+
+df_new['#Code_commune_INSEE'] = df_new['Code_insee']
+df_new['Lib_MA'] = df_new['ville']
+base_url = "https://www.meilleursagents.com/prix-immobilier/"
+df["url"] = base_url + df["ville_slug"] + "-" + df["code_postal"].astype(str) + "/"
+
+# ré-écriture du fichier csv pour le mettre à jour
+set_with_dataframe(df, df_new)
