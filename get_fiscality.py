@@ -1,6 +1,13 @@
 #Import subprocess and sys
 import subprocess
 import sys
+import os
+import json
+import pandas as pd
+import gspread
+from gspread_dataframe import set_with_dataframe
+from google.oauth2.service_account import Credentials
+import gdown
 
 SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
