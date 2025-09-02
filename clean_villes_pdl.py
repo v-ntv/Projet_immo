@@ -24,12 +24,15 @@ gc = gspread.authorize(creds)
 
 # ouverture du fichier csv
 sheet = gc.open_by_key("1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E-HoB0").sheet1  
+sheet2 = gc.open_by_key("11VsO4-jk8E5Ti3uwilvp9j3CxEug1TI9T07vJbT1kAU").sheet1  
 
 # récupérer toutes les valeurs
 data = sheet.get_all_records()
+data2 = sheet2.get_all_records()
 
 # convertir en DataFrame
 df = pd.DataFrame(data)
+df2 = pd.DataFrame(data2)
 
 # fonction pour mettre les villes en minuscules, sans accents et avec des tirets
 def slugify_ville(ville: str) -> str:
@@ -71,5 +74,4 @@ base_url = "https://www.meilleursagents.com/prix-immobilier/"
 df_new["url"] = base_url + df_new["ville_slug"] + "-" + df_new["Code_postal"].astype(str) + "/"
 
 # ré-écriture du fichier csv pour le mettre à jour
-df_new.to_csv('testpdl.csv')
-#set_with_dataframe(df, df_new)
+set_with_dataframe(df2, df_new)
