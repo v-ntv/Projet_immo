@@ -4,7 +4,7 @@ name: Run all scripts
 on:
   workflow_dispatch:  
 
-# lancement des étapes
+# lancement des étapes 
 jobs:
   update-sheet:
     runs-on: ubuntu-latest
