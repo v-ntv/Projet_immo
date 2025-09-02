@@ -104,12 +104,17 @@ if (df_merged_clean.loc[mask_dep72, 'Taux_Global_TFB'].isna().any()):
     mean_value = df_merged_clean.loc[mask_dep72, 'Taux_Global_TFB'].mean()
     df_merged_clean.loc[mask_dep72 & df_merged_clean['Taux_Global_TFB'].isna(), 'Taux_Global_TFB'] = mean_value
 
-# convertir les colonnes en numériques
-cols_to_convert = ['prix_appartement', 'prix_maison', 'min_appartement', 'min_maison', 'loyer_appartement', 'loyer_maison']
+# convertir en numériques 
+cols_to_numeric = [
+    'prix_appartement', 'prix_maison',
+    'min_appartement', 'min_maison',
+    'loyer_appartement', 'loyer_maison',
+    'loyer_min_appartement', 'loyer_min_maison'
+]
 
-for col in cols_to_convert:
+for col in cols_to_numeric:
     df_merged_clean[col] = pd.to_numeric(df_merged_clean[col], errors='coerce')
-    
+
 # Ajout des données global + ratio en Python
 df_merged_clean['prix_global'] = (df_merged_clean['prix_appartement']+df_merged_clean['prix_maison'])/2
 df_merged_clean['min_global'] = (df_merged_clean['min_appartement']+df_merged_clean['min_maison'])/2
