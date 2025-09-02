@@ -2,15 +2,28 @@
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import gdown
 from sklearn.preprocessing import MinMaxScaler
+import os
+import json
+import gspread
+from gspread_dataframe import set_with_dataframe
+from google.oauth2.service_account import Credentials
+import gdown
+
 
 
 # Importer le fichier CSV 
-file_id = "1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq"
-gdown.download(f"https://drive.google.com/uc?export=download&id={file_id}", "dossier_complet_insee.csv", quiet=False)
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
 
-df = pd.read_csv("dossier_complet_insee.csv", sep=";")
+# ouverture du fichier csv
+sheet = gc.open_by_key("1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq").sheet1  
+
+# récupérer toutes les valeurs
+data = sheet.get_all_records()
+
+# convertir en DataFrame
+df = pd.DataFrame(data)
 
 df["CODE_INSEE"] = df["CODGEO"].astype(str).str.strip().str.zfill(5)   # code commune à 5 chiffres
 df["DEP"] = df["CODE_INSEE"].str[:2] 

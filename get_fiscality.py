@@ -43,4 +43,10 @@ response = requests.get(url, verify=False)
 # Load in a DF
 df_fiscality = pd.read_csv(StringIO(response.text), delimiter=';')
 
-set_with_dataframe(sheet, df_fiscality) 
+chunk_size = 5000  # 5000 lignes par batch
+for start in range(0, len(df_fiscality), chunk_size):
+    end = min(start + chunk_size, len(df_fiscality))
+    chunk = df_fiscality.iloc[start:end]
+
+    # inclure les entêtes seulement pour le premier batch
+    set_with_dataframe(sheet, chunk, row=start+1, include_column_header=(start==0))
