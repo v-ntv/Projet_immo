@@ -1,4 +1,8 @@
 # Projet_immo
+V: automatisation:  github, github actions,  ipynb to py, csv to gsheet to looker avec python
+Hébergement https://huggingface.co/spaces ou streamlit cloud 
+1 Github Action pour run tous les GA
+1 GA pour automatiser le looker
 
 # liste de nos datasets
 
