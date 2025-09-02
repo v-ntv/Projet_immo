@@ -1,4 +1,4 @@
-#Import subprocess and sys
+# Importer les librairies 
 import subprocess
 import sys
 import os

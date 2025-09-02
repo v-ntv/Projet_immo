@@ -33,7 +33,7 @@ jobs:
       - name: test
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python get_fiscality.py
+        run: python calcul_data.py
 
       #- name: Run ###
       #  run: python ###.py

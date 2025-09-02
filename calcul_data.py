@@ -1,12 +1,39 @@
-# Import pandas, numpy and random libraries 
+# Import libraries 
 import pandas as pd
 import numpy as np
 import random
 from datetime import datetime
+import os
+import json
+import gspread
+from gspread_dataframe import set_with_dataframe
+from google.oauth2.service_account import Credentials
+import gdown
 
-# Loading all DF
-df_fiscality = pd.read_csv('df_fiscality.csv')
-df_MA_temp = pd.read_csv('df_MA_clean.csv')
+SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
+
+# scope where we need to search files
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive'
+]
+
+# authentification with GCP account
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
+
+# open csv files
+sheet = gc.open_by_key("1ZwK81NBWhM_xvQgKaSzRp-u7tF0HLd2stJS8F9VNyFY").sheet1  
+sheet2 = gc.open_by_key("1r0bFPyZa5a0PgXBB3inwMLj5dpAYrT-yfbkQagG40Xw").sheet1  
+sheet3 = gc.open_by_key("1xL4a5Cn6h9JK-36gwi8xrwXAMocrmcpM9oNgcZpiJhk").sheet1  
+
+# get values
+data = sheet.get_all_records()
+data2 = sheet2.get_all_records()
+
+# convert to DF
+df_fiscality = pd.DataFrame(data)
+df_MA_temp = pd.DataFrame(data2)
 
 # Droping column with false values
 df_MA_clean = df_MA_temp.drop(columns=['Taux_Global_TFB'])
@@ -77,3 +104,15 @@ if (df_merged_clean.loc[mask_dep72, 'Taux_Global_TFB'].isna().any()):
     mean_value = df_merged_clean.loc[mask_dep72, 'Taux_Global_TFB'].mean()
     df_merged_clean.loc[mask_dep72 & df_merged_clean['Taux_Global_TFB'].isna(), 'Taux_Global_TFB'] = mean_value
 
+ #Ajout des données global + ratio en Python
+df_merged_clean['prix_global'] = (df_merged_clean['prix_appartement']+df_merged_clean['prix_maison'])/2
+df_merged_clean['min_global'] = (df_merged_clean['min_appartement']+df_merged_clean['min_maison'])/2
+df_merged_clean['max_global'] = (df_merged_clean['max_appartement']+df_merged_clean['max_maison'])/2
+df_merged_clean['loyer_global'] = (df_merged_clean['loyer_appartement']+df_merged_clean['loyer_maison'])/2
+df_merged_clean['loyer_min_global'] = (df_merged_clean['loyer_min_appartement']+df_merged_clean['loyer_min_maison'])/2
+df_merged_clean['loyer_max_global'] = (df_merged_clean['loyer_max_appartement']+df_merged_clean['loyer_max_maison'])/2
+df_merged_clean['ratio_m2_apt'] = round(((df_merged_clean['loyer_appartement']*12)/df_merged_clean['prix_appartement'])*100,2)
+df_merged_clean['ratio_m2_msn'] = round(((df_merged_clean['loyer_maison']*12)/df_merged_clean['prix_maison'])*100,2)
+df_merged_clean['ratio_m2_glb'] = round(((df_merged_clean['loyer_global']*12)/df_merged_clean['prix_global'])*100,2)
+
+set_with_dataframe(sheet3, df_merged_clean)

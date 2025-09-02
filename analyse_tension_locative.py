@@ -10,8 +10,6 @@ from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 import gdown
 
-
-
 # Importer le fichier CSV 
 creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(creds)
