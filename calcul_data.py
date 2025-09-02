@@ -35,6 +35,9 @@ data2 = sheet2.get_all_records()
 df_fiscality = pd.DataFrame(data)
 df_MA_clean = pd.DataFrame(data2)
 
+# ajout de la colonne geo sur df_MA_clean
+df_MA_clean['geo'] = df_MA_clean['ville'] + ', ' + df_MA_clean['Departement'] + ', France'
+
 # Creating mask to check where 'loyer_maison' contains null values and replacing them with 'loyer_appartement' (because it was inverted in meilleurs-agents)
 mask = df_MA_clean['loyer_maison'].isna()
 
