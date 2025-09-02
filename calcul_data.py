@@ -128,7 +128,23 @@ df_merged_clean['ratio_m2_apt'] = round(((df_merged_clean['loyer_appartement']*1
 df_merged_clean['ratio_m2_msn'] = round(((df_merged_clean['loyer_maison']*12)/df_merged_clean['prix_maison'])*100,2)
 df_merged_clean['ratio_m2_glb'] = round(((df_merged_clean['loyer_global']*12)/df_merged_clean['prix_global'])*100,2)
 
-df_norm = pd.read_csv('df_norm.csv')
+# Load df_norm, but only keep the columns you need + the key for merge
+df_norm = pd.read_csv('df_norm.csv', usecols=['CODE_INSEE', 'INDICE_TENSION_LOG', 'CROI_POP_16_22'])
+
+# Convert both keys to string
+df_merged_clean['Code_insee'] = df_merged_clean['Code_insee'].astype(str)
+df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
+
+# Merge with df_merged_clean
+df_merged_clean_wnorm = df_merged_clean.merge(
+    df_norm,
+    left_on='Code_insee',    # key in df_merged_clean
+    right_on='CODE_INSEE',   # key in df_norm
+    how='left'               # use 'left' join to keep all df_merged_clean rows
+)
+
+# Optional: drop redundant CODE_INSEE column if you want
+df_merged_clean_wnorm = df_merged_clean_wnorm.drop(columns=['CODE_INSEE'])
 
 df_merged_clean_wnorm = df_merged_clean.merge(df_norm, left_on='Code_insee', right_on='CODE_INSEE')
 
