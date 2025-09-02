@@ -1,5 +1,6 @@
 # Projet_immo
-
+explication comment notre produit marche
+et comment installer
 ## pour utiliser les données 
 il va falloir faire:
 
@@ -13,7 +14,10 @@ une fois le repo téléchargé
 lancer le meilleur agent v4 pour récupérer les données (peut prendre plusieurs heures)
 puis lancer le github action 'run scripts'
 
-
+--
+1 clic pour lancer le scraping
+1 clic pour lancer la recuperation de certains csv et faire tous les calculs 
+--
 
 V: automatisation:  github, github actions,  ipynb to py, csv to gsheet to looker avec python
 Hébergement https://huggingface.co/spaces ou streamlit cloud 
