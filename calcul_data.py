@@ -33,10 +33,7 @@ data2 = sheet2.get_all_records()
 
 # convert to DF
 df_fiscality = pd.DataFrame(data)
-df_MA_temp = pd.DataFrame(data2)
-
-# Droping column with false values
-df_MA_clean = df_MA_temp.drop(columns=['Taux_Global_TFB'])
+df_MA_clean = pd.DataFrame(data2)
 
 # Creating mask to check where 'loyer_maison' contains null values and replacing them with 'loyer_appartement' (because it was inverted in meilleurs-agents)
 mask = df_MA_clean['loyer_maison'].isna()
