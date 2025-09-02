@@ -7,7 +7,7 @@ pip install gdown scikit-learn.......
 
 pip install selenium selenium-stealth beautifulsoup4 pandas
 
-
+pip install scikit-learn
 # automatisation en 2 clicks
 une fois le repo téléchargé
 lancer le meilleur agent v4 pour récupérer les données (peut prendre plusieurs heures)
