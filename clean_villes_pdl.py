@@ -36,7 +36,7 @@ df = pd.DataFrame(data)
 def slugify_ville(ville: str) -> str:
     if pd.isna(ville):  # gérer les NaN
         return ville
-    # minuscules
+    # minuscules 
     ville = ville.lower()
     # enlever les accents
     ville = ''.join(
