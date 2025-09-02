@@ -11,24 +11,24 @@ import gdown
 
 SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
-# scope where we need to search files
+# on défini où chercher les fichiers
 SCOPES = [
     'https://www.googleapis.com/auth/spreadsheets',
     'https://www.googleapis.com/auth/drive'
 ]
 
+# authentification avec le compte GCP
 creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(creds)
 
 # ouverture du fichier csv
-sheet = gc.open_by_key("1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq").sheet1  
-sheet2 = gc.open_by_key("1B8sqSuWEjtfEoGOibpErG52CaejEz7TdiUosFzWyJ7s").sheet1  
+sheet = gc.open_by_key("1B8sqSuWEjtfEoGOibpErG52CaejEz7TdiUosFzWyJ7s").sheet1  
 
-# récupérer toutes les valeurs
-data = sheet.get_all_records()
+url = "https://drive.google.com/uc?id=1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq"
+output = "dossier_complet_insee.csv"
+#gdown.download(url, output, quiet=False)
 
-# convertir en DataFrame
-df = pd.DataFrame(data)
+df = pd.read_csv('dossier_complet_insee.csv', sep=';')
 
 df["CODE_INSEE"] = df["CODGEO"].astype(str).str.strip().str.zfill(5)   # code commune à 5 chiffres
 df["DEP"] = df["CODE_INSEE"].str[:2] 
@@ -287,4 +287,4 @@ map_villes = {
 top10_villes["CODE_INSEE"] = top10_villes["CODE_INSEE"].astype(str).str.zfill(5)
 top10_villes["NOM_COMMUNE"] = top10_villes["CODE_INSEE"].map(map_villes)
 
-set_with_dataframe(sheet2, df_norm)
+set_with_dataframe(sheet, df_norm)
