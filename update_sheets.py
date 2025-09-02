@@ -21,7 +21,17 @@ creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPE
 gc = gspread.authorize(creds)
 
 # importation du fichier csv
-df = gc.open_by_key("15dEZnnqY9KjnVhFm47SyHbhFMQc9PDXEtZenwBpBCAw").sheet1  
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
+
+# ouverture du fichier csv
+sheet = gc.open_by_key("15dEZnnqY9KjnVhFm47SyHbhFMQc9PDXEtZenwBpBCAw").sheet1  
+
+# récupérer toutes les valeurs
+data = sheet.get_all_records()
+
+# convertir en DataFrame
+df = pd.DataFrame(data)
 
 # création de masques sur les départements
 mask_dep44 = (df['Departement'] == 'Loire-Atlantique')

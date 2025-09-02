@@ -23,11 +23,13 @@ creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPE
 gc = gspread.authorize(creds)
 
 # ouverture du fichier csv
-df = gc.open_by_key("1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E-HoB0").sheet1  
+sheet = gc.open_by_key("1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E-HoB0").sheet1  
 
-import pandas as pd
-import re
-import unicodedata
+# récupérer toutes les valeurs
+data = sheet.get_all_records()
+
+# convertir en DataFrame
+df = pd.DataFrame(data)
 
 # fonction pour mettre les villes en minuscules, sans accents et avec des tirets
 def slugify_ville(ville: str) -> str:
