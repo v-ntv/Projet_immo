@@ -19,33 +19,21 @@ st.set_page_config(
 with st.sidebar:
     st.success("Select a page above")
     st.image("Logo_le_wagon.png", caption="Le wagon")
-    st.markdown('Vincent - Amaury - Antoine')
+    st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
 
 st.cache_data.clear()
 # --- Chargement des données ---
 def load_data():
     # Charger les fichiers GeoJSON 
-    geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
+    geojson_filtre = "pays_de_la_loire.geojson"
     # Charger les données de meilleur agent
     data_MA = "df_MA_clean3.csv"
     # Charger les données avec pandas
     communes_data = pd.read_csv(data_MA)
     
-    return geojson, communes_data
+    return geojson_filtre, communes_data
 
-geojson, communes_data = load_data()
-
-
-# Filtrer aux pays de la loire
-features_filtrees = [
-    feature for feature in geojson["features"]
-    if feature["properties"].get("reg") == "52"
-]
-# Créer un nouveau GeoJSON
-geojson_filtre = {
-    "type": "FeatureCollection",
-    "features": features_filtrees
-}
+geojson_filtre, communes_data = load_data()
 
 
 #Titre de la page
@@ -78,6 +66,7 @@ with tab1:
         fill_opacity=0.7,
         line_opacity=0.2,
         legend_name='Indice de la tension locative', # Nom de la légende dynamique
+        highlight=True,
         smooth_factor=0.5,
         zoom_on_click=True
     ).add_to(m)

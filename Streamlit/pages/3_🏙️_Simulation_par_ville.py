@@ -18,36 +18,23 @@ st.set_page_config(
 with st.sidebar:
     st.success("Select a page above")
     st.image("Logo_le_wagon.png", caption="Le wagon")
-    st.markdown('Vincent - Amaury - Antoine')
+    st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
 
 # --- Chargement des données ---
 def load_data():
     # Charger les fichiers GeoJSON 
-    geojson = requests.get("https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6").json()
+    geojson_filtre = "pays_de_la_loire.geojson"
     # Charger les données de meilleur agent
     data_MA = "df_MA_clean3.csv"
     # Charger les données avec pandas
     communes_data = pd.read_csv(data_MA)
     
+    return geojson_filtre, communes_data
 
-    return geojson, communes_data
-
-geojson, communes_data = load_data()
+geojson_filtre, communes_data = load_data()
 
 #Titre de la page
 st.title("🏙️ Simulation par ville")
-
-# Filtrer aux pays de la loire
-features_filtrees = [
-    feature for feature in geojson["features"]
-    if feature["properties"].get("reg") == "52"
-]
-# Créer un nouveau GeoJSON
-geojson_filtre = {
-    "type": "FeatureCollection",
-    "features": features_filtrees
-}
-
 
 # Le fichier GeoJSON doit avoir une propriété 'codegeo' qui correspond à la colonne 'code_commune' du CSV.
 communes_data['Code_insee'] = communes_data['Code_insee'].astype(str)
@@ -253,42 +240,42 @@ txo = g.slider(
 def df_simulation(prix, loyer):
 
     df_simu = pd.DataFrame()
-    df_simu['Prix au m2']= df_filtre[prix]
+    df_simu['Prix au m2 en €']= df_filtre[prix]
     df_simu['Surface en m2']= nbm2
-    df_simu['Prix net vendeur'] = df_simu['Prix au m2']*df_simu['Surface en m2']
-    df_simu["Frais d'agence en %"] = frag/100 # slider
-    df_simu["Frais de notaire en %"] = taux_choisi # 3% sur neuf 8% sur ancien
-    df_simu["Frais d'agence en €"] = df_simu["Prix net vendeur"]*df_simu["Frais d'agence en %"]
-    df_simu["Frais de notaire en €"] = df_simu["Prix net vendeur"]*df_simu["Frais de notaire en %"]
-    df_simu["Loyer m2"] = df_filtre[loyer]
+    df_simu['Prix net vendeur en €'] = df_simu['Prix au m2 en €']*df_simu['Surface en m2']
+    df_simu["Frais d'agence"] = frag/100 # slider
+    df_simu["Frais de notaire"] = taux_choisi # 3% sur neuf 8% sur ancien
+    df_simu["Frais d'agence en €"] = df_simu["Prix net vendeur en €"]*df_simu["Frais d'agence"]
+    df_simu["Frais de notaire en €"] = df_simu["Prix net vendeur en €"]*df_simu["Frais de notaire"]
+    df_simu["Loyer m2 en €"] = df_filtre[loyer]
     df_simu["Taux d'occupation"] = txo # slider
-    df_simu["Loyer mensuel"] = df_simu['Surface en m2']*df_simu["Loyer m2"]*df_simu["Taux d'occupation"]
-    df_simu["Loyer annuel"] = df_simu["Loyer mensuel"]*12
-    df_simu["Assurance annuelle PNO"] = pno # à remplir
-    df_simu["GLI annuelle (Garantie Loyers Impayés)"] = gli #0.03*df_simu["Loyer annuel"] # à mettre par défaut
-    df_simu["Comptabilité annuelle"] = coan # à remplir
-    df_simu["Valeur cadastrale"] = df_simu['Surface en m2']*df_simu["Loyer m2"]
+    df_simu["Loyer mensuel en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]*df_simu["Taux d'occupation"]
+    df_simu["Loyer annuel en €"] = df_simu["Loyer mensuel en €"]*12
+    df_simu["Assurance annuelle PNO en €"] = pno # à remplir
+    df_simu["GLI annuelle (Garantie Loyers Impayés) en €"] = gli #0.03*df_simu["Loyer annuel"] # à mettre par défaut
+    df_simu["Comptabilité annuelle en €"] = coan # à remplir
+    df_simu["Valeur cadastrale en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]
     df_simu["Taux global TFPB"] = df_filtre['Taux_Global_TFB']
-    df_simu["Taxe foncière annuelle"] = (df_simu["Valeur cadastrale"]*0.5)*df_simu["Taux global TFPB"]
-    df_simu["provisions entretien annuel"] = df_simu['Loyer annuel']*0.02
-    df_simu["provisions gros oeuvres annuel"] = df_simu['Prix net vendeur']*0.005
-    df_simu["Assurance habitation annuelle"] = aha #à remplir
-    df_simu["Frais de gestion locative annuel"] = df_simu['Loyer mensuel']*0.07*12
-    df_simu["Prix achat total"] = df_simu["Prix net vendeur"]+df_simu["Frais d'agence en €"]+df_simu["Frais de notaire en €"]
-    df_simu['Rentabilité Brute'] = round(df_simu['Loyer annuel']/df_simu["Prix achat total"],2)
-    df_simu['Charges Annuelles'] = round(df_simu["Assurance annuelle PNO"]+df_simu["GLI annuelle (Garantie Loyers Impayés)"]+df_simu["Comptabilité annuelle"]+df_simu["Taux global TFPB"]+df_simu["provisions entretien annuel"]+df_simu["provisions gros oeuvres annuel"]+df_simu["Assurance habitation annuelle"]+df_simu["Frais de gestion locative annuel"],2)
-    df_simu['Rentabilité Net'] = round((df_simu['Loyer annuel']-df_simu['Charges Annuelles'])/df_simu["Prix achat total"],2)
+    df_simu["Taxe foncière annuelle en €"] = (df_simu["Valeur cadastrale en €"]*0.5)*df_simu["Taux global TFPB"]
+    df_simu["Provisions entretien annuel en €"] = df_simu['Loyer annuel en €']*0.02
+    df_simu["Provisions gros oeuvres annuel en €"] = df_simu['Prix net vendeur en €']*0.005
+    df_simu["Assurance habitation annuelle en €"] = aha #à remplir
+    df_simu["Frais de gestion locative annuel en €"] = df_simu['Loyer mensuel en €']*0.07*12
+    df_simu["Prix achat total en €"] = df_simu["Prix net vendeur en €"]+df_simu["Frais d'agence en €"]+df_simu["Frais de notaire en €"]
+    df_simu['Rentabilité Brute en %'] = round(df_simu['Loyer annuel en €']/df_simu["Prix achat total en €"],2)
+    df_simu['Charges Annuelles en €'] = round(df_simu["Assurance annuelle PNO en €"]+df_simu["GLI annuelle (Garantie Loyers Impayés) en €"]+df_simu["Comptabilité annuelle en €"]+df_simu["Taux global TFPB"]+df_simu["Provisions entretien annuel en €"]+df_simu["Provisions gros oeuvres annuel en €"]+df_simu["Assurance habitation annuelle en €"]+df_simu["Frais de gestion locative annuel en €"],2)
+    df_simu['Rentabilité Net en %'] = round((df_simu['Loyer annuel en €']-df_simu['Charges Annuelles en €'])/df_simu["Prix achat total en €"],2)
     return df_simu
 
 df_simu= df_simulation(prix, loyer)
 
 with st.expander('Data Simulation'):
-    st.dataframe(df_simu)
+    st.dataframe(df_simu[['Prix net vendeur en €',"Frais d'agence en €","Frais de notaire en €","Loyer annuel en €","Valeur cadastrale en €","Provisions entretien annuel en €","Provisions gros oeuvres annuel en €","Frais de gestion locative annuel en €"]])
 
 with st.expander('Data Indicateurs'):
-    st.dataframe(df_simu[['Prix achat total','Rentabilité Brute','Charges Annuelles','Rentabilité Net']])
+    st.dataframe(df_simu[['Prix achat total en €','Rentabilité Brute en %','Charges Annuelles en €','Rentabilité Net en %',"Taxe foncière annuelle en €"]])
 
 h, i, j = st.columns(3)
-h.metric("Prix d'achat total", f"{int(df_simu['Prix achat total'])} €", border=True) 
-i.metric("Ratio achat/loc Brut", f"{df_simu['Rentabilité Brute'][0]} %", border=True) 
-j.metric("Ratio achat/loc Net", f"{df_simu['Rentabilité Net'][0]} %",border=True)
+h.metric("Prix d'achat total", f"{round(df_simu['Prix achat total en €'][0])} €", border=True) 
+i.metric("Ratio achat/loc Brut", f"{df_simu['Rentabilité Brute en %'][0]} %", border=True) 
+j.metric("Ratio achat/loc Net", f"{df_simu['Rentabilité Net en %'][0]} %",border=True)

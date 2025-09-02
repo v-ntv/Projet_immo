@@ -11,7 +11,7 @@ st.set_page_config(
 with st.sidebar:
     st.success("Select a page above")
     st.image("Logo_le_wagon.png", caption="Le wagon")
-    st.markdown('Vincent - Amaury - Antoine')
+    st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
 
 # Votre dictionnaire de glossaire
 glossaire = {
