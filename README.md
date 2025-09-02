@@ -15,8 +15,9 @@ lancer le meilleur agent v4 pour récupérer les données (peut prendre plusieur
 puis lancer le github action 'run scripts'
 
 --
-1 clic pour lancer le scraping
-1 clic pour lancer la recuperation de certains csv et faire tous les calculs 
+1etape: clic pour lancer le scraping
+2etape: clic pour lancer la recuperation de certains csv et faire tous les calculs 
+3etape: téléchargerle nouveau df ma clean sur le drive et remplacer l'ancien df_ma_clean qui est situé dans le dossier streamlit
 --
 
 V: automatisation:  github, github actions,  ipynb to py, csv to gsheet to looker avec python
