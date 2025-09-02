@@ -2,8 +2,26 @@
 import subprocess
 import sys
 
-# Install requests
-subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
+
+# on défini où chercher les fichiers
+SCOPES = [
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/drive'
+]
+
+# authentification avec le compte GCP
+creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+gc = gspread.authorize(creds)
+
+# ouverture du fichier csv
+sheet = gc.open_by_key("1jswqR4I0L9xW4wVMjDk3TJqxAD03MZo07D0i6E-HoB0").sheet1  
+
+# récupérer toutes les valeurs
+data = sheet.get_all_records()
+
+# convertir en DataFrame
+df = pd.DataFrame(data)
 
 # Import pandas, requests and io
 import pandas as pd
@@ -18,3 +36,4 @@ response = requests.get(url, verify=False)
 # Load in a DF
 df_fiscality = pd.read_csv(StringIO(response.text), delimiter=';')
 
+set_with_dataframe(sheet, df_fiscality) 

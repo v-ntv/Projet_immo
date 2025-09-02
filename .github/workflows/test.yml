@@ -27,13 +27,13 @@ jobs:
 
       # Installer les dépendances Python
       - name: Install dependencies
-        run: pip install pandas gspread gspread-dataframe google-auth gdown
+        run: pip install pandas gspread gspread-dataframe google-auth gdown requests
 
       # Lancer le script Python en utilisant le json du compte GCP (mis sur github en secret)
       - name: test
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python clean_villes_pdl.py
+        run: python get_fiscality.py
 
       #- name: Run ###
       #  run: python ###.py

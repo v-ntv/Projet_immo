@@ -8,6 +8,12 @@ pip install gdown scikit-learn.......
 pip install selenium selenium-stealth beautifulsoup4 pandas
 
 
+# automatisation en 2 clicks
+une fois le repo téléchargé
+lancer le meilleur agent v4 pour récupérer les données (peut prendre plusieurs heures)
+puis lancer le github action 'run scripts'
+
+
 
 V: automatisation:  github, github actions,  ipynb to py, csv to gsheet to looker avec python
 Hébergement https://huggingface.co/spaces ou streamlit cloud 
