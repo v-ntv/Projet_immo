@@ -110,7 +110,7 @@ cols_to_numeric = [
     'min_appartement', 'min_maison',
     'max_appartement', 'max_maison',
     'loyer_appartement', 'loyer_maison',
-    'loyer_min_appartement', 'loyer_min_maison'
+    'loyer_min_appartement', 'loyer_min_maison',
     'loyer_max_appartement', 'loyer_max_maison'
 ]
 
