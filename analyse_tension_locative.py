@@ -9,21 +9,6 @@ from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 import gdown
 
-SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
-
-# on défini où chercher les fichiers
-SCOPES = [
-    'https://www.googleapis.com/auth/spreadsheets',
-    'https://www.googleapis.com/auth/drive'
-]
-
-# authentification avec le compte GCP
-creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-gc = gspread.authorize(creds)
-
-# ouverture du fichier csv
-sheet = gc.open_by_key("1B8sqSuWEjtfEoGOibpErG52CaejEz7TdiUosFzWyJ7s").sheet1  
-
 url = "https://drive.google.com/uc?id=1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq"
 output = "dossier_complet_insee.csv"
 #gdown.download(url, output, quiet=False)
@@ -287,4 +272,4 @@ map_villes = {
 top10_villes["CODE_INSEE"] = top10_villes["CODE_INSEE"].astype(str).str.zfill(5)
 top10_villes["NOM_COMMUNE"] = top10_villes["CODE_INSEE"].map(map_villes)
 
-set_with_dataframe(sheet, df_norm)
+df_norm.to_csv('df_norm.csv')

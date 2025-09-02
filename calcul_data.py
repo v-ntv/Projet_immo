@@ -128,4 +128,8 @@ df_merged_clean['ratio_m2_apt'] = round(((df_merged_clean['loyer_appartement']*1
 df_merged_clean['ratio_m2_msn'] = round(((df_merged_clean['loyer_maison']*12)/df_merged_clean['prix_maison'])*100,2)
 df_merged_clean['ratio_m2_glb'] = round(((df_merged_clean['loyer_global']*12)/df_merged_clean['prix_global'])*100,2)
 
-set_with_dataframe(sheet3, df_merged_clean)
+df_norm = pd.read_csv('df_merged_clean.csv')
+
+df_merged_clean_wnorm = df_merged_clean.merge(df_norm, left_on='Code_insee', right_on='CODE_INSEE')
+
+set_with_dataframe(sheet3, df_merged_clean_wnorm)
