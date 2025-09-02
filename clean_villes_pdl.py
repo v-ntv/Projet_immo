@@ -72,4 +72,5 @@ base_url = "https://www.meilleursagents.com/prix-immobilier/"
 df_new["url"] = base_url + df_new["ville_slug"] + "-" + df_new["Code_postal"].astype(str) + "/"
 
 # ré-écriture du fichier csv pour le mettre à jour
+sheet2.clear()
 set_with_dataframe(sheet2, df_new) 
