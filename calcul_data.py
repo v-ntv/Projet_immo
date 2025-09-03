@@ -74,7 +74,7 @@ df_fiscality_clean['INSEE COM'] = df_fiscality_clean['INSEE COM'].astype(str)
 df_merged = df_MA_clean.merge(df_fiscality_clean, how='left', left_on='Code_insee', right_on='INSEE COM')
 
 # Keep all needed columns and divide by 100 'Taux_Global_TFB' for easier calculation later
-df_merged_clean = df_merged[['ville','prix_appartement','min_appartement','max_appartement','prix_maison','min_maison','max_maison','loyer_appartement','loyer_min_appartement','loyer_max_appartement','loyer_maison','loyer_min_maison','loyer_max_maison','Taux_Global_TFB','Code_insee','Departement','geo']]
+df_merged_clean = df_merged[['ville','prix_appartement','min_appartement','max_appartement','prix_maison','min_maison','max_maison','loyer_appartement','loyer_min_appartement','loyer_max_appartement','loyer_maison','loyer_min_maison','loyer_max_maison','Taux_Global_TFB','Code_insee','Code_postal','Departement','geo']]
 df_merged['Taux_Global_TFB'] = df_merged_clean['Taux_Global_TFB'] / 100
 
 # Create a mask for all departments and fill the NaN values with the average 'Taux_Global_TFB' per department

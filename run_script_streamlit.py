@@ -8,19 +8,30 @@ import gspread
 from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
 import gdown
+import requests
 
-url = "https://drive.google.com/uc?id=1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq"
-output = "dossier_complet_insee.csv"
-gdown.download(url, output, quiet=False) 
+# récupérer le csv df_MA_clean_v2
+import pandas as pd
 
-df = pd.read_csv('dossier_complet_insee.csv', sep=';')
+sheet_id = "1xL4a5Cn6h9JK-36gwi8xrwXAMocrmcpM9oNgcZpiJhk"
+url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv"
 
-# cleaning
+df = pd.read_csv(url)
 
+# mettre les colonnes dans l'ordre
+colonnes = ['ville','prix_appartement','min_appartement',
+            'max_appartement','prix_maison','min_maison',
+            'max_maison','loyer_appartement','loyer_min_appartement',
+            'loyer_max_appartement','loyer_maison','loyer_min_maison',
+            'loyer_max_maison','prix_global','min_global','max_global',
+            'loyer_global','loyer_min_global','loyer_max_global','ratio_m2_apt',
+            'ratio_m2_msn','ratio_m2_glb','Taux_Global_TFB','Code_insee',
+            'Code_postal','Departement','geo','INDICE_TENSION_LOG','CROI_POP_16_22']
+
+df_clean = df[colonnes]
 
 # export sur le dossier streamlit
-df.to_csv('')
-
+df_clean.to_csv('Streamlit/df_MA_clean3.csv')
 
 # Télécharger le GeoJSON complet
 url = "https://www.data.gouv.fr/api/1/datasets/r/138844a4-2994-462c-a6da-d636c13692b6"
@@ -40,7 +51,7 @@ geojson_filtre = {
 }
 # Sauvegarder le GeoJSON filtré dans un fichier local
 # Le nom du fichier est une chaîne de caractères (string)
-nom_fichier = "pays_de_la_loire.geojson"
+nom_fichier = "Streamlit/pays_de_la_loire.geojson"
 try:
     # Utiliser 'w' (write) et la fonction json.dump pour écrire le dictionnaire JSON
     with open(nom_fichier, 'w', encoding='utf-8') as f:
