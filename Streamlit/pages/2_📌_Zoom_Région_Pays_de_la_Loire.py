@@ -19,7 +19,7 @@ st.set_page_config(
 # --- SideBar ---
 with st.sidebar:
     st.success("Selectionner les pages au dessus")
-    st.image("Streamlit\Logo_Red&Black.png")
+    st.image("Streamlit/Logo_Red&Black.png")
     st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
     st.subheader('Auteurs')
     st.write('<a href="https://www.linkedin.com/in/amaury-guilbaud-a20950183/" target="_blank">Amaury Guilbaud</a>',unsafe_allow_html=True)
@@ -33,7 +33,7 @@ def load_data():
     # Charger les fichiers GeoJSON 
     geojson_filtre = "pays_de_la_loire.geojson"
     # Charger les données de meilleur agent
-    data_MA = "Streamlit\df_MA_clean3.csv"
+    data_MA = "Streamlit/df_MA_clean3.csv"
     # Charger les données avec pandas
     communes_data = pd.read_csv(data_MA)
     
