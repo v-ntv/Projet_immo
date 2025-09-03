@@ -41,3 +41,8 @@ jobs:
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
         run: python update_sheets.py
+
+      - name: Update df_MA_clean
+        env:
+          GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
+        run: python calcul_data.py
