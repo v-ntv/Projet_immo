@@ -11,7 +11,7 @@ st.set_page_config(
 with st.sidebar:
     st.success("Selectionner les pages au dessus")
     st.image("Streamlit/Logo_Red&Black.png")
-    st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilère*')
+    st.markdown('*Batch* ***#2043*** *Projet rentabilité immobilière*')
     st.subheader('Auteurs')
     st.write('<a href="https://www.linkedin.com/in/amaury-guilbaud-a20950183/" target="_blank">Amaury Guilbaud</a>',unsafe_allow_html=True)
     st.write('<a href="https://www.linkedin.com/in/vincent-verhulst-vntv/" target="_blank">Vincent Verhulst</a>',unsafe_allow_html=True)
