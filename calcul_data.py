@@ -39,24 +39,24 @@ df_MA_temp = pd.DataFrame(data2)
 df_MA_temp['Code_postal'] = df_MA_temp['Code_postal'].astype(str)
 df_MA_temp['Code_insee'] = df_MA_temp['Code_insee'].astype(str)
 
+# Liste des colonnes à convertir en numérique
+colonnes_a_convertir = [
+    'prix_appartement', 'min_appartement', 'max_appartement',
+    'prix_maison', 'min_maison', 'max_maison',
+    'loyer_appartement', 'loyer_min_appartement', 'loyer_max_appartement',
+    'loyer_maison', 'loyer_min_maison', 'loyer_max_maison'
+]
+
+# Conversion en numérique (les valeurs non convertibles deviennent NaN)
+for col in colonnes_a_convertir:
+    df_MA_temp[col] = pd.to_numeric(df_MA_temp[col], errors='coerce')
+
 # GroupBy avec aggregation personnalisée
 df_MA_clean = df_MA_temp.groupby('ville', as_index=False).agg({
-    # on prend la moyenne des anciennes colonnes pour les mettre sur la nouvelle avec les bonnes infos
-    'Code_postal': 'first',  
-    'Code_insee': 'first',   
+    'Code_postal': 'first',
+    'Code_insee': 'first',
     'Departement': 'first',
-    'prix_appartement': 'mean',
-    'min_appartement': 'mean',
-    'max_appartement': 'mean',
-    'prix_maison': 'mean',
-    'min_maison': 'mean',
-    'max_maison': 'mean',
-    'loyer_appartement': 'mean',
-    'loyer_min_appartement': 'mean',
-    'loyer_max_appartement': 'mean',
-    'loyer_maison': 'mean',
-    'loyer_min_maison': 'mean',
-    'loyer_max_maison': 'mean'
+    **{col: 'mean' for col in colonnes_a_convertir}  # applique mean à toutes les colonnes numériques
 })
 
 # ajout de la colonne geo sur df_MA_clean
