@@ -74,7 +74,7 @@ fig_glb_loc = px.bar(
     df_filtre,
     x=df_filtre.index,
     y=['loyer_min_global','loyer_global','loyer_max_global'],
-    title = f"Prix m2 à {df_filtre.index[0]}",
+    title = f"Prix loc m2 à {df_filtre.index[0]}",
     barmode="group",
     color_discrete_sequence=["#fd0", "#f0f", "#04f"],
     text_auto=True
@@ -91,7 +91,7 @@ fig_apt_loc = px.bar(
     df_filtre,
     x=df_filtre.index,
     y=['loyer_min_appartement','loyer_appartement','loyer_max_appartement'],
-    title = f"Prix m2 à {df_filtre.index[0]}",
+    title = f"Prix loc m2 à {df_filtre.index[0]}",
     barmode="group",
     color_discrete_sequence=["#fd0", "#f0f", "#04f"],
     text_auto=True
@@ -108,7 +108,7 @@ fig_msn_loc = px.bar(
     df_filtre,
     x=df_filtre.index,
     y=['loyer_min_maison','loyer_maison','loyer_max_maison'],
-    title = f"Prix m2 à {df_filtre.index[0]}",
+    title = f"Prix loc m2 à {df_filtre.index[0]}",
     barmode="group",
     color_discrete_sequence=["#fd0", "#f0f", "#04f"],
     text_auto=True
@@ -283,5 +283,5 @@ with st.expander('Data Indicateurs'):
 
 h, i, j = st.columns(3)
 h.metric("Prix d'achat total", f"{round(df_simu['Prix achat total en €'][0])} €", border=True) 
-i.metric("Ratio achat/loc Brut", f"{df_simu['Rentabilité Brute en %'][0]} %", border=True) 
-j.metric("Ratio achat/loc Net", f"{df_simu['Rentabilité Net en %'][0]} %",border=True)
+i.metric("Rentabilité Brute", f"{df_simu['Rentabilité Brute en %'][0]} %", border=True) 
+j.metric("Rentabilité Nette", f"{df_simu['Rentabilité Net en %'][0]} %",border=True)
