@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re, time, random
 
-# chemin vers mon secret github (clé json GCP) 
+# chemin vers mon secret github (clé json GCP)  
 SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
 # on défini où chercher les fichiers
@@ -36,11 +36,11 @@ def extract_number(text):
     clean_text = clean_text.replace(",", ".")
     return float(clean_text)
 
-# Selenium setup (Chrome auto-managed by Selenium Manager; Chrome must be installed)
+# Setup de Selenium (Chrome est auto-géré par Selenium Manager; Chrome doit être installé)
 options = webdriver.ChromeOptions()
 options.add_argument("--lang=fr-FR")
 options.add_argument("--disable-blink-features=AutomationControlled")
-# Uncomment to persist cookies/session between runs:
+# Décommenter la ligne ci-dessous pour faire persister les cookies de la session entre chaque run:
 # options.add_argument(r"--user-data-dir=C:\Users\Dell\AppData\Local\Google\Chrome\User Data\ScrapeProfile")
 
 driver = webdriver.Chrome(options=options)
@@ -64,7 +64,7 @@ error_data = []
 for index, row in df_data_villes_clean.iterrows():
     city = row['Lib_MA']+" ("+row['Code_postal']+")"
     try:
-        # Human-like pacing
+        # Simuler un comportement humain 
         time.sleep(random.uniform(1.8, 3.6))
 
         # Trouver la barre de recherche
@@ -87,7 +87,7 @@ for index, row in df_data_villes_clean.iterrows():
         raw_text3 = soup.find_all("ul", class_="prices-summary__price-range")
         data_dict = {}
 
-        #condition pour clear la barre de recherche si il ne trouve pas la ville
+        # condition pour clear la barre de recherche si il ne trouve pas la ville
         if not raw_text3 :
             driver.refresh()
             time.sleep(3)

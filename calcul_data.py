@@ -1,4 +1,4 @@
-# Import libraries 
+# Importation des librairies 
 import pandas as pd
 import numpy as np
 import random
@@ -12,33 +12,33 @@ import gdown
 
 SERVICE_ACCOUNT_FILE = json.loads(os.environ['GCP_SERVICE_ACCOUNT_V'])
 
-# scope where we need to search files
+# Définir où chercher les fichiers
 SCOPES = [
     'https://www.googleapis.com/auth/spreadsheets',
     'https://www.googleapis.com/auth/drive'
 ]
 
-# authentification with GCP account
+# authentification avec le compte GCP 
 creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(creds)
 
-# open csv files
+# ouverture des fichiers csv 
 sheet = gc.open_by_key("1ZwK81NBWhM_xvQgKaSzRp-u7tF0HLd2stJS8F9VNyFY").sheet1  
 sheet2 = gc.open_by_key("1r0bFPyZa5a0PgXBB3inwMLj5dpAYrT-yfbkQagG40Xw").sheet1  
 sheet3 = gc.open_by_key("1xL4a5Cn6h9JK-36gwi8xrwXAMocrmcpM9oNgcZpiJhk").sheet1  
 
-# get values
+# obtenir les données des csv
 data = sheet.get_all_records()
 data2 = sheet2.get_all_records()
 
-# convert to DF
+# convertir les csv en dataframe
 df_fiscality = pd.DataFrame(data)
 df_MA_clean = pd.DataFrame(data2)
 
 # ajout de la colonne geo sur df_MA_clean
 df_MA_clean['geo'] = df_MA_clean['ville'] + ', ' + df_MA_clean['Departement'] + ', France'
 
-# Creating mask to check where 'loyer_maison' contains null values and replacing them with 'loyer_appartement' (because it was inverted in meilleurs-agents)
+# création d'un masque pour vérifier si 'loyer_maison' contient des valeurs null et si oui les remplacer par celle de 'loyer_appartement' (parce que c'est inversé sur le site meilleurs-agents)
 mask = df_MA_clean['loyer_maison'].isna()
 
 if mask.any(): 
@@ -51,12 +51,12 @@ if mask.any():
     df_MA_clean.loc[mask, 'loyer_max_maison'] = df_MA_clean.loc[mask, 'loyer_max_appartement']
     df_MA_clean.loc[mask, 'loyer_max_appartement'] = np.nan
 
-# Check in df_fiscality the fiscality in every city in the current and last year
+# Vérification dans df_fiscality: la fiscalité dans chaque ville sur l'année actuelle et l'année passée
 today = datetime.today()
 current_year = today.year
 link_year = current_year - 1
 
-# Filter for current year
+# filtre sur l'année actuelle 
 df_current = df_fiscality[df_fiscality['EXERCICE'] == current_year]
 
 if not df_current.empty:
@@ -64,20 +64,20 @@ if not df_current.empty:
 else:
     df_fiscality_year = df_fiscality[df_fiscality['EXERCICE'] == link_year]
 
-# Select the needed columns
+# Sélection des colonnes nécessaires 
 df_fiscality_clean = df_fiscality_year[['Taux_Global_TFB', 'INSEE COM']]
 
-# Join df_MA and df_fiscality by insee code with a left join to keep all rows in df_MA
+# Merging du df_MA et df_fiscality par le code INSEE avec un left join pour garder toutes les lignes de df_MA 
 df_MA_clean['Code_insee'] = df_MA_clean['Code_insee'].astype(str)
 df_fiscality_clean['INSEE COM'] = df_fiscality_clean['INSEE COM'].astype(str)
 
 df_merged = df_MA_clean.merge(df_fiscality_clean, how='left', left_on='Code_insee', right_on='INSEE COM')
 
-# Keep all needed columns and divide by 100 'Taux_Global_TFB' for easier calculation later
+# On garde toutes les colonnes nécessaires et on divise par 100 la colonne 'Taux_Global_TFB' pour faciliter les calculs plus tard
 df_merged_clean = df_merged[['ville','prix_appartement','min_appartement','max_appartement','prix_maison','min_maison','max_maison','loyer_appartement','loyer_min_appartement','loyer_max_appartement','loyer_maison','loyer_min_maison','loyer_max_maison','Taux_Global_TFB','Code_insee','Code_postal','Departement','geo']]
 df_merged['Taux_Global_TFB'] = df_merged_clean['Taux_Global_TFB'] / 100
 
-# Create a mask for all departments and fill the NaN values with the average 'Taux_Global_TFB' per department
+# Création de masques en fonction de chaque département, on rempli les valeurs null avec la valeur moyenne de 'Taux_Global_TFB' pour chaque département
 mask_dep44 = (df_merged_clean['Departement'] == 'Loire-Atlantique')
 mask_dep85 = (df_merged_clean['Departement'] == 'Vendée')
 mask_dep49 = (df_merged_clean['Departement'] == 'Maine-et-Loire')
@@ -128,14 +128,14 @@ df_merged_clean['ratio_m2_apt'] = round(((df_merged_clean['loyer_appartement']*1
 df_merged_clean['ratio_m2_msn'] = round(((df_merged_clean['loyer_maison']*12)/df_merged_clean['prix_maison'])*100,2)
 df_merged_clean['ratio_m2_glb'] = round(((df_merged_clean['loyer_global']*12)/df_merged_clean['prix_global'])*100,2)
 
-# Load df_norm, but only keep the columns you need + the key for merge
+# Chargement de df_norm en gardant seulement les colonnes nécessaires et la clé de merge (code INSEE)
 df_norm = pd.read_csv('df_norm.csv', usecols=['CODE_INSEE', 'INDICE_TENSION_LOG', 'CROI_POP_16_22'])
 
-# Convert both keys to string
+# On converti les clés des 2 DF en string
 df_merged_clean['Code_insee'] = df_merged_clean['Code_insee'].astype(str)
 df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
 
-# Merge with df_merged_clean
+# Merge avec df_merged_clean
 df_merged_clean_wnorm = df_merged_clean.merge(
     df_norm,
     left_on='Code_insee',

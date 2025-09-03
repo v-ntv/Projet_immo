@@ -30,17 +30,17 @@ data = sheet.get_all_records()
 # convertir en DataFrame
 df = pd.DataFrame(data)
 
-# Import pandas, requests and io
+# Importation de pandas, requests et io
 import pandas as pd
 import requests
 from io import StringIO
 
-# Get content by ignoring SSL 
+# Obtenir le contenu en ignorant le SSL  
 url = 'https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/fiscalite-locale-des-particuliers/exports/csv?lang=fr&timezone=Europe%2FParis&use_labels=true&delimiter=%3B'
 
 response = requests.get(url, verify=False)
 
-# Load in a DF
+# charger le DF
 df_fiscality = pd.read_csv(StringIO(response.text), delimiter=';')
 
 chunk_size = 5000  # 5000 lignes par batch
