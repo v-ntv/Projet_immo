@@ -1,4 +1,4 @@
-name: Run all scripts
+name: Run MAJ pdl MA (pour le web scraping)
 
 # déclenchement manuel
 on:
