@@ -47,7 +47,7 @@ st.title("📌 Zoom Pays de la Loire")
 st.subheader("Carte des Pays de la Loire ")
 
 #Ajout de feuillet pour les différents indicateurs
-tab1, tab2 = st.tabs(["Tension Locative", "Ration Achat/Loc"])
+tab1, tab2 = st.tabs(["Tension Locative", "Ratio Achat/Loc"])
 
 with tab1:
     st.subheader('Tension Locative')
