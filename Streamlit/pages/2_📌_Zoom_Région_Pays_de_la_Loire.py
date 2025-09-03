@@ -125,7 +125,7 @@ with tab2:
         data=communes_data,
         columns=["Code_insee", colonne_valeur], # Colonnes pour lier les données
         key_on="properties.codgeo", # Clé de liaison dans le GeoJSON
-        fill_color="RdYlGn", # Palette de couleurs 
+        fill_color="RdYlGn_r", # Palette de couleurs 
         nan_fill_color="grey",
         fill_opacity=0.7,
         line_opacity=0.2,
