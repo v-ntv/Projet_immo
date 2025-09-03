@@ -138,12 +138,11 @@ df_norm['CODE_INSEE'] = df_norm['CODE_INSEE'].astype(str)
 # Merge with df_merged_clean
 df_merged_clean_wnorm = df_merged_clean.merge(
     df_norm,
-    left_on='Code_insee',    # key in df_merged_clean
-    right_on='CODE_INSEE',   # key in df_norm
-    how='left'               # use 'left' join to keep all df_merged_clean rows
+    left_on='Code_insee',
+    right_on='CODE_INSEE',
+    how='left'
 )
 
-# Optional: drop redundant CODE_INSEE column if you want
-df_merged_clean_wnorm = df_merged_clean.merge(df_norm, left_on='Code_insee', right_on='CODE_INSEE')
-
+# export du csv sur gsheet
+sheet3.clear()
 set_with_dataframe(sheet3, df_merged_clean_wnorm)
