@@ -66,10 +66,10 @@ df_new["ville_slug"] = df_new["ville"].apply(slugify_ville)
 # Nom_de_la_commune_url	
 # url
 
-df_new['#Code_commune_INSEE'] = df_new['Code_insee']
-df_new['Lib_MA'] = df_new['ville']
+df_new['#Code_commune_INSEE'] = df_new['old_Code_insee']
+df_new['Lib_MA'] = df_new['old_ville']
 base_url = "https://www.meilleursagents.com/prix-immobilier/"
-df_new["url"] = base_url + df_new["ville_slug"] + "-" + df_new["Code_postal"].astype(str) + "/"
+df_new["url"] = base_url + df_new["ville_slug"] + "-" + df_new["old_Code_postal"].astype(str) + "/"
 
 # ré-écriture du fichier csv pour le mettre à jour
 set_with_dataframe(sheet2, df_new) 

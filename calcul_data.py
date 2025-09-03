@@ -33,7 +33,20 @@ data2 = sheet2.get_all_records()
 
 # convertir les csv en dataframe
 df_fiscality = pd.DataFrame(data)
-df_MA_clean = pd.DataFrame(data2)
+df_MA_temp = pd.DataFrame(data2)
+
+# Convertir les codes en str
+df_MA_temp['Code_postal'] = df_MA_temp['Code_postal'].astype(str)
+df_MA_temp['Code_insee'] = df_MA_temp['Code_insee'].astype(str)
+
+# GroupBy avec aggregation personnalisée
+df_MA_clean = df_MA_temp.groupby('ville', as_index=False).agg({
+    'Code_postal': 'first',  
+    'Code_insee': 'first',   
+    'Departement': 'first',
+    # on prend la moyenne des anciennes colonnes pour les mettre sur la nouvelle avec les bonnes infos
+    **{col: 'mean' for col in df_MA_temp.select_dtypes(include='number').columns}
+})
 
 # ajout de la colonne geo sur df_MA_clean
 df_MA_clean['geo'] = df_MA_clean['ville'] + ', ' + df_MA_clean['Departement'] + ', France'
