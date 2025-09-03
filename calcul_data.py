@@ -41,11 +41,22 @@ df_MA_temp['Code_insee'] = df_MA_temp['Code_insee'].astype(str)
 
 # GroupBy avec aggregation personnalisée
 df_MA_clean = df_MA_temp.groupby('ville', as_index=False).agg({
+    # on prend la moyenne des anciennes colonnes pour les mettre sur la nouvelle avec les bonnes infos
     'Code_postal': 'first',  
     'Code_insee': 'first',   
     'Departement': 'first',
-    # on prend la moyenne des anciennes colonnes pour les mettre sur la nouvelle avec les bonnes infos
-    **{col: 'mean' for col in df_MA_temp.select_dtypes(include='number').columns}
+    'prix_appartement': 'mean',
+    'min_appartement': 'mean',
+    'max_appartement': 'mean',
+    'prix_maison': 'mean',
+    'min_maison': 'mean',
+    'max_maison': 'mean',
+    'loyer_appartement': 'mean',
+    'loyer_min_appartement': 'mean',
+    'loyer_max_appartement': 'mean',
+    'loyer_maison': 'mean',
+    'loyer_min_maison': 'mean',
+    'loyer_max_maison': 'mean'
 })
 
 # ajout de la colonne geo sur df_MA_clean
