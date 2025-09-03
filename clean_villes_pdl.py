@@ -53,7 +53,7 @@ def slugify_ville(ville: str) -> str:
 
 # application du filtre
 df_new = df.copy()
-df_new["ville_slug"] = df_new["ville"].apply(slugify_ville)
+df_new["ville_slug"] = df_new["old_ville"].apply(slugify_ville)
 
 
 # remplacer les colonnes :
