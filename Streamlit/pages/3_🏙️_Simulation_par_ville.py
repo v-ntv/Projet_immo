@@ -254,7 +254,7 @@ def df_simulation(prix, loyer):
     df_simu["Frais d'agence en €"] = df_simu["Prix net vendeur en €"]*df_simu["Frais d'agence"]
     df_simu["Frais de notaire en €"] = df_simu["Prix net vendeur en €"]*df_simu["Frais de notaire"]
     df_simu["Loyer m2 en €"] = df_filtre[loyer]
-    df_simu["Taux d'occupation"] = txo # slider
+    df_simu["Taux d'occupation"] = txo/100 # slider
     df_simu["Loyer mensuel en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]*df_simu["Taux d'occupation"]
     df_simu["Loyer annuel en €"] = df_simu["Loyer mensuel en €"]*12
     df_simu["Assurance annuelle PNO en €"] = pno # à remplir
@@ -262,7 +262,7 @@ def df_simulation(prix, loyer):
     df_simu["Comptabilité annuelle en €"] = coan # à remplir
     df_simu["Valeur cadastrale en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]
     df_simu["Taux global TFPB"] = df_filtre['Taux_Global_TFB']
-    df_simu["Taxe foncière annuelle en €"] = (df_simu["Valeur cadastrale en €"]*0.5)*df_simu["Taux global TFPB"]
+    df_simu["Taxe foncière annuelle en €"] = round((df_simu["Valeur cadastrale en €"]*0.5)*df_simu["Taux global TFPB"],2)
     df_simu["Provisions entretien annuel en €"] = df_simu['Loyer annuel en €']*0.02
     df_simu["Provisions gros oeuvres annuel en €"] = df_simu['Prix net vendeur en €']*0.005
     df_simu["Assurance habitation annuelle en €"] = aha #à remplir
