@@ -28,7 +28,7 @@ with st.sidebar:
 @st.cache_data
 def load_data():
     # Charger les fichiers GeoJSON 
-    geojson_filtre = "pays_de_la_loire.geojson"
+    geojson_filtre = "Streamlit/pays_de_la_loire.geojson"
     # Charger les données de meilleur agent
     data_MA = "Streamlit/df_MA_clean3.csv"
     # Charger les données avec pandas

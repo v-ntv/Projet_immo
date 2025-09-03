@@ -11,7 +11,7 @@ import gdown
 
 url = "https://drive.google.com/uc?id=1hj72ZgbFI0lmB9klZknntpaG2XXrJLOq"
 output = "dossier_complet_insee.csv"
-#gdown.download(url, output, quiet=False) 
+gdown.download(url, output, quiet=False) 
 
 df = pd.read_csv('dossier_complet_insee.csv', sep=';')
 
