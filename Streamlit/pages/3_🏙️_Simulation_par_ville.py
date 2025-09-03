@@ -268,9 +268,9 @@ def df_simulation(prix, loyer):
     df_simu["Assurance habitation annuelle en €"] = aha #à remplir
     df_simu["Frais de gestion locative annuel en €"] = df_simu['Loyer mensuel en €']*0.07*12
     df_simu["Prix achat total en €"] = df_simu["Prix net vendeur en €"]+df_simu["Frais d'agence en €"]+df_simu["Frais de notaire en €"]
-    df_simu['Rentabilité Brute en %'] = round(df_simu['Loyer annuel en €']/df_simu["Prix achat total en €"],2)
+    df_simu['Rentabilité Brute en %'] = round(df_simu['Loyer annuel en €']/df_simu["Prix achat total en €"],2)*100
     df_simu['Charges Annuelles en €'] = round(df_simu["Assurance annuelle PNO en €"]+df_simu["GLI annuelle (Garantie Loyers Impayés) en €"]+df_simu["Comptabilité annuelle en €"]+df_simu["Taux global TFPB"]+df_simu["Provisions entretien annuel en €"]+df_simu["Provisions gros oeuvres annuel en €"]+df_simu["Assurance habitation annuelle en €"]+df_simu["Frais de gestion locative annuel en €"],2)
-    df_simu['Rentabilité Net en %'] = round((df_simu['Loyer annuel en €']-df_simu['Charges Annuelles en €'])/df_simu["Prix achat total en €"],2)
+    df_simu['Rentabilité Net en %'] = round((df_simu['Loyer annuel en €']-df_simu['Charges Annuelles en €'])/df_simu["Prix achat total en €"],2)*100
     return df_simu
 
 df_simu= df_simulation(prix, loyer)
