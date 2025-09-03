@@ -26,18 +26,8 @@ jobs:
       - name: Install dependencies
         run: pip install pandas gspread gspread-dataframe google-auth gdown requests scikit-learn
 
-      # Lancer les scripts Python en utilisant le json du compte GCP (mis sur github en secret)
-      - name: Get fiscality
+      # Lancer le script Python en utilisant le json du compte GCP (mis sur github en secret)
+      - name: Clean villes PDL
         env:
           GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python get_fiscality.py
-
-      - name: Update google sheets
-        env:
-          GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python update_sheets.py
-
-      - name: Update df_MA_clean
-        env:
-          GCP_SERVICE_ACCOUNT_V: ${{ secrets.GCP_SERVICE_ACCOUNT_V }}
-        run: python calcul_data.py
+        run: python clean_villes_pdl.py
