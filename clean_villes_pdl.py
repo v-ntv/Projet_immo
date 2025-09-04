@@ -53,8 +53,6 @@ def slugify_ville(ville: str) -> str:
 
 # application du filtre
 df_new = df.copy()
-df_new["ville_slug"] = df_new["old_ville"].apply(slugify_ville)
-
 
 # remplacer les colonnes :
 # ville	
@@ -65,6 +63,9 @@ df_new["ville_slug"] = df_new["old_ville"].apply(slugify_ville)
 # Lib_MA	
 # Nom_de_la_commune_url	
 # url
+
+# remplacer les valeurs vide par des NaN
+df_new.replace("", pd.NA, inplace=True)
 
 # créer une colonne "ville_finale" qui prend old_ville si dispo, sinon ville
 df_new["ville_finale"] = df_new["old_ville"].combine_first(df_new["ville"])
