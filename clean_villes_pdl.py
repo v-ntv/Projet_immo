@@ -72,10 +72,20 @@ df_new["ville_finale"] = df_new["old_ville"].combine_first(df_new["ville"])
 # slugify sur ville_finale
 df_new["ville_slug"] = df_new["ville_finale"].apply(slugify_ville)
 
-df_new['#Code_commune_INSEE'] = df_new['old_Code_insee']
+# remplacer les colonnes comme demandé
+df_new['#Code_commune_INSEE'] = df_new['old_Code_insee']   # pas de fallback ici
 df_new['Lib_MA'] = df_new['ville_finale']
+
+# construction de l’URL
 base_url = "https://www.meilleursagents.com/prix-immobilier/"
-df_new["url"] = base_url + df_new["ville_slug"] + "-" + df_new["old_Code_postal"].astype(str) + "/"
+df_new["url"] = (
+    base_url
+    + df_new["ville_slug"]
+    + "-"
+    + df_new["old_Code_postal"].astype(str)
+    + "/"
+)
 
 # ré-écriture du fichier csv pour le mettre à jour
+sheet2.clear()
 set_with_dataframe(sheet2, df_new) 
