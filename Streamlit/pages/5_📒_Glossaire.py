@@ -34,7 +34,7 @@ glossaire = {
 }
 
 st.title("📒 Glossaire des termes techniques")
-st.write("Cliquez sur un terme pour voir sa définition.")
+st.write("Cliquer sur un terme pour voir sa définition.")
 
 # Boucle pour afficher chaque terme et sa définition
 for terme, definition in glossaire.items():
