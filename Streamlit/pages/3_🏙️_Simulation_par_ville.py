@@ -260,7 +260,7 @@ def df_simulation(prix, loyer):
     df_simu["Assurance annuelle PNO en €"] = pno # à remplir
     df_simu["GLI annuelle (Garantie Loyers Impayés) en €"] = gli #0.03*df_simu["Loyer annuel"] # à mettre par défaut
     df_simu["Comptabilité annuelle en €"] = coan # à remplir
-    df_simu["Valeur cadastrale en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]*12
+    df_simu["Valeur cadastrale en €"] = df_simu['Surface en m2']*df_simu["Loyer m2 en €"]*12*0.5
     df_simu["Taux global TFPB"] = df_filtre['Taux_Global_TFB']
     df_simu["Taxe foncière annuelle en €"] = round((df_simu["Valeur cadastrale en €"])*df_simu["Taux global TFPB"],2)
     df_simu["Provisions entretien annuel en €"] = df_simu['Loyer annuel en €']*0.02
