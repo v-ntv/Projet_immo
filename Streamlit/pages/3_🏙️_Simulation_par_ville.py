@@ -155,7 +155,7 @@ with tab3:
     a, b, x = st.columns(3)
     c, d = st.columns(2)
     a.subheader(f"Rentabilité Brute pour les maisons au m2 à {df_filtre.index[0]}")
-    a.metric("Rentabilité Brut moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
+    a.metric("Rentabilité Brute moyenne", f"{df_filtre['ratio_m2_msn'][0]} %", border=True)
     b.subheader(f"Evolution de la population à {df_filtre.index[0]} entre 2016 et 2022")
     b.metric("Croissance pop", f"{df_filtre['CROI_POP_16_22'][0]} %", border=True)
     # affichage des graphiques
@@ -192,7 +192,7 @@ nbm2 = e.number_input(
     placeholder="en m2"
     )
 frag =e.slider(
-    "Selectionné les frais d'agences (en %)",
+    "Selectionner les frais d'agences (en %)",
     0.0,
     10.0,
     5.0,
@@ -204,7 +204,7 @@ taux_par_type = {
     "Neuf": 0.05
 }
 annf = e.pills(
-    "Sélectionnez le type du bien :",
+    "Sélectionner le type du bien :",
     ["Ancien", "Neuf"],
     default="Ancien"
 )
@@ -270,7 +270,7 @@ def df_simulation(prix, loyer):
     df_simu["Prix achat total en €"] = df_simu["Prix net vendeur en €"]+df_simu["Frais d'agence en €"]+df_simu["Frais de notaire en €"]
     df_simu['Rentabilité Brute en %'] = round(df_simu['Loyer annuel en €']/df_simu["Prix achat total en €"]*100,2)
     df_simu['Charges Annuelles en €'] = round(df_simu["Assurance annuelle PNO en €"]+df_simu["GLI annuelle (Garantie Loyers Impayés) en €"]+df_simu["Comptabilité annuelle en €"]+df_simu["Taux global TFPB"]+df_simu["Provisions entretien annuel en €"]+df_simu["Provisions gros oeuvres annuel en €"]+df_simu["Assurance habitation annuelle en €"]+df_simu["Frais de gestion locative annuel en €"],2)
-    df_simu['Rentabilité Net en %'] = round((df_simu['Loyer annuel en €']-df_simu['Charges Annuelles en €'])/df_simu["Prix achat total en €"]*100,2)
+    df_simu['Rentabilité Nette en %'] = round((df_simu['Loyer annuel en €']-df_simu['Charges Annuelles en €'])/df_simu["Prix achat total en €"]*100,2)
     return df_simu
 
 df_simu= df_simulation(prix, loyer)
@@ -279,9 +279,9 @@ with st.expander('Data Simulation'):
     st.dataframe(df_simu[['Prix net vendeur en €',"Frais d'agence en €","Frais de notaire en €","Loyer annuel en €","Valeur cadastrale en €","Provisions entretien annuel en €","Provisions gros oeuvres annuel en €","Frais de gestion locative annuel en €"]])
 
 with st.expander('Data Indicateurs'):
-    st.dataframe(df_simu[['Prix achat total en €','Rentabilité Brute en %','Charges Annuelles en €','Rentabilité Net en %',"Taxe foncière annuelle en €"]])
+    st.dataframe(df_simu[['Prix achat total en €','Rentabilité Brute en %','Charges Annuelles en €','Rentabilité Nette en %',"Taxe foncière annuelle en €"]])
 
 h, i, j = st.columns(3)
 h.metric("Prix d'achat total", f"{round(df_simu['Prix achat total en €'][0])} €", border=True) 
 i.metric("Rentabilité Brute", f"{df_simu['Rentabilité Brute en %'][0]} %", border=True) 
-j.metric("Rentabilité Nette", f"{df_simu['Rentabilité Net en %'][0]} %",border=True)
+j.metric("Rentabilité Nette", f"{df_simu['Rentabilité Nette en %'][0]} %",border=True)
