@@ -278,9 +278,6 @@ df_simu= df_simulation(prix, loyer)
 with st.expander('Data Simulation'):
     st.dataframe(df_simu[['Prix net vendeur en €',"Frais d'agence en €","Frais de notaire en €","Loyer annuel en €","Valeur cadastrale en €","Provisions entretien annuel en €","Provisions gros oeuvres annuel en €","Frais de gestion locative annuel en €"]])
 
-with st.expander('Data Indicateurs'):
-    st.dataframe(df_simu[['Prix achat total en €','Rentabilité Brute en %','Charges Annuelles en €','Rentabilité Nette en %',"Taxe foncière annuelle en €"]])
-
 h, i, j = st.columns(3)
 h.metric("Prix d'achat total", f"{round(df_simu['Prix achat total en €'][0])} €", border=True) 
 i.metric("Rentabilité Brute", f"{df_simu['Rentabilité Brute en %'][0]} %", border=True) 
